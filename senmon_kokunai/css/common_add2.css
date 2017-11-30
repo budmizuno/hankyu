@@ -1,0 +1,602 @@
+@charset "UTF-8";
+
+a p {
+    color: #1d3994;
+}
+
+/* 世界遺産特集はこちらリンク */
+
+/* メインタイトル */
+.main-title-txt {
+	color: #ffffff;
+}
+.main-title {
+	position: relative;
+	padding: 6px 10px 6px 20px;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-position: bottom right;
+}
+.main-title::before {
+    width: 7px;
+    height: calc(100% - 18px);
+    background-color: #89a9d1;
+    position: absolute;
+    top: 0;
+    left: 11px;
+    content: "";
+    margin: 9px 0;
+}
+
+/* アイコン付タイトル */
+.main-title.uresuzi_title,
+.main-title.tantosha_title,
+.main-title.keyword_title,
+.main-title.bus-title {
+    padding: 6px 10px 6px 50px;
+}
+.main-title.uresuzi_title:before,
+.main-title.tantosha_title:before,
+.main-title.keyword_title:before,
+.main-title.bus-title:before {
+    width: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    margin: 3px 0 3px;
+}
+
+.main-title.keyword_title:before {
+    background-color: inherit;
+}
+.recommend-group span {
+    padding-top: 3px;
+}
+.set01 .main-title.uresuzi_title:before,
+.set01 .main-title.tantosha_title:before { background-color: #fe90a8;}
+.set02 .main-title.uresuzi_title:before,
+.set02 .main-title.tantosha_title:before { background-color: #ffdd20;}
+.set03 .main-title.uresuzi_title:before,
+.set03 .main-title.tantosha_title:before { background-color: #fedb3c;}
+.set04 .main-title.uresuzi_title:before,
+.set04 .main-title.tantosha_title:before { background-color: #6cdec5;}
+.set05 .main-title.uresuzi_title:before,
+.set05 .main-title.tantosha_title:before { background-color: #beae24;}
+.set06 .main-title.uresuzi_title:before,
+.set06 .main-title.tantosha_title:before { background-color: #7d7eb1;}
+.set07 .main-title.uresuzi_title:before,
+.set07 .main-title.tantosha_title:before { background-color: #a3e5c4;}
+.set08 .main-title.uresuzi_title:before,
+.set08 .main-title.tantosha_title:before { background-color: #e57c73;}
+.set09 .main-title.uresuzi_title:before,
+.set09 .main-title.tantosha_title:before { background-color: #96d4c5;}
+.set10 .main-title.uresuzi_title:before,
+.set10 .main-title.tantosha_title:before { background-color: #fed36c;}
+.set11 .main-title.uresuzi_title:before,
+.set11 .main-title.tantosha_title:before { background-color: #9f84d7;}
+.set12 .main-title.uresuzi_title:before,
+.set12 .main-title.tantosha_title:before { background-color: #9ceefe;}
+
+/* 売れ筋ランキング */
+.main-title.uresuzi_title:before { background-image: url(../images/icon/icn_cup.png);}
+/* 担当者おすすめ */
+.main-title.tantosha_title:before { background-image: url(../images/icon/icn_good.png);}
+/* 最安値 */
+.icon-price { background-image: url(../images/icon/icn_price.png); background-color: rgba(255, 255, 255, 0.5);}
+/* 人気キーワード(12色) */
+.set01 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set01.png);}
+.set02 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set02.png);}
+.set03 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set03.png);}
+.set04 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set04.png);}
+.set05 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set05.png);}
+.set06 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set06.png);}
+.set07 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set07.png);}
+.set08 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set08.png);}
+.set09 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set09.png);}
+.set10 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set10.png);}
+.set11 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set11.png);}
+.set12 .main-title.keyword_title:before { background-image: url(../images/icon/icn_keyword_set12.png);}
+/* 新着 */
+.set01 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set01.png);}
+.set02 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set02.png);}
+.set03 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set03.png);}
+.set04 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set04.png);}
+.set05 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set05.png);}
+.set06 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set06.png);}
+.set07 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set07.png);}
+.set08 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set08.png);}
+.set09 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set09.png);}
+.set10 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set10.png);}
+.set11 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set11.png);}
+.set12 .icon-new-hokkaido { background-image: url(../images/icon/icn_new_set12.png);}
+/* 発着バスツアー */
+.main-title.bus-title:before { background-image: url(/attending/senmon_kokunai/images/icon/icn_bus.png);}
+
+.banner1 {
+    position: relative;
+    height: 360px;
+    overflow-y: hidden;
+}
+/* 方面の国画像  */
+.wr-image-banner .bx-wrapper {
+	min-height: 255px;
+}
+.wr-image-banner .bx-wrapper img {
+	width: 100%;
+	max-height: 255px;
+}
+/* 人気の都市・観光地 */
+.banner-europe .wr-banner2-bottom dl,.pg_12-13 .wr-banner2-bottom dl {
+    background: #ffffff;
+}
+.banner-europe .wr-banner2-bottom dt,.pg_12-13 .wr-banner2-bottom dt {
+    display: inline-block;
+    width: 134px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.banner-europe .wr-banner2-bottom dd,.pg_12-13 .wr-banner2-bottom dd {
+    display: inline-block;
+    vertical-align: top;
+}
+.banner-europe .wr-banner2-bottom ul li,.pg_12-13 .wr-banner2-bottom ul li {
+    vertical-align: top;
+}
+
+/* イチオシツアー */
+.img_ichioshi {
+	width: 380px;
+	height: 285px;
+}
+/* 売れ筋ランキング */
+.img_uresuzi {
+	width: 200px;
+	height: 150px;
+}
+/* 担当者オススメ */
+.img_tantoshaosusuem {
+	width: 300px;
+	height: 225px;
+}
+/* 拠点自由枠画像 */
+.box_kyoten_free {
+    text-align: center;
+}
+.box_kyoten_free img {
+    max-width: 960px;
+    min-width: 340px;
+    min-height: 200px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+
+/* 拠点特集枠 */
+/*
+1枚目が”横：400×縦：300px”、2～7枚目（6枚）が”横：300×縦：225px”、8枚目以降が”横：220×縦：165px”。
+*/
+.base-list img {
+	width: 400px;
+	height: 300px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.base-feature img {
+	width: 300px;
+	height: 225px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.base-special img {
+	width: 300px;
+	height: 225px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.base-place img {
+	width: 220px;
+	height: 165px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.list-item p {
+    font-size: 12px;
+}
+.base-feature li:nth-child(3n) {
+	margin-right: 0;
+}
+.base-special li:nth-child(3n) {
+	margin-right: 0;
+}
+.base-place li:nth-child(4n) {
+	margin-right: 0;
+}
+
+/* ホテルランキング */
+/*
+1枚目が”横：360×縦：270px”、2～3枚目（2枚）が”横：280×縦：210px”、4～7枚目以降が”横：240×縦：180px”、
+8～10枚目が”横：160×縦：120px”
+
+*/
+.list-hotel .list-hotel-1 img {
+	width: 360px;
+	height: 270px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.list-hotel .list-hotel-2 img,
+.list-hotel .list-hotel-3 img {
+	width: 280px;
+	height: 210px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.list-hotel .list-hotel-4 img {
+	width: 240px;
+	height: 180px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+.list-hotel .list-hotel-5 img {
+    width: 160px;
+    height: 120px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size: contain;
+}
+
+/* 人気のキーワード */
+.link-taia a {
+	display: inline;
+	line-height: 28px;
+}
+
+/* DP枠 */
+.recommend-group {
+	line-height: 2;
+}
+.recommend-list li a {
+	padding: 6px 15px;
+}
+
+.recommend-list li a span {
+	color: #ffffff;
+}
+
+/* ブランド枠 */
+.group-crystal-list img {
+	width: 300px;
+	height: 225px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size:contain;
+}
+
+/* デジタルカタログ 旅の情報 */
+.journey {
+	padding: 26px 13px;
+}
+.digital h2 {
+    display: none;
+}
+
+/* 現地情報ブログ */
+.list-home-link li > a:first-child {
+	margin-bottom: 10px;
+	min-height: 119px;
+	max-height: 119px;
+	overflow: hidden;
+}
+.list-home-link li img {
+	margin-bottom: 0px;
+    min-width: 159px;
+    min-height: 120px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size:contain;
+}
+
+/* ガイド枠 */
+ul.frame-guide a:hover {
+    text-decoration: none;
+}
+.frame-guide-title {
+	color: #4c4c4c;
+}
+.frame-guide a:hover .frame-guide-title {
+	color: #FF9933;
+}
+.frame-guide-txt {
+	color: #4c4c4c;
+}
+
+/* 国ページのマップ部分 */
+.wr-banner2 .bx-wrapper {
+	height: 360px;
+}
+.wr-banner2 .bx-wrapper img {
+	height: auto;
+	width: 550px;
+}
+.wr-banner2-bottom {
+	bottom: 0;
+}
+
+/* 新着最安値*/
+.find-tour p {
+    /*padding: 3px 10px;*/
+}
+.find-tour span {
+    color: #ffffff;
+    font-size: 14px;
+}
+.find-tour>li {
+    width: 50%;
+}
+.find-tour>li.last {
+    width: 50%;
+}
+
+/* 基本情報 */
+.basic-information span {
+    margin-left: 6px;
+    font-size: 14px;
+}
+
+/* 都市ページ紹介画像 */
+.city .bx-wrapper {
+    min-height: 360px;
+}
+.city .bx-wrapper img {
+	width: 960px;
+    height: 360px;
+}
+
+/* 検索枠 */
+.searchBlk {
+	width: 380px;
+}
+.searchBlk .topSearchAdd a {
+	text-align: left;
+	padding-left: 10px;
+}
+p.topSearchAdd {
+	margin-top: 10px;
+}
+
+.tab-content-search table td {
+	font-size: 13px;
+}
+.searchBlk .kikan_list td.selected {
+    background: #faa700;
+    border: 1px solid #fa9600;
+    color: #FFFFFF;
+}
+.srchResult {
+	font-size: 12px;
+}
+.addBox table {
+    margin: 13px 0px;
+    width: 100%;
+}
+.addBox table th {
+    width: 100px;
+}
+.addBox table td {
+	padding-bottom: 9px;
+}
+
+.month_str {
+    color: #4c4c4c !important;
+}
+
+
+
+
+
+.bn-title-ltxt{
+	line-height: 1.4;
+}
+.osusume {
+    background-image: url(/attending/senmon_kokunai/images/nodata/i-ichioshi.png);
+    background-position: 395px 0;
+    background-repeat: no-repeat;
+    min-width: 550px;
+}
+.uresuzi {
+    background-image: url(/attending/senmon_kokunai/images/nodata/i-rank.png);
+    background-repeat: no-repeat;
+    background-size: 850px 150px;
+    background-position-y: 3px;
+    background-position-x: 193px;
+    min-width: 960px;
+}
+.tantosha {
+    background: url(/attending/senmon_kokunai/images/nodata/i-osusume.png);
+    background-repeat: no-repeat;
+    background-size: 1220px 230px;
+    background-position-y: 3px;
+    background-position-x: 300px;
+    min-width: 960px;
+}
+.aside.right.nodata {
+    background-image: url(/attending/senmon_kokunai/images/nodata/d-bg_ill.png);
+    min-height: 920px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.btn-find-tour-link span {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+
+
+
+.ft-list-menu1 span a {
+    font-size: 14px;
+}
+
+
+
+#guide_index_main_p {
+	padding-top: 0;
+	background-image: inherit;
+}
+
+.map a:hover span {
+    color: #F93;
+}
+
+p.btn-more span {
+    font-size: 12px;
+}
+.idx_ancBtn {
+    width: 40px;
+}
+
+.tab-content-search li span.IconBg {
+    font-size: 14px;
+}
+.tour-info p {
+    font-size: 12px;
+}
+
+.basicinfo_1 {
+    position: relative;
+    min-height: 300px;
+}
+.basicinfo_1 .aside.right.nodata {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#p_dep_date {
+    width: 84%;
+    vertical-align: top;
+}
+.js_dep_date_cal {
+    margin-left: 3px;
+    display: inline !important;
+}
+li.cal {
+    width: 210px;
+}
+
+.map li.bgGray, .map li.bgGray:hover, .map li.active.bgGray, .map li.active.bgGray:hover {
+    background: #666 !important;
+}
+.map li.bgGray:hover a, .map li.bgGray:hover span, .map li.active.bgGray a, .map li.active.bgGray span {
+    color: #ffffff !important;
+}
+
+.wr-banner2 .left {
+    max-height: 360px;
+    overflow-y: hidden;
+}
+
+
+.tab-menu li.active {
+    margin-top: 0;
+    vertical-align: top;
+    height: inherit;
+    cursor:inherit;
+}
+.tab-menu li {
+    width: calc(100% /2 - 2px);
+    vertical-align: bottom;
+    position: relative;
+    height: 50px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor:pointer;
+}
+.tab-menu-3 li {
+    width: calc(100% / 3 - 3px);
+}
+
+
+.tab-menu li:after {
+    -webkit-filter: brightness(0.8);
+    -moz-filter: brightness(0.8);
+    -o-filter: brightness(0.8);
+    -ms-filter: brightness(0.8);
+    filter: brightness(0.8);
+    background-size: auto 100%;
+    z-index: -1;
+}
+.tab-menu li.active:after {
+    -webkit-filter: brightness(1);
+    -moz-filter: brightness(1);
+    -o-filter: brightness(1);
+    -ms-filter: brightness(1);
+    filter: brightness(1);
+    background-size: auto 100%;
+    z-index: 0;
+}
+.tab-menu li span {
+    height: 100%;
+}
+
+/* 人気の都市・観光地タイトル */
+.box_popular_title {
+    position: relative;
+}
+.box_popular_title:after {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 10px;
+    content: "";
+    left: 0;
+    z-index: 5;
+}
+.popular_title {
+    font-size: 12px;
+    padding: 2px 4px 2px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/*bot 追記20171107 */
+.area-slct{ clear:both; border-bottom:1px dotted #d3d3d3; overflow:hidden; margin-bottom:10px; padding-bottom:10px;}
+.area-slct li{ float:left; margin-right:24px;}
+.area-slct li a {font-size: 14px; color: #1b3697; -webkit-box-orient: vertical; -webkit-line-clamp: 2;  display: block;}
+.area-slct li a:before{content:"▶";color:#ffae00!important; display:inline-block; margin-right:3px;}
+/*新着 フリープラン*/
+ .main-title.new_title {
+    padding: 6px 10px 6px 50px;
+}
+.main-title.new_title:before {
+    background-image: url(../images/icon/icn_new_set09.png);
+	width: 40px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    height: 40px;
+    margin: 3px 0 3px;
+	background-color: #16b8d9;
+}
+.tour_box01{ clear:both; overflow:hidden;}
+.tour_box01 p{ float:left; width:210px;}
+.tour_box01 ul{ float:left; width:750px;}
+.air{ padding: 2px 20px; display: inline-block; border-radius: 4px; background: gray; color: #fff; width:100px; text-align:center;}
+.tour_box02 ul{ clear:both; overflow:hidden;}
+.tour_box02 .fl01{ float:left; width:100px; margin-right:10px}
+.tour_box02 .fl02{ float:left; width:640px; pmargin-right:10px;}
+.tour_box02 .fl03{ float:left; width:210px;}
+.btn_more_list { border: solid 1px #bbc3df; margin: 0px 0px 15px 760px; text-align: center; display:inline-block;}
+.btn_more_list a { display: block; font-size: 14px; line-height: 1.7; padding: 2px 11px; color: #1d3597; text-align: center; width:198px;}
+.day_mds{ font-size:18px; font-weight:bold; width:960px; margin-bottom:5px;}
+.day_mds02{ font-size:18px; font-weight:bold; border-top: solid 1px #d3d3d3; padding-top:10px; width:960px; margin-bottom:5px;}
+
+.moreLink {
+    display: table;
+    width: 100%;
+}

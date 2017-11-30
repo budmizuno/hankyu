@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* 方面の国画像 Noimage  */
+.wr-image-banner .bx-wrapper img {
+    width:340px;
+    height:255px;
+    background-size:contain;
+}
+
+/* 国ページのマップ部分 Noimage */
+.wr-banner2 .bx-wrapper img {
+    width:550px;
+    height:auto;
+}
+
+/* 都市画像 Noimage  */
+.city .bx-wrapper img {
+    width:960px;
+    height:360px;
+    background-size:contain;
+}
+/* イチオシツアー */
+.osusume .slider-title{
+    height: 45px;
+}
+.slider-title{
+    max-height: 45px;
+}
+.slider-content {
+    height: 39px;
+}
+.slider-price{
+    height: 30px;
+}
+/* 拠点特集枠 */
+.txt-point-title {
+    font-size:16px;
+}
+/* フレンドツアー */
+.close_bottom{
+    text-align: center;
+}
+
+/* フリープランの検索枠 */
+#tab_ct_freeplan .searchBlk {
+    min-height: 432px;
+}
+#tab_ct_freeplan .searchBlk .clBtn {position: absolute;bottom: 2px;right: 10px;}
+#tab_ct_freeplan .searchBlk .clBtn a {font-size: 1.4rem;font-weight: 400;color: white;text-decoration: underline;}
+#tab_ct_freeplan .tab-tt{position: relative;}
+/* お住まいの地域設定枠 */
+.wrap_botBox01 {
+    border-bottom: none;
+}
+/* 検索枠 */
+.tab-content-search .tab-tt{
+    font-size:16px;
+}
+/* 新着ツアー 最安値ツアー */
+.find-tour span{
+	font-size: 16px !important;
+}
+/* イチオシツアーの画像 */
+.osusume li img{
+    width: 380px;
+	height: 285px;
+    background: url(/sharing/common14/images/noimage390.png) no-repeat;
+    background-size:contain;
+}
+/* フリープラン検索の検索を追加するボタン */
+.searchBlk .topSearchAdd a{
+	width: 160px !important;
+}
+/* イチオシツアーの金額 */
+.osusume .slider-price{
+	font-size: 18px;
+}
+/* 右側配置ブログのもっと見るボタン */
+.btn_more_right {
+    border: solid 1px #bbc3df;
+    margin: 15px 20px;
+    text-align: center;
+}
+.btn_more_right a {
+    display: block;
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 2px 11px ;
+    color: #1d3597;
+    text-align: center;
+}
+.btn_more_right span{
+    font-size: 12px;
+}
+/* 最近見たツアー、おすすめツアー */
+#historyWrapper h2,#ppz_recommend_kaigaitop h2{
+    font-weight: bold;
+}
+/* IEの表示崩れ用 */
+#RankigPht02 .best01 { margin-right:0;}
+#RankigPht02 .best02 { float:right;}
+#RankigPht02 .best03 { float:right;}
+#RankigPht02 .best06 { margin-right:0;}
+#RankigPht02 .best07 { float:right;}
+/* 国ページの観光情報 */
+.charmBox{
+    float: left;
+}
+/* フリープラン検索 */
+.overlayMds04{
+	width:auto;
+}
+/* フリープランの日数 */
+.kikan_list td{
+	cursor: pointer;
+}
+/* カレンダー */
+.SubWinBox .SW_SD_Month td, .SubWinBox .SW_SD_Month th {
+	width: 26px !important;
+	height:29px !important;
+}

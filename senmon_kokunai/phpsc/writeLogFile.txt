@@ -1,0 +1,460 @@
+array(3) {
+  ["photoArray"]=>
+  array(16) {
+    [1]=>
+    string(42) "東京駅・日本橋・銀座・有楽町"
+    [2]=>
+    string(33) "品川・目黒・羽田・蒲田"
+    [3]=>
+    string(33) "上野・浅草・両国・足立"
+    [4]=>
+    string(30) "赤坂・六本木・虎ノ門"
+    [5]=>
+    string(24) "新宿・中野・杉並"
+    [6]=>
+    string(27) "新橋・汐留・お台場"
+    [7]=>
+    string(36) "御茶ノ水・水道橋・飯田橋"
+    [8]=>
+    string(27) "渋谷・恵比寿・青山"
+    [9]=>
+    string(30) "江東・江戸川・新小岩"
+    [10]=>
+    string(42) "池袋・目白・赤羽・板橋・練馬"
+    [11]=>
+    string(45) "武蔵野・立川・府中・三鷹・調布"
+    [12]=>
+    string(15) "多摩・町田"
+    [13]=>
+    string(12) "伊豆大島"
+    [14]=>
+    string(18) "奥多摩・青梅"
+    [15]=>
+    string(15) "小笠原諸島"
+    [16]=>
+    string(9) "八丈島"
+  }
+  ["photoDataCSV"]=>
+  array(35) {
+    [0]=>
+    array(4) {
+      ["q_category"]=>
+      string(42) "東京駅・日本橋・銀座・有楽町"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-07210.jpg"
+      ["p_img1_caption"]=>
+      string(19) "袋田の滝 紅葉"
+    }
+    [1]=>
+    array(4) {
+      ["q_category"]=>
+      string(42) "東京駅・日本橋・銀座・有楽町"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-SP16_-26891.jpg"
+      ["p_img1_caption"]=>
+      string(24) "竜神大吊橋　紅葉"
+    }
+    [2]=>
+    array(4) {
+      ["q_category"]=>
+      string(33) "品川・目黒・羽田・蒲田"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00467-EBP15-00080.jpg"
+      ["p_img1_caption"]=>
+      string(21) "花貫渓谷の紅葉"
+    }
+    [3]=>
+    array(4) {
+      ["q_category"]=>
+      string(33) "上野・浅草・両国・足立"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-SP16_-34842.jpg"
+      ["p_img1_caption"]=>
+      string(21) "弘道館　至善堂"
+    }
+    [4]=>
+    array(4) {
+      ["q_category"]=>
+      string(33) "上野・浅草・両国・足立"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-EBP16-00004.jpg"
+      ["p_img1_caption"]=>
+      string(36) "神磯の鳥居　大洗磯前神社"
+    }
+    [5]=>
+    array(4) {
+      ["q_category"]=>
+      string(30) "赤坂・六本木・虎ノ門"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP12_-01568.jpg"
+      ["p_img1_caption"]=>
+      string(36) "龍頭の滝　奥日光　紅葉　"
+    }
+    [6]=>
+    array(4) {
+      ["q_category"]=>
+      string(30) "赤坂・六本木・虎ノ門"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-03218.jpg"
+      ["p_img1_caption"]=>
+      string(21) "華厳の滝　紅葉"
+    }
+    [7]=>
+    array(4) {
+      ["q_category"]=>
+      string(30) "赤坂・六本木・虎ノ門"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-04674.jpg"
+      ["p_img1_caption"]=>
+      string(18) "秋の戦場ヶ原"
+    }
+    [8]=>
+    array(4) {
+      ["q_category"]=>
+      string(24) "新宿・中野・杉並"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-05225.jpg"
+      ["p_img1_caption"]=>
+      string(21) "中禅寺湖　紅葉"
+    }
+    [9]=>
+    array(4) {
+      ["q_category"]=>
+      string(24) "新宿・中野・杉並"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(87) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00133-BL14-00004.jpg"
+      ["p_img1_caption"]=>
+      string(21) "いろは坂　紅葉"
+    }
+    [10]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "新橋・汐留・お台場"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-SP17_-23921.jpg"
+      ["p_img1_caption"]=>
+      string(33) "わたらせ渓谷鉄道　紅葉"
+    }
+    [11]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "新橋・汐留・お台場"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00056-ALLUP-64275.jpg"
+      ["p_img1_caption"]=>
+      string(21) "吹割の滝　紅葉"
+    }
+    [12]=>
+    array(4) {
+      ["q_category"]=>
+      string(36) "御茶ノ水・水道橋・飯田橋"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-06364.jpg"
+      ["p_img1_caption"]=>
+      string(18) "榛名湖　紅葉"
+    }
+    [13]=>
+    array(4) {
+      ["q_category"]=>
+      string(36) "御茶ノ水・水道橋・飯田橋"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-AM17_-00710.jpg"
+      ["p_img1_caption"]=>
+      string(36) "谷川岳ロープウェイ　紅葉"
+    }
+    [14]=>
+    array(4) {
+      ["q_category"]=>
+      string(36) "御茶ノ水・水道橋・飯田橋"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-ESP14-00048.jpg"
+      ["p_img1_caption"]=>
+      string(15) "富岡製糸場"
+    }
+    [15]=>
+    array(4) {
+      ["q_category"]=>
+      string(36) "御茶ノ水・水道橋・飯田橋"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-ALLUP-69158.jpg"
+      ["p_img1_caption"]=>
+      string(18) "長瀞渓谷　秋"
+    }
+    [16]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "渋谷・恵比寿・青山"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-EBP16-00010.jpg"
+      ["p_img1_caption"]=>
+      string(18) "川越　時の鐘"
+    }
+    [17]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "渋谷・恵比寿・青山"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-ESP13-00038.jpg"
+      ["p_img1_caption"]=>
+      string(15) "宝登山神社"
+    }
+    [18]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "渋谷・恵比寿・青山"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-07236.jpg"
+      ["p_img1_caption"]=>
+      string(27) "秩父鉄道　荒川橋梁"
+    }
+    [19]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "渋谷・恵比寿・青山"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-EBP14-00043.jpg"
+      ["p_img1_caption"]=>
+      string(21) "喜多院　慈恵堂"
+    }
+    [20]=>
+    array(4) {
+      ["q_category"]=>
+      string(27) "渋谷・恵比寿・青山"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(89) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-ALLUP-101955.jpg"
+      ["p_img1_caption"]=>
+      string(18) "浅草寺　雷門"
+    }
+    [21]=>
+    array(4) {
+      ["q_category"]=>
+      string(30) "江東・江戸川・新小岩"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(89) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-ALLUP-101957.jpg"
+      ["p_img1_caption"]=>
+      string(18) "東京駅　夜景"
+    }
+    [22]=>
+    array(4) {
+      ["q_category"]=>
+      string(42) "池袋・目白・赤羽・板橋・練馬"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-EBP14-00044.jpg"
+      ["p_img1_caption"]=>
+      string(15) "東京タワー"
+    }
+    [23]=>
+    array(4) {
+      ["q_category"]=>
+      string(42) "池袋・目白・赤羽・板橋・練馬"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-01643.jpg"
+      ["p_img1_caption"]=>
+      string(36) "レインボーブリッジ　夜景"
+    }
+    [24]=>
+    array(4) {
+      ["q_category"]=>
+      string(42) "池袋・目白・赤羽・板橋・練馬"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-07187.jpg"
+      ["p_img1_caption"]=>
+      string(15) "国会議事堂"
+    }
+    [25]=>
+    array(4) {
+      ["q_category"]=>
+      string(45) "武蔵野・立川・府中・三鷹・調布"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-06608.jpg"
+      ["p_img1_caption"]=>
+      string(21) "濃溝の滝　紅葉"
+    }
+    [26]=>
+    array(4) {
+      ["q_category"]=>
+      string(45) "武蔵野・立川・府中・三鷹・調布"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-05330.jpg"
+      ["p_img1_caption"]=>
+      string(21) "養老渓谷　紅葉"
+    }
+    [27]=>
+    array(4) {
+      ["q_category"]=>
+      string(15) "多摩・町田"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP16_-06746.jpg"
+      ["p_img1_caption"]=>
+      string(15) "亀山湖　秋"
+    }
+    [28]=>
+    array(4) {
+      ["q_category"]=>
+      string(15) "多摩・町田"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP14_-02750.jpg"
+      ["p_img1_caption"]=>
+      string(12) "海ほたる"
+    }
+    [29]=>
+    array(4) {
+      ["q_category"]=>
+      string(12) "伊豆大島"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00699-EBP16-00002.jpg"
+      ["p_img1_caption"]=>
+      string(29) "崖観音 船形山 大福寺"
+    }
+    [30]=>
+    array(4) {
+      ["q_category"]=>
+      string(12) "伊豆大島"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-AM16_-01075.jpg"
+      ["p_img1_caption"]=>
+      string(24) "箱根登山鉄道　秋"
+    }
+    [31]=>
+    array(4) {
+      ["q_category"]=>
+      string(12) "伊豆大島"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BP15_-06253.jpg"
+      ["p_img1_caption"]=>
+      string(27) "芦ノ湖と富士山　秋"
+    }
+    [32]=>
+    array(4) {
+      ["q_category"]=>
+      string(18) "奥多摩・青梅"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-SP16_-25798.jpg"
+      ["p_img1_caption"]=>
+      string(30) "箱根ロープウェイ　秋"
+    }
+    [33]=>
+    array(4) {
+      ["q_category"]=>
+      string(15) "小笠原諸島"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00000-BL17_-00138.jpg"
+      ["p_img1_caption"]=>
+      string(18) "箱根　大涌谷"
+    }
+    [34]=>
+    array(4) {
+      ["q_category"]=>
+      string(9) "八丈島"
+      ["q_group"]=>
+      string(18) "タイトル画像"
+      ["p_img1_filepath"]=>
+      string(88) "//x.hankyu-travel.com/photo_db/image_search_kikan5.php?p_photo_mno=00002-EBP14-00045.jpg"
+      ["p_img1_caption"]=>
+      string(36) "横浜　みなとみらい　夜景"
+    }
+  }
+  ["pageCaptionArray"]=>
+  array(16) {
+    [1]=>
+    string(42) "東京駅・日本橋・銀座・有楽町"
+    [2]=>
+    string(33) "品川・目黒・羽田・蒲田"
+    [3]=>
+    string(33) "上野・浅草・両国・足立"
+    [4]=>
+    string(30) "赤坂・六本木・虎ノ門"
+    [5]=>
+    string(24) "新宿・中野・杉並"
+    [6]=>
+    string(27) "新橋・汐留・お台場"
+    [7]=>
+    string(36) "御茶ノ水・水道橋・飯田橋"
+    [8]=>
+    string(27) "渋谷・恵比寿・青山"
+    [9]=>
+    string(30) "江東・江戸川・新小岩"
+    [10]=>
+    string(42) "池袋・目白・赤羽・板橋・練馬"
+    [11]=>
+    string(45) "武蔵野・立川・府中・三鷹・調布"
+    [12]=>
+    string(15) "多摩・町田"
+    [13]=>
+    string(12) "伊豆大島"
+    [14]=>
+    string(18) "奥多摩・青梅"
+    [15]=>
+    string(15) "小笠原諸島"
+    [16]=>
+    string(9) "八丈島"
+  }
+}

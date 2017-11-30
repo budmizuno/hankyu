@@ -1,0 +1,498 @@
+@charset "utf-8";
+
+/*++++++++++++++++++++++++++++++++++++++++++
+メインコンテンツ
++++++++++++++++++++++++++++++++++++++++++++*/
+
+#guide_index_sightseeing_map_highlights {
+	top:0px;
+	left:141px;
+	width:309px;
+	height:261px;
+}
+.guide_index_sightseeing_map_highlights00 { background-image:url(../inc/html/index/img/index_map_00.gif)!important; }
+.guide_index_sightseeing_map_highlights01 { background-image:url(../inc/html/index/img/index_map_01.gif)!important; }
+.guide_index_sightseeing_map_highlights02 { background-image:url(../inc/html/index/img/index_map_02.gif)!important; }
+.guide_index_sightseeing_map_highlights03 { background-image:url(../inc/html/index/img/index_map_03.gif)!important; }
+#guide_index_sightseeing_map_highlights a {
+	width:181px;
+	height:24px;
+	background-image:url(../inc/html/index/img/index_map_00.gif);
+}
+#guide_index_sightseeing_map_highlights a#guide_index_sightseeing_map_btn01 {
+	width:181px;
+	height:24px;
+	background-image:url(../inc/html/index/img/index_map_00.gif);
+}
+#guide_index_sightseeing_map_btn01 {
+	top:14px;
+	left:0px;
+	background-position:-0px -14px;
+}
+#guide_index_sightseeing_map_btn02 {
+	top:128px;
+	left:83px;
+	background-position:-83px -128px;
+}
+#guide_index_sightseeing_map_btn03 {
+	top:222px;
+	left:39px;
+	background-position:-39px -222px;
+}
+
+#guide_index_ttl{
+	background-image:url(../inc/html/index/img/index_ttl.gif);
+}
+.guide_index_menu_list_ttl {
+	width:365px;
+	height:34px;
+	text-indent:38px;
+	background-image:url(../inc/html/index/img/list_ttl.gif);
+}
+
+.guide_index_menu_list_ttl a{
+	height:34px;
+}
+
+/*
+*html .guide_index_menu_list_ttl {
+	width:385px;
+	height:34px;
+	padding-left:5px;
+	background-image:url(../inc/html/index/img/list_ttl.gif);
+}
+*/
+/*#guide_index_btnbox{ height:55px; margin-bottom:25px;}*/
+#guide_index_btnbox a#guide_index_btn01 { background-image:url(../inc/html/index/img/btn_EBP08-26608A.jpg); }
+#guide_index_btnbox a#guide_index_btn02 { background-image:url(../inc/html/index/img/btn_EBP09-61295A.jpg); }
+#guide_index_btnbox a#guide_index_btn03 { background-image:url(../inc/html/index/img/btn_ESP12-48142A.jpg); }
+
+#guide_index_menu_list_ttl2 {
+	width:395px;
+	height:54px;
+	padding-left:40px;
+	background-image:url(../inc/html/index/img/list_ttl2.gif);
+}
+
+#guide_index_menu_list_ttl2 a{
+	padding-left:0px;
+	height:54px;
+	vertical-align:middle;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++
+おすすめツアー
++++++++++++++++++++++++++++++++++++++++++++*/
+
+#guide_index_recommend_tour{
+	margin:15px 0 5px 0;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++
+右エリア
++++++++++++++++++++++++++++++++++++++++++++*/
+#guide_index_p dt {
+	background-image:url(../inc/html/index/img/sub_ttl_taipei.gif);
+	height:12px;
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++
+グルメ変則アイコン
++++++++++++++++++++++++++++++++++++++++++++*/
+
+.guide_index_foodshop_icon_east-eur {
+background:transparent url(../inc/html/index/img/icon_food_shopping.gif) no-repeat scroll left top;
+display:block;
+padding:1px 0px 4px 20px;
+}
+
+.guide_index_history_icon_east-eur{
+background:transparent url(../inc/html/index/img/icon26.gif) no-repeat scroll left top;
+display:block;
+padding:1px 0px 4px 20px;
+}
+
+#guide_index_enjoy .guide_index_esthetique_icon{ display:block; background:url(../../sharing/parts/icon24.gif) no-repeat -1px -1px; padding:1px 2px 4px 20px; }
+
+/*++++++++++++++++++++++++++++++++++++++++++
+おすすめツアーのtop空き
++++++++++++++++++++++++++++++++++++++++++++*/
+dl#guide_recommend_tour {
+padding-top:10px;
+background-position: 0px 10px;
+}
+
+
+#guide_index_menu_list .guide_index_menu_dot .guide_index_menu_list_ttl{
+margin-bottom: 0px;
+}
+
+
+.index_city_box {
+	width:365px;
+	height:auto;
+	}
+
+.index_city_sbttl {
+	 display: block;
+    background: url(../inc/html/index/img/list_ttl.gif) no-repeat;
+	 height: 34px;
+    text-indent: 50px;
+    padding-top: 4px;
+    width: 365px;
+    margin-bottom: 10px;
+	 	}
+
+.index_city_sbttl a {
+    font-size: 14px;
+    font-weight: bold;
+	}
+
+.index_city_onebox {
+	width:365px;
+	height:auto;
+	margin-bottom:10px;
+	overflow:hidden;
+	}
+
+.index_city_ss {
+	width:365px;
+	height:auto;
+	}
+
+.index_city_ss_img {
+	float:left;
+	width:60px;
+	height:auto;
+	}
+
+.index_city_ss_txt {
+	float:right;
+	width:288px;
+	height:auto;
+	}
+
+.index_city_ss_txt ul {
+	margin-bottom:2px;
+	}
+
+.index_city_ss_txt ul li {
+	display:inline;
+	}
+
+.index_city_navi {
+	clear:both;
+	width:365px;
+	height:auto;
+	margin-bottom:8px;
+	}
+
+.index_city_navi dt {
+    background: url(../../sharing/parts/index_more_bg.gif) no-repeat;
+    color: #663340;
+    display: block;
+    float: left;
+    height: 17px;
+    line-height: 1.4em;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 76px;
+}
+
+.index_city_navi dd {
+	text-align:left;
+	float: right;
+    line-height: 1.4em;
+    width: 284px;
+}
+
+.index_city_petit {
+	clear:both;
+	width:365px;
+	height:auto;
+	}
+
+.index_city_petit dt {
+    background: url(../../sharing/parts/index_petit_bg.gif) no-repeat;;
+    color: #336659;
+    display: block;
+    float: left;
+    height: 17px;
+    line-height: 1.4em;
+    text-align: center;
+    width: 96px;
+}
+
+.index_city_petit dd {
+	text-align:left;
+	float: right;
+    line-height: 1.4em;
+    width: 259px;
+}
+
+#guide_contents_r #guide_index_enjoy {
+    float: left;
+    margin: 20px 14px 0 0;
+}
+#guide_index_enjoy h2 {
+    background: url("../../sharing/parts/index_sbttl02_2.gif") repeat scroll 0 0 transparent;
+}
+.guide_index_gourmet_icon {
+    background: url("../../sharing/parts/icon_d06.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+
+
+#guide_contents_r #guide_index_practice {
+    float: right;
+    margin-top: 20px;
+}
+#guide_index_practice h2 {
+    background: url("../../sharing/parts/index_sbttl03_2.gif") no-repeat scroll 0 0 transparent;
+}
+
+.guide_index_onsen_icon {
+    background: url("../../sharing/parts/icon_d05.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+.guide_index_hibiscus_icon {
+    background: url("../../sharing/parts/icon_d21.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+.guide_index_flower_icon {
+    background: url("../../sharing/parts/icon_d01.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+.guide_index_superb_icon {
+    background: url("../../sharing/parts/icon_d22.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+.guide_index_train_icon {
+    background: url("../../sharing/parts/icon_d20.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;
+}
+.guide_index_kenrokuen_icon {background: url("../../sharing/parts/icon_d17.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;}
+.guide_index_festival_icon {background: url("../../sharing/parts/icon_d04.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;}
+.guide_index_drive_icon {background: url("../../sharing/parts/icon_d03.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 1px 0 4px 23px;}
+#guide_index_main_p{
+	height:auto;
+	}
+#guide_index_RankigPht{
+	clear:both;
+	width:750px;
+	height:auto;
+	}
+#RankigPht{
+	position:relative;
+	margin-top:8px;
+	height:407px;
+	padding-bottom:10px;
+	}
+.best1, .best2, .best3, .best4, .best5, .best6, .best7{
+	position:absolute;
+	}
+.best1{
+	top:0;
+	left:0;
+	width:238px;
+	height:407px;
+
+	}
+.best1 a{
+	display:block;
+	width:238px;
+	height:407px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP14-35007A.jpg) no-repeat 0 0;
+
+	}
+.best1 a div{
+	position:absolute;
+	top:369px;
+	left:10px;
+	color:#344865;
+	}
+.best1 a div span.Linktxt{
+	display:block;
+	font-size:16px;
+	text-decoration:underline;
+	color:#344865;
+	text-indent:1em;
+	}
+.best2{
+	top:0;
+	left:238px;
+	width:258px;
+	height:160px;
+	}
+.best2 a{
+	display:block;
+	width:258px;
+	height:160px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP07-07459A.jpg) no-repeat 0 0;
+	}
+.best2 a div{
+	position:absolute;
+	top:135px;
+	left:10px;
+	color:#344865;
+	}
+.best2 a div span.Linktxt{
+	font-size:16px;
+	text-decoration:underline;
+	color:#344865;
+	padding-left:1em;
+	}
+.best3{
+	top:0;
+	left:496px;
+	width:258px;
+	height:160px;
+	}
+.best3 a{
+	display:block;
+	width:258px;
+	height:160px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP07-15011A2.jpg) no-repeat 0 0;
+	}
+.best3 a div{
+	position:absolute;
+	top:135px;
+	left:10px;
+	color:#344865;
+	}
+.best3 a div span.Linktxt{
+	font-size:16px;
+	text-decoration:underline;
+	color:#344865;
+	padding-left:1em;
+	}
+.best4{
+	top:160px;
+	left:238px;
+	width:172px;
+	height:247px;
+	}
+.best4 a{
+	display:block;
+	width:172px;
+	height:247px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP13-86557A.jpg) no-repeat 0 0;
+	}
+.best4 a div{
+	position:absolute;
+	top:227px;
+	left:10px;
+	color:#344865;
+	}
+.best4 a div span.Linktxt{
+	/*display:block;*/
+	font-size:16px;
+	text-decoration:underline;
+	color:#344865;
+	text-indent:1em;
+	}
+.best5{
+	top:160px;
+	left:410px;
+	width:340px;
+	height:142px;
+	}
+.best5 a{
+	display:block;
+	width:340px;
+	height:142px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP14-54506A.jpg) no-repeat 0 0;
+	}
+.best5 a div{
+	position:absolute;
+	top:114px;
+	left:10px;
+	color:#344865;
+	}
+.best5 .Linktxt{
+	text-decoration:underline;
+	}
+.best6{
+	top:302px;
+	left:410px;
+	width:172px;
+	height:105px;
+	}
+.best6 a{
+	display:block;
+	width:172px;
+	height:105px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP14-47169A.jpg) no-repeat 0 0;
+	}
+.best6 a div{
+	position:absolute;
+	top:85px;
+	left:10px;
+	color:#344865;
+	}
+.best6 .Linktxt{
+	text-decoration:underline;
+	}
+.best7{
+	top:302px;
+	left:582px;
+	width:172px;
+	height:105px;
+	}
+.best7 a{
+	display:block;
+	width:172px;
+	height:105px;
+	background:url(/attending/guide/vietnam/inc/html/index/img/EBP08-26755A2.jpg) no-repeat 0 0;
+	}
+.best7 a div{
+	position:absolute;
+	top:85px;
+	left:10px;
+	color:#344865;
+	}
+.best7 .Linktxt{
+	text-decoration:underline;
+	}
+#guide_index_main_p p{
+	padding:0 10px;
+	font-size:14px;
+	line-height:20px;
+	color:000;
+	}
+#guide_index_photo_sub{
+	margin-top:25px;
+	width:750px;
+	}
+#AnimeImg{
+	width:750px;
+	height:auto;
+	margin-top:8px;
+	}
+.best1 a:hover, .best2 a:hover, .best3 a:hover, .best4 a:hover, .best5 a:hover, .best6 a:hover, .best7 a:hover {
+	filter: alpha(opacity=50);
+  -moz-opacity:0.5;
+  opacity:0.5;
+	}
+.point{
+	color:#d41665;
+	}
+.Linktxt{
+	font-size:14px;
+	color:#344865;
+	}
+.px12{font-size:12px;}
+.guide_index_ttl_cap{font-size:12px;}

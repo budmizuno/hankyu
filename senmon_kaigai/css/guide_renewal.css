@@ -1,0 +1,374 @@
+@charset "utf-8";
+a {font-size: 12px;}
+div#guide_search { padding-bottom:5px;}
+.lwPrcBoxSbttl{font-size: 12px; line-height: 1.5rem; font-weight:bold; color: #4D4D4D; margin-bottom: 3px; padding-left:5px; padding-left:21px;}
+.airSearchFormBlk { background-color:#fffcf4; width:171px; height:auto; margin:0 auto 5px; padding:5px; border-radius:7px; -webkit-border-radius:7px; -moz-border-radius:7px; box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 2px 2px; -webkit-box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 2px 2px; -moz-box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;}
+
+.airModalBlock .sbTtl a { width:50px;}
+
+.airSearchFormBlk h3 { background:url(/attending/guide/taiwan/images/guide_srchMds01.png) no-repeat; text-indent:-9999px; height:30px; margin-bottom:5px;}
+.airSearchFormBlk h2 { background:url(/attending/guide/taiwan/images/guide_srchMds02.png) no-repeat; text-indent:-9999px; height:30px; margin-bottom:5px;}
+.airSearchFormBlk img { text-indent:-9999px;}
+.airSearchFormBlk select { width:167px; height:auto;}
+/*.airSearchFormBlk input[type="text"] { width:160px; height:auto;}*/
+
+.SachFrmBox dl { border-bottom:solid 1px #e4dfd0; margin-bottom:5px;}
+
+.SachStep1 dt,
+.SachStep2 dt,
+.SachStep3 dt,
+.SachStep4 dt { font-size:14px; line-height:1.5; font-weight:bold; color:#009bfd;}
+
+.SachStep1 dd,
+.SachStep2 dd,
+.SachStep3 dd,
+.SachStep4 dd { font-size:12px; line-height:1.5; color:#4d4d4d; margin-bottom:3px;}
+
+.SachSubmitBt { display:block; background:url(/attending/guide/taiwan/images/guide_srchBtn01.png) no-repeat; text-indent:-9999px; width:171px; height:30px;}
+.SachCondition {
+	clear:both;
+	display:block;
+	height:auto;
+	margin:0 0 5px 0;
+	text-align:center;
+	font-size:10px;
+	}
+
+.SachCondition em {
+	font-size:12px;
+	font-style:normal;
+	font-weight:bold;
+}
+.SachCondition span {
+	color:#CE3233;
+	font-size:14px;
+	font-style:normal;
+}
+
+.topSearchBody dl { overflow:hidden; border-bottom:solid 1px #e4dfd0; margin-bottom:5px; padding-bottom:5px;}
+.topSearchLine .departureDate1Select dt { width:70px; float:left;}
+.topSearchLine .departureDate1Select dd { width:90px; float:left;}
+.topSearchLine .departureDate1Select input { width:90px;}
+
+.topSearchLine .departureDate2Select dt { width:70px; float:left;}
+.topSearchLine .departureDate2Select dd { width:90px; float:left;}
+.topSearchLine .departureDate2Select input { width:90px;}
+
+.tripTypeSelect dt,
+.departureDate1Select dt,
+.departureDate2Select dt,
+.departure1Select dt,
+.departure2Select dt,
+.numSelect dt,
+.caSelect dt,
+.seatSelect dt,
+.depTimeSelect1 dt,
+.depTimeSelect2 dt,
+.directSelect dt,
+.retOpenSelect dt,
+.fareSelect dt { font-size:12px; line-height:1.5; color:#4d4d4d; font-weight:bold; padding-bottom:3px;}
+
+.tripTypeSelect { overflow:hidden;}
+.tripTypeSelect .tripTypeSelectRT { float:left; width:50%;}
+.tripTypeSelect .tripTypeSelectOW { float:left; width:50%;}
+.tripTypeSelect .tripTypeSelectRT label,
+.tripTypeSelect .tripTypeSelectOW label { font-size:12px; line-height:1.5; color:#4d4d4d; margin-left:5px;}
+.tripTypeSelect .tripTypeSelect01 { clear:both;}
+.tripTypeSelect01 a { font-size:10px; line-height:1.5;}
+
+.numSelect dd { font-size:12px; line-height:1.5 ;color:#4d4d4d;}
+.numSelect dd span { font-size:12px; line-height:1.5 ;color:#4d4d4d;}
+.numSelect dd.aboutNum a { font-size:12px;}
+
+.topSearchAddCts { display:none;}
+.topSearchAddCts label { font-size:12px; line-height:1.5; color:#4d4d4d; margin-left:5px;}
+
+.topSearchAdd { margin-bottom:5px;}
+.topSearchAdd a { font-size:12px;}
+
+.topSearchBtn a { display:block; background:url(/attending/guide/taiwan/images/guide_srchBtn02.png) no-repeat; text-indent:-9999px; height:30px;}
+
+#guide_index_RankigPht h3 { margin-bottom:10px;}
+
+#RankigPht02 ol { overflow:hidden;}
+#RankigPht02 li { position:relative;}
+#RankigPht02 ol li .TourLink { display:block; height:100%;}
+#RankigPht02 ol li dl dd { /*background-color:#fffcf4;*/ padding:5px; background-color:#f2f2f2;}
+#RankigPht02 ol li.best01 dl dd { /*background-color:#fffcf4;*/ padding:8px 5px; background-color:#f2f2f2;}
+#RankigPht02 .best02 dl dd { /*background-color:#fffcf4;*/ padding:11px 5px; background-color:#f2f2f2;}
+#RankigPht02 ol li dl dd ul { overflow:hidden;}
+#RankigPht02 ol li dl dd ul .lead { float:right; text-align:left;}
+#RankigPht02 ol li dl dd ul .lead .point { font-size:12px; color:#344865;/* margin-right:10px;*/}
+#RankigPht02 ol li dl dd ul .lead .linktxt { color:#344865;}
+#RankigPht02 ol li dl dd ul .icn_b { /*float:left;*/ position: absolute; top:5px; left:5px;}
+#RankigPht02 .best01 { float:left; width:515px; height:auto; margin-bottom:10px; margin-right:15px;}
+#RankigPht02 .best01 dl dd ul .lead { font-size:14px; width:505px;/* padding-top:13px;*/}
+#RankigPht02 .best01 dl dt img { width:515px; height:387px;}
+#RankigPht02 .best02 { float:left; width:220px; height:auto; margin-bottom:10px;}
+#RankigPht02 .best03 { float:left; width:220px; height:auto; margin-bottom:10px;}
+#RankigPht02 ol li.best02 dl dd,#RankigPht02 ol li.best03 dl dd { /*background-color:#fffcf4;*/ padding:10px 5px; background-color:#f2f2f2;}
+
+#RankigPht02 .best02 dl dt img,#RankigPht02 .best03 dl dt img { width:220px; height:165px;}
+#RankigPht02 .best02 dl dd ul .lead,
+#RankigPht02 .best03 dl dd ul .lead { font-size:14px; width:210px; }
+#RankigPht02 .best04 { float:left; clear:both;  width:180px; height:auto; margin-right:10px;}
+#RankigPht02 .best05 { float:left; width:180px; height:auto; margin-right:10px;}
+#RankigPht02 .best06 { float:left; width:180px; height:auto; margin-right:10px;}
+#RankigPht02 .best07 { float:left; width:180px; height:auto;}
+#RankigPht02 .icn_p img{ width:180px; height:135px;}
+#RankigPht02 .best04 dl dd ul .lead,
+#RankigPht02 .best05 dl dd ul .lead,
+#RankigPht02 .best06 dl dd ul .lead,
+#RankigPht02 .best07 dl dd ul .lead { font-size:14px; width:170px; padding:5px 0px; color:#344865;}
+
+
+#RankigPht02 .best01 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:470px; padding:2px 5px;}
+#RankigPht02 .best02 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:250px; padding:2px 5px;}
+#RankigPht02 .best03 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:250px; padding:2px 5px;}
+#RankigPht02 .best04 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:170px; padding:2px 5px;}
+#RankigPht02 .best05 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:170px; padding:2px 5px;}
+#RankigPht02 .best06 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:170px; padding:2px 5px;}
+#RankigPht02 .best07 div { position:absolute; bottom:0; background:rgba(255,255,255,0.8); width:170px; padding:2px 5px;}
+
+#guide_index_main_p p { clear:both; padding-top:10px;}
+
+.SachFrmBox dl { overflow:hidden;}
+.SachFrmBox dl dt { display:none;}
+.SachFrmBox dl .SachInterStep1SubTtle,
+.SachFrmBox dl .SachInterStep2SubTtle1,
+.SachFrmBox dl .SachInterStep2SubTtle2,
+.SachFrmBox dl .SachInterStep2SubTtle3,
+.SachFrmBox dl .SachInterStep3SubTtle,
+.SachFrmBox dl .SachInterStep4SubTtle { float:left; width:70px;}
+.SachFrmBox dl .SachSelect,
+.SachFrmBox dl .SachInputDd { float:right; width:100px;}
+.SachFrmBox dl .SachSelect select { width:100px;}
+.SachFrmBox dl .SachInputDd input { width:94px;}
+
+.topSearchBody .numSelect dd { float:left;}
+.topSearchBody .numSelect dd select { float:right; width:133px; margin-left:10px;}
+.topSearchBody .numSelect dd span { display:none;}
+
+
+/*レストボックス上書き用*/
+div#lowest_price dt.px14 {
+	color: #0066cc;
+	float: left;
+	padding-right:5px;
+	vertical-align:top;
+}
+
+div#tour_info li a {
+    padding: 0px 12px 5px 16px;
+}
+body .airModalBlock .sbTtl a {
+    width: 50px;
+}
+/*body #guide_info li a {
+    font-size: 1.3rem;
+}
+body #guide_travel_info ul li a {
+    font-size: 1.3rem;
+}
+*/
+
+/*モーダルカレンダ*/
+.SubWinBox .SW_SD_Month td a,.SubWinBox2 .SW_SD_Month td a{text-decoration:underline;color:#1D3994 !important; display:block; width:20px; height:20px; margin:0 auto;}
+.SubWinBox .SW_SD_Month td a:hover,.SubWinBox2 .SW_SD_Month td a:hover{color:#FF9933 !important; background:#fff7cf !important;}
+.SubWinBox .SW_SD_Month td a:visited,.SubWinBox2 .SW_SD_Month td a:visited{color:#1D3994;}
+.SubWinBox .SW_SD_Month td.sel a,.SubWinBox2 .SW_SD_Month td.sel a{color:#FFFFFF;}
+.SubWinBox .SW_SD_Month td.sel a:visited,.SubWinBox2 .SW_SD_Month td.sel a:visited{color:#FFFFFF;}
+.SubWinBox2 {
+	left:200px;
+    position: absolute;
+    z-index: 200;
+}
+
+/*閉じるボタン 出発日選択＠検索BOX*/
+.SB_SWClsTtl{
+	height:30px;
+	width:auto;
+}
+.SB_SWClsTtl a.SB_BtnClose{
+	display:block;
+	background-position:0 -1000px;
+	height:21px;
+	width:65px;
+	text-indent:-12345px;
+}
+.SB_SWClsTtl a.SB_BtnClose:hover{
+	background-position:0 -1025px;
+	height:21px;
+	width:65px;
+}
+.SB_SWClsTtl a.SB_BtnClose { background:url(/search/images/search_icon_g2014.gif) 25px -390px no-repeat; width:100px; height:30px;}
+.SB_SWClsTtl a.SB_BtnClose:hover { background-position:25px -390px; width:100px; height:30px;}
+/*出発日*/
+.SW_InBox {
+	padding-top: 10px !important;
+	overflow: hidden;
+	margin: 0 10px;
+	width:680px;
+	}
+.SubWinBox .SW_SD_Caption,.SubWinBox2 .SW_SD_Caption {
+	background-color:#197FBC;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 29px;
+    line-height: 29px;
+    margin: 0 2px;
+    text-align: center;
+		font-size:12px; font-size:1.2rem;
+}
+.SubWinBox .SW_SD_Caption a,.SubWinBox2 .SW_SD_Caption a {
+	display:block;
+	padding-top:4px;
+}
+.SW_SD_Caption{
+	background:none;
+	}
+
+.SubWinBox .SW_SD_Month td, .SubWinBox .SW_SD_Month th,.SubWinBox2 .SW_SD_Month td, .SubWinBox .SW_SD_Month th {
+	font-size:12px;
+}
+.SubWinBox .SW_SD_Caption a,.SubWinBox2 .SW_SD_Caption a{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+.SubWinBox .SW_SD_Caption a:visited,.SubWinBox2 .SW_SD_Caption a:visited{
+	color:#FFFFFF;
+}
+.SubWinBox .SW_SD_Caption,.SubWinBox2 .SW_SD_Caption{
+	background-position:-5px -90px;
+	height:29px;
+	color:#FFFFFF;
+	font-weight:bold;
+	line-height:29px;
+	text-align:center;
+	margin:0 2px;
+}
+.SubWinBox .SW_SD_Month,.SubWinBox2 .SW_SD_Month{
+	border-collapse:separate;
+	border-spacing:2px;
+	margin-left:8px;
+	margin-bottom:8px;
+	clear:none;
+	width:196px;
+}
+.SubWinBox .SW_SD_Month td, .SubWinBox .SW_SD_Month th,.SubWinBox2 .SW_SD_Month td, .SubWinBox2 .SW_SD_Month th{
+	border:1px solid #CCCCCC;
+	text-align:center;
+	width:22px;
+	min-height:5px;
+	vertical-align:middle;
+	height:25px;
+}
+.SubWinBox .SW_SD_Month th,.SubWinBox2 .SW_SD_Month th{
+	background-color:#EEEEEE;
+}
+.SubWinBox .SW_SD_Month td,.SubWinBox2 .SW_SD_Month td{
+	background-color:#FFFFFF;
+}
+.SubWinBox .SW_SD_Month th.sun, .SubWinBox .SW_SD_Month td.sun, .SubWinBox .SW_SD_Month td.hol,.SubWinBox2 .SW_SD_Month th.sun, .SubWinBox2 .SW_SD_Month td.sun, .SubWinBox2 .SW_SD_Month td.hol{
+	background-color:#FFD7CB;
+}
+.SubWinBox .SW_SD_Month th.sat, .SubWinBox .SW_SD_Month td.sat,.SubWinBox2 .SW_SD_Month th.sat, .SubWinBox2 .SW_SD_Month td.sat{
+	background-color:#CBE7FF;
+}
+.SubWinBox .SW_SD_Month td.non,.SubWinBox2 .SW_SD_Month td.non{
+	background-color:#DDDDDD;
+}
+.SubWinBox .SW_SD_Month td.sel.SubWinBox2 .SW_SD_Month td.sel{
+	background-color:#35649A;
+	color:#FFFFFF;
+}
+.SubWinBox .SW_SD_Month td a,.SubWinBox2 .SW_SD_Month td a{
+	text-decoration:underline;
+	color:#0000FF;
+}
+.SubWinBox .SW_SD_Month td a:visited.SubWinBox2 .SW_SD_Month td a:visited{
+	color:#0000FF;
+}
+.SubWinBox .SW_SD_Month td.sel a,.SubWinBox2 .SW_SD_Month td.sel a{
+	color:#FFFFFF;
+}
+.SubWinBox .SW_SD_Month td.sel a:visited,.SubWinBox2 .SW_SD_Month td.sel a:visited{
+	color:#FFFFFF;
+}
+.SubWinBox2 .SW_CalBtn,.SubWinBox2 .SW_CalBtn{
+	width:27px;
+	height:27px;
+	margin-top:90px;
+}
+.SubWinBox .SW_CalBtn a,.SubWinBox2 .SW_CalBtn a{
+	display:block;
+	width:27px;
+	height:27px;
+	text-indent:-12345px;
+}
+.SubWinBox .SW_CalBtn a.SW_CalBack,.SubWinBox2 .SW_CalBtn a.SW_CalBack{
+	background-position:0 -1520px;
+}
+.SubWinBox .SW_CalBtn a.SW_CalNext,.SubWinBox2 .SW_CalBtn a.SW_CalNext{
+	background-position:0 -1490px;
+}
+.SB_BgBodyGR {
+    background-color: #ffffff;
+}
+.SubWinBox .SW_CalBtn a.SW_CalBack,.SubWinBox2 .SW_CalBtn a.SW_CalBack { background:url(/search/images/SR_Cal_Prev.gif) no-repeat; width:26px; height:26px; margin-top:90px; margin-top:0;}
+.SubWinBox .SW_CalBtn a.SW_CalNext,.SubWinBox2 .SW_CalBtn a.SW_CalNext { background:url(/search/images/SR_Cal_Next.gif) no-repeat; width:26px; height:26px; margin-top:90px; margin-top:0;}
+#guide_container {
+    position: relative;
+}
+body .SB_BgBodyGR {
+    padding-top: 0px;
+}
+
+#guide_blog dd{
+	display:none;
+	}
+#guide_blog dd:first-child,#guide_blog dt+dd{
+	display:block;
+
+	}
+
+
+#guide_blog dd:last-child{
+	display:block;
+
+	}
+
+#guide_tourlink {
+    background: url("../../sharing/parts/bg03.gif") no-repeat scroll left bottom transparent;
+    height: auto;
+    padding-bottom: 10px;
+	margin-bottom:15px;
+}
+
+#guide_tourlink ul{
+	background: url("../../sharing/parts/bg02.gif") no-repeat scroll 0 0 transparent;
+    line-height: 1.2em;
+	padding-top:15px;
+}
+#guide_tourlink li a.tour {
+	background-image: url(/attending/guide/taiwan/images/icon01.gif);
+	background-repeat: no-repeat;
+	padding: 10px 10px 10px 30px;
+	margin-left: 20px;
+}
+
+#guide_tourlink li a.air {
+	background-image: url(/attending/guide/taiwan/images/icon02.gif);
+	background-repeat: no-repeat;
+	padding: 10px 10px 10px 30px;
+	margin-left: 20px;
+}
+
+#guide_tourlink li{
+	line-height:2.5rem;
+}
+#SubWinBox{ position:absolute;}
+
+#guide_contents_l #guide_blog {
+	margin-top: 0;
+}

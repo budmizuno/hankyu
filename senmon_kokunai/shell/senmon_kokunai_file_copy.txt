@@ -1,0 +1,689 @@
+<?php 
+/**
+ * 専門店のベースページを指定したページに複製するバッチプログラム
+ *  指定したベースページのファイルを指定したディレクトリに複製します。
+ *  複製する際、置換が必要なものは置換処理を行います。
+ *
+ *
+ */
+
+
+
+// 専門店共通で持つCSV読み込みファイル
+include_once(dirname(__FILE__) . '/../phpsc/common_readCsv.php');
+
+// ドキュメントルートのパス
+define('DOCUMENT_ROOT', '/var/www/html/cms/');
+// attendingのパス
+define('ATTENDING_ROOT', '/var/www/html/hankyu-travel.com/attending/');
+
+// ファイル名の日時フォーマット（例：20170213_150359）
+define('FILE_NAME_DATETIME_FORMAT', 'Ymd_His');
+
+// バックアップフォルダの基底パス
+define('BACKUP_BASE_DIR', ATTENDING_ROOT . 'senmon_kokunai/shell/backup/');
+
+// バックアップフォルダ名（例：bk_20170213_150359）
+define('BACKUP_FOLDER_NAME_IDENTIFIER', 'bk_');
+
+// テンポラリーフォルダの基底パス
+define('TEMP_BASE_DIR', ATTENDING_ROOT . 'senmon_kokunai/shell/temp/');
+
+// バックアップフォルダ名（例：temp_20170213_150359）
+define('TEMP_FOLDER_NAME_IDENTIFIER', 'temp_');
+
+// attending
+define('ATTENDING_PATH_NAME', 'attending/');
+
+define('PROCESSING_CHECK_FILE',         ATTENDING_ROOT . 'senmon_kokunai/shell/setting/PCF_SenmonKokunaiFileCopy.txt');
+define('FORCED_TERMINATION_CHECK_FILE', ATTENDING_ROOT . 'senmon_kokunai/shell/setting/FTCF_SenmonKokunaiFileCopy.txt');
+
+// ログファイル
+define('LOG_SYSTEM', ATTENDING_ROOT . 'senmon_kokunai/shell/log/LOG_SenmonKokunaiFileCopy.');
+
+// ログファイル
+define('LOG_MOVE_FILE', ATTENDING_ROOT . 'senmon_kokunai/shell/log/LOD_SenmonKokunaiFileCopy.MOVE_FILE.');
+
+// ログファイル
+define('LOG_BACKUP_FILE', ATTENDING_ROOT . 'senmon_kokunai/shell/log/LOD_SenmonKokunaiFileCopy.BACKUP_FILE.');
+
+
+// 海外：i,国内：d
+define('MY_NAIGAI', 'd');
+
+define('REPLACE_KYOTEN', '##_KYOTEN_##');
+
+define('MASTER_CSV_URL', ATTENDING_ROOT.'senmon_kokunai/setting/master_senmon_kokunai_2017.csv');
+
+
+// ##   コピー元のファイルの属性情報   ##
+
+// ファイルのコピー先ディレクトリがドキュメントルートの場合に設定※デフォルトは、「ATTENDING_ROOT」配下
+define('AT_DOCUMENT_ROOT' ,'document_root'); 
+// 設定ファイルの場合に設定※各種置換が行われます
+define('AT_SETTING_CSV' ,'setting_csv');
+
+// ## --コピー元のファイルの属性情報-- ##
+
+class SenmonKokunaiFileCopy {
+    private $commonReadCsv;
+
+
+    // コピー元のファイル
+    private $_base_file_list = array(
+            'd' => array(
+                    'homen' => array(
+                        array('page' => 'hokkaido', 'path' => '##_KYOTEN_##.php',                         'attribute' => array(AT_DOCUMENT_ROOT)),
+                        //array('page' => 'hokkaido', 'path' => 'inc/contents_##_KYOTEN_##.php',            'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'inc/deco.php',                             'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'inc/deco_smp.php',                         'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'inc/recommend_season_calendar.php',        'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'inc/recommend_season_calendar_smp.php',    'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'inc/smp_##_KYOTEN_##.php',                 'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'phpsc/config.php',                         'attribute' => array()),
+                        //array('page' => 'hokkaido', 'path' => 'setting/##_KYOTEN_##.csv',                 'attribute' => array(AT_SETTING_CSV)),
+                    ),
+                    'country' => array(
+                        array('page' => 'kyushu/miyazaki', 'path' => '##_KYOTEN_##.php',                          'attribute' => array(AT_DOCUMENT_ROOT)),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/contents_##_KYOTEN_##.php',             'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/deco.php',                              'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/deco_smp.php',                          'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/recommend_season_calendar.php',         'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/recommend_season_calendar_smp.php',     'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'inc/smp_##_KYOTEN_##.php',                  'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'phpsc/config.php',                          'attribute' => array()),
+                        //array('page' => 'kyushu/miyazaki', 'path' => 'setting/##_KYOTEN_##.csv',                  'attribute' => array(AT_SETTING_CSV)),
+                    ),
+                    'city' => array(
+                        array('page' => 'okinawa/miyako', 'path' => '##_KYOTEN_##.php',                      'attribute' => array(AT_DOCUMENT_ROOT)),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/contents_##_KYOTEN_##.php',         'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/deco.php',                          'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/deco_smp.php',                      'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/recommend_season_calendar.php',     'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/recommend_season_calendar_smp.php', 'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'inc/smp_##_KYOTEN_##.php',              'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'phpsc/config.php',                      'attribute' => array()),
+                        //array('page' => 'okinawa/miyako', 'path' => 'setting/##_KYOTEN_##.csv',              'attribute' => array(AT_SETTING_CSV)),
+                    ),
+            )
+    );
+
+    // コピー先の方面・国・都市※複製先を設定する
+    // idは量産化CSVのK10（URL）の値でセットすること
+    private $_to_copy_page_list = array(
+            'd' => array(
+                    'homen' => array(
+                        array('id' => 'tohoku/'),
+                        array('id' => 'kanto/'),
+                        array('id' => 'chubu-hokuriku/'),
+                        array('id' => 'kinki/'),
+                        array('id' => 'sanin-sanyo/'),
+                        array('id' => 'shikoku/'),
+                        array('id' => 'kyushu/'),
+                        array('id' => 'okinawa/'),
+                        array('id' => 'hokkaido/'),
+                    ),
+                    'country' => array(
+                        array('id' => 'tohoku/aomori/'),
+                        array('id' => 'tohoku/iwate/'),
+                        array('id' => 'tohoku/miyagi/'),
+                        array('id' => 'tohoku/akita/'),
+                        array('id' => 'tohoku/yamagata/'),
+                        array('id' => 'tohoku/fukushima/'),
+                        array('id' => 'kanto/ibaraki/'),
+                        array('id' => 'kanto/tochigi/'),
+                        array('id' => 'kanto/gunma/'),
+                        array('id' => 'kanto/saitama/'),
+                        array('id' => 'kanto/tokyo/'),
+                        array('id' => 'kanto/chiba/'),
+                        array('id' => 'kanto/kanagawa/'),
+                        array('id' => 'chubu-hokuriku/yamanashi/'),
+                        array('id' => 'chubu-hokuriku/niigata/'),
+                        array('id' => 'chubu-hokuriku/toyama/'),
+                        array('id' => 'chubu-hokuriku/ishikawa/'),
+                        array('id' => 'chubu-hokuriku/fukui/'),
+                        array('id' => 'chubu-hokuriku/nagano/'),
+                        array('id' => 'chubu-hokuriku/gifu/'),
+                        array('id' => 'chubu-hokuriku/shizuoka/'),
+                        array('id' => 'chubu-hokuriku/aichi/'),
+                        array('id' => 'chubu-hokuriku/mie/'),
+                        array('id' => 'kinki/shiga/'),
+                        array('id' => 'kinki/kyoto/'),
+                        array('id' => 'kinki/osaka/'),
+                        array('id' => 'kinki/nara/'),
+                        array('id' => 'kinki/hyogo/'),
+                        array('id' => 'kinki/wakayama/'),
+                        array('id' => 'sanin-sanyo/tottori/'),
+                        array('id' => 'sanin-sanyo/shimane/'),
+                        array('id' => 'sanin-sanyo/okayama/'),
+                        array('id' => 'sanin-sanyo/hiroshima/'),
+                        array('id' => 'sanin-sanyo/yamaguchi/'),
+                        array('id' => 'shikoku/tokushima/'),
+                        array('id' => 'shikoku/kagawa/'),
+                        array('id' => 'shikoku/kochi/'),
+                        array('id' => 'shikoku/ehime/'),
+                        array('id' => 'kyushu/fukuoka/'),
+                        array('id' => 'kyushu/saga/'),
+                        array('id' => 'kyushu/nagasaki/'),
+                        array('id' => 'kyushu/kumamoto/'),
+                        array('id' => 'kyushu/oita/'),
+                        array('id' => 'kyushu/kagoshima/'),
+                        array('id' => 'kyushu/miyazaki/'),
+                    ),
+                    'city' => array(
+                        array('id' => 'hokkaido/sapporo/'),
+                        array('id' => 'hokkaido/hakodate/'),
+                        array('id' => 'hokkaido/otaru/'),
+                        array('id' => 'hokkaido/noboribetsu/'),
+                        array('id' => 'hokkaido/furano/'),
+                        array('id' => 'hokkaido/wakkanai/'),
+                        array('id' => 'hokkaido/rishiri/'),
+                        array('id' => 'hokkaido/shiretoko/'),
+                        array('id' => 'hokkaido/niseko/'),
+                        array('id' => 'hokkaido/obihiro/'),
+                        array('id' => 'hokkaido/kushiro/'),
+                        array('id' => 'hokkaido/asahiyama/'),
+                        array('id' => 'okinawa/naha/'),
+                        array('id' => 'okinawa/onna/'),
+                        array('id' => 'okinawa/nago/'),
+                        array('id' => 'okinawa/ishigaki/'),
+                        array('id' => 'okinawa/iriomote/'),
+                        array('id' => 'okinawa/yonaguni/'),
+                        array('id' => 'okinawa/churaumi/'),
+                        array('id' => 'okinawa/miyako/'),
+                    ),
+            )
+    );
+    
+    // 初期化時にセットされる
+    private $start_datetime = '';
+    private $backup_dir = '';
+    private $tmp_dir = '';
+    private $log_file_path = '';
+    private $log_file_path_move_file = '';
+    private $log_file_path_backup_file = '';
+
+    // コンストラクタ
+    function __construct() {
+        $this->commonReadCsv = new common_readCsv();
+    
+        // 初期処理
+        $this->init();
+        
+    }
+
+    // メイン処理
+    function main() {
+    
+        $this->processStart();
+    
+        // 処理実行中の場合は処理を行わない
+        if (file_exists(PROCESSING_CHECK_FILE)) {
+            // ログ書き出し
+            $this->log("本プログラムが処理中のため、新たに実行することができません。\n(".PROCESSING_CHECK_FILE.')');
+            // 処理終了
+            $this->processExit();
+        }
+        
+        // 処理実行中を表すファイルを作成する。
+        if (file_put_contents(PROCESSING_CHECK_FILE, '') === false) {
+            // ログ書き出し
+            $this->log("ファイル作成に失敗しました。(".__LINE__.")\n(".PROCESSING_CHECK_FILE.')');
+            // 処理終了
+            $this->processExit();
+        }
+        
+        
+        // 拠点一覧の設定 ※contents_○○○.php のファイルを作成するための設定
+        $kyoten_list = $this->getKyotenList();
+
+        // ベースファイルの設定（海外-方面,国,都市の各ページのアクセスファイル,inc,phpsc,setting）
+        // ※コピー元のファイル
+        $base_file_list = isset($this->_base_file_list[MY_NAIGAI]) ? $this->_base_file_list[MY_NAIGAI]: array();
+
+        // コピー先ページの設定
+        $to_copy_page_list = isset($this->_to_copy_page_list[MY_NAIGAI]) ? $this->_to_copy_page_list[MY_NAIGAI]: array();
+
+        // データがない場合は、処理終了
+        if (count($kyoten_list) <= 0 
+                || count($base_file_list) <= 0 
+                || count($to_copy_page_list) <= 0) {
+                
+            // ログ書き出し
+            $this->log("設定に誤りがあります。(".__LINE__.")");
+            // 処理終了
+            $this->processExit();
+        }
+        
+
+        // 専門店マスターCSVのデータ取得
+        $_senmon_data_list = $this->commonReadCsv->readCsv(MASTER_CSV_URL);
+
+        //var_dump($_senmon_data_list);
+        
+        if (count($_senmon_data_list) <= 0) {
+            // ログ書き出し
+            $this->log("専門店マスターのデータがありません(".__LINE__.")");
+            // 処理終了
+            $this->processExit();
+        }
+        
+        // DSページ以外のデータを再取得
+        $senmon_data_list = array();
+        foreach($_senmon_data_list as $no => $_senmon_data) {
+            if ($_senmon_data['page_type'] != 'DS') {
+                $senmon_data_list[$_senmon_data['URL']] = $_senmon_data;
+            }
+        }
+
+
+        // コピー用のファイルパス格納変数
+        // array('from' => 'テンポラリーのファイルパス', 'to' => 'コピー先のファイルパス'
+        //      ,'backup' => 'バックアップ先のファイルパス', 'base' => 'コピー元のファイルパス');
+        $copy_file_list = array();
+        
+        
+        // コピー元およびコピー先の配列を作成する
+        foreach($to_copy_page_list as $page_type => $to_copy_page_base) {
+        
+            foreach($to_copy_page_base as $to_copy_page) {
+                
+                // page_id
+                $page_id = $to_copy_page['id'];
+                
+                if (!isset($senmon_data_list[$page_id])) {
+                    // 専門店マスターのデータがない場合は、次のループ
+                    continue;
+                }
+                
+                // 量産化CSVからデータを取得する
+                $to_copy_page_senmon_data = $senmon_data_list[$page_id];
+                
+                // コピー元ファイルをテンポラリーに複製
+                foreach($base_file_list[$page_type] as $key => $base_file) {
+                    // ファイル名に拠点コードが存在する場合は、拠点分作成する
+                    if (strpos($base_file['path'], REPLACE_KYOTEN) !== false) {
+                        // 拠点コードが存在する場合
+                        
+                        // 拠点コードを置換する
+                        foreach($kyoten_list as $kyoten_code => $_kyotenNameJa) {
+                        
+                            // パスのREPLACE_KYOTENを拠点コードに置換する
+                            $_path = str_replace(REPLACE_KYOTEN, $kyoten_code, $base_file['path']);
+                        
+                             // ベースファイルのパス
+                            $copy_file_base = ATTENDING_ROOT . $base_file['page'] . '/' . $_path;
+                            // テンポラリーへのファイルパス
+                            $copy_file_temp = $this->tmp_dir . ATTENDING_PATH_NAME . $base_file['page'] . '/' . $_path;
+                            // コピー先のファイルパス
+                            $copy_file_to   = ATTENDING_ROOT . $page_id . $_path;
+                            // バックアップ先のファイルパス
+                            $backup_file_path   = $this->backup_dir . ATTENDING_PATH_NAME . $page_id . $_path;
+                            
+                            if (in_array(AT_DOCUMENT_ROOT, $base_file['attribute'])) {
+                                $copy_file_base = DOCUMENT_ROOT . $base_file['page'] . '/' . $_path;
+                                $copy_file_temp = $this->tmp_dir . $base_file['page'] . '/' . $_path;
+                                $copy_file_to   = DOCUMENT_ROOT . $page_id . $_path;
+                                $backup_file_path   = $this->backup_dir . $page_id . $_path;
+                            }
+                            
+                            // テンポラリーフォルダの存在チェックおよびフォルダ作成
+                            $copy_file_dir_to = dirname($copy_file_temp);
+                            if (!file_exists($copy_file_dir_to)) {
+                                if (!mkdir($copy_file_dir_to, 0777, true)) {
+                                    // 作成に失敗したら処理終了
+                                    // ログ書き出し
+                                    $this->log("テンポラリーフォルダの作成に失敗しました(".__LINE__.")\n(".$copy_file_dir_to.')');
+                                    // 処理終了
+                                    $this->processExit();
+                                }
+                            }
+                            
+                            // ファイルコピー
+                            if (copy($copy_file_base, $copy_file_temp) != false) {
+                                // コピーに成功した場合
+                                $copy_file_list[] = array('from'   => $copy_file_temp
+                                                        , 'to'     => $copy_file_to
+                                                        , 'backup' => $backup_file_path
+                                                        , 'base'   => $copy_file_base);
+                            } else {
+                                // コピーに失敗した場合
+                                // ログ書き出し
+                                $this->log("ファイルのコピーに失敗しました(".__LINE__.")");
+                            }
+                            
+                            // 内容を置換する必要があればここで置換
+                            if (count($base_file['attribute']) > 0 ) {
+                                if (in_array(AT_SETTING_CSV, $base_file['attribute'])) {
+                                    // setting_csvの場合は置換が必要
+                                    
+                                    // 置換対象
+                                    $replace = array(
+                                         '#ClassName#'   => 'MyPage'
+                                        ,'#date#'        => '2011-10-10 01:10:00'
+                                        ,'#ModelName#'   => 'User'
+                                        ,'#ActionName#'  => 'First'
+                                    );
+
+                                    $this->file_replace($copy_file_temp, $replace);
+                                    
+                                }
+                            }
+                        }
+                    } else {
+                        // 拠点コードが存在しない場合
+                        
+                        // パスのREPLACE_KYOTENを拠点コードに置換する
+                        $_path = $base_file['path'];
+                    
+                         // ベースファイルのパス
+                        $copy_file_base = ATTENDING_ROOT . $base_file['page'] . '/' . $_path;
+                        // テンポラリーへのファイルパス
+                        $copy_file_temp = $this->tmp_dir . ATTENDING_PATH_NAME . $base_file['page'] . '/' . $_path;
+                        // コピー先のファイルパス
+                        $copy_file_to   = ATTENDING_ROOT . $page_id . $_path;
+                        // バックアップ先のファイルパス
+                        $backup_file_path   = $this->backup_dir . ATTENDING_PATH_NAME . $page_id . $_path;
+                        
+                        if (in_array(AT_DOCUMENT_ROOT, $base_file['attribute'])) {
+                            $copy_file_base = DOCUMENT_ROOT . $base_file['page'] . '/' . $_path;
+                            $copy_file_temp = $this->tmp_dir . $base_file['page'] . '/' . $_path;
+                            $copy_file_to   = DOCUMENT_ROOT . $page_id . $_path;
+                            $backup_file_path   = $this->backup_dir . $page_id . $_path;
+                        }
+                        
+                        // テンポラリーフォルダの存在チェックおよびフォルダ作成
+                        $copy_file_dir_to = dirname($copy_file_temp);
+                        if (!file_exists($copy_file_dir_to)) {
+                            if (!mkdir($copy_file_dir_to, 0777, true)) {
+                                // 作成に失敗したら処理終了
+                                // ログ書き出し
+                                $this->log("テンポラリーフォルダの作成に失敗しました(".__LINE__.")\n(".$copy_file_dir_to.')');
+                                // 処理終了
+                                $this->processExit();
+                            }
+                        }
+                        
+                        // ファイルコピー
+                        if (copy($copy_file_base, $copy_file_temp) != false) {
+                            // コピーに成功した場合
+                            $copy_file_list[] = array('from'   => $copy_file_temp
+                                                    , 'to'     => $copy_file_to
+                                                    , 'backup' => $backup_file_path
+                                                    , 'base'   => $copy_file_base);
+                        } else {
+                            // コピーに失敗した場合
+                            // ログ書き出し
+                            $this->log("ファイルのコピーに失敗しました(".__LINE__.")");
+                        }
+                        
+                        // 内容を置換する必要があればここで置換
+                        if (count($base_file['attribute']) > 0 ) {
+                            $this->log($base_file['attribute']);
+                            if (in_array(AT_SETTING_CSV, $base_file['attribute'])) {
+                                // setting_csvの場合は置換が必要
+                                
+                                // 置換対象
+                                $replace = array(
+                                     '#ClassName#'   => 'MyPage'
+                                    ,'#date#'        => '2011-10-10 01:10:00'
+                                    ,'#ModelName#'   => 'User'
+                                    ,'#ActionName#'  => 'First'
+                                );
+
+                                $this->file_replace($copy_file_temp, $replace);
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        // コピー処理（テンポラリーからファイル移動）
+        if (count($copy_file_list) > 0) {
+        
+            // array('from' => 'テンポラリーのファイルパス', 'to' => 'コピー先のファイルパス'
+            //      ,'backup' => 'バックアップ先のファイルパス', 'base' => 'コピー元のファイルパス');
+            foreach($copy_file_list as $copy_file_data) {
+                $copy_from_path = $copy_file_data['from'];
+                $copy_to_path   = $copy_file_data['to'];
+                $backup_path   = $copy_file_data['backup'];
+                
+                $copy_to_dir = dirname($copy_to_path);
+                
+                // コピー先のフォルダ存在チェック,なければフォルダ作成
+                if (!file_exists($copy_to_dir)) {
+                    if (!mkdir($copy_to_dir, 0755, true)) {
+                        // 作成に失敗したら処理終了
+                        $this->processErrorExit("コピー先のフォルダの作成に失敗しました(".__LINE__.")\n(path: ".$copy_to_dir." )");
+                    }
+                }
+                
+                // コピー先ファイルの存在チェック
+                if (file_exists($copy_to_path)) {
+                    // コピー先ファイルが存在する場合、バックアップフォルダに移動させる
+                
+                    // バックアップフォルダの作成
+                    $_backup_dir = dirname($backup_path);
+                    if (!file_exists($_backup_dir)) {
+                        if (!mkdir($_backup_dir, 0755, true)) {
+                            $this->processErrorExit("バックアップフォルダの作成に失敗しました(".__LINE__.")\n(path: ".$_backup_dir." )");
+                        }
+                    }
+                
+                    // バックアップ作成(バックアップフォルダにファイルコピー)
+                    if (copy($copy_to_path, $backup_path) === false) {
+                        // ファイル移動に失敗した場合処理終了
+                        $this->processErrorExit("バックアップファイルのコピーに失敗しました(".__LINE__.")\n(from: ".$copy_to_path." ,\n to: " . $backup_path . ")");
+                    } else {
+                          $this->addLogBackupFile($backup_path, $copy_to_path);
+                    }
+                }
+                
+                // ファイル移動
+                if (copy($copy_from_path, $copy_to_path) !== false) {
+                      $this->addLogMoveFile($copy_to_path);
+                } else {
+                    $this->processErrorExit("ファイルの移動に失敗しました(".__LINE__.")\n(from: ".$copy_from_path." ,\n to: " . $copy_to_path . ")");
+                }
+                
+            }
+        }
+        
+        $this->log("*** Success!! ***");
+        
+        // 処理実行中を表すファイルを削除する
+        if (file_exists(PROCESSING_CHECK_FILE)) {
+            unlink(PROCESSING_CHECK_FILE);
+        }
+        
+        // ログ書き出し
+        $this->log($copy_file_list);
+        // 処理終了
+        $this->processExit();
+    }
+    
+    // 初期処理
+    function init() {
+    
+        $this->start_datetime = date(FILE_NAME_DATETIME_FORMAT);
+        
+        $this->log_file_path = LOG_SYSTEM . $this->start_datetime . '.log';
+        
+        $this->log_file_path_move_file = LOG_MOVE_FILE . $this->start_datetime . '.log';
+        $this->log_file_path_backup_file = LOG_BACKUP_FILE . $this->start_datetime . '.log';
+        
+        // ログ用フォルダの作成
+        $log_dir_name = dirname($this->log_file_path);
+        if (!file_exists($log_dir_name)) {
+            // フォルダが存在しなければフォルダ作成
+            if (!mkdir($log_dir_name, 0755)) {
+                // 作成に失敗したら処理終了
+                $this->processErrorExit("ログ用フォルダの作成に失敗しました(".__LINE__.")\n(".$this->backup_dir.')');
+            }
+        }
+        
+        // 設定用フォルダの作成
+        $setting_dir_name = dirname(PROCESSING_CHECK_FILE);
+        if (!file_exists($setting_dir_name)) {
+            // フォルダが存在しなければフォルダ作成
+            if (!mkdir($setting_dir_name, 0755)) {
+                // 作成に失敗したら処理終了
+                $this->processErrorExit("設定用フォルダの作成に失敗しました(".__LINE__.")\n(".$this->backup_dir.')');
+            }
+        }
+        
+        // バックアップ用フォルダの作成
+        $backup_dir_name = BACKUP_FOLDER_NAME_IDENTIFIER . $this->start_datetime; 
+        $this->backup_dir = BACKUP_BASE_DIR . $backup_dir_name . '/';
+        
+        if (!file_exists($this->backup_dir)) {
+            // フォルダが存在しなければフォルダ作成
+            if (!mkdir($this->backup_dir, 0755, true)) {
+                // 作成に失敗したら処理終了
+                $this->processErrorExit("バックアップフォルダの作成に失敗しました(".__LINE__.")\n(".$this->backup_dir.')');
+            }
+        }
+        
+        // テンポラリーファイル用フォルダの作成
+        $tmp_dir_name = TEMP_FOLDER_NAME_IDENTIFIER . $this->start_datetime; 
+        $this->tmp_dir = TEMP_BASE_DIR . $tmp_dir_name . '/';
+        
+        if (!file_exists($this->tmp_dir)) {
+            // フォルダが存在しなければフォルダ作成
+            if (!mkdir($this->tmp_dir, 0755, true)) {
+                // 作成に失敗したら処理終了
+                $this->processErrorExit("テンポラリーフォルダの作成に失敗しました(".__LINE__.")\n( ".$this->tmp_dir.' )');
+            }
+        }
+    }
+
+    // 処理開始
+    function processStart() {
+        // ログ書き出し
+        $msg = get_class($this) . ' STRAT --';
+        $this->log($msg);
+    }
+    
+    // 処理終了
+    function processErrorExit($msg) {
+        // ログ書き出し
+        $this->log($msg);
+        $this->log("############################\n############################\n Failure \n############################");
+        $msg = get_class($this) . ' END --\n-----------------------------------------------------------------';
+        $this->log($msg);
+        
+        // 処理実行中を表すファイルを削除する
+        if (file_exists(PROCESSING_CHECK_FILE)) {
+            unlink(PROCESSING_CHECK_FILE);
+        }
+        
+        // 処理終了
+        exit;
+    }
+    
+    // 処理終了
+    function processExit() {
+        // ログ書き出し
+        $msg = get_class($this) . " END --\n-----------------------------------------------------------------";
+        $this->log($msg);
+        
+        // 処理終了
+        exit;
+    }
+    
+    // 強制終了のチェックおよびチェック後フラグが立っていれば強制終了
+    // 「FORCED_TERMINATION_CHECK_FILE」のファイルが存在していれば終了させる
+    function checkAndForcedTermination() {
+        if(file_exists(FORCED_TERMINATION_CHECK_FILE)) {
+            // ログ書き出し
+            $this->log("強制終了ファイルがあるため処理を停止します\n(".FORCED_TERMINATION_CHECK_FILE.')');
+            // 処理終了
+            $this->processExit();
+        }
+    }
+    
+    // ログ書き出し
+    function log($str) {
+        $now_datetime = date('Ymd H:i:s');
+        
+        if (is_array($str)) {
+            error_log($now_datetime . ' | ' . "\n" . print_r($str, true), 3, $this->log_file_path);
+        } else {
+            error_log($now_datetime . ' | ' . $str . "\n", 3, $this->log_file_path);
+        }
+    }
+
+    // 移動ファイルログ追記
+    function addLogMoveFile($file_path) {
+        //  ファイル取得
+        error_log($file_path . "\n", 3, $this->log_file_path_move_file);
+    }
+    
+    // バックアップファイルログ追記
+    function addLogBackupFile($backup_file_path, $copy_to_path) {
+        //  ファイル取得
+        error_log('mv ' . $backup_file_path . ' ' . $copy_to_path . "\n", 3, $this->log_file_path_backup_file);
+    }
+    
+    /**
+     * ファイル置換
+     *
+     *   $replace_pairs = array(
+     *        '検索ワード'    => '置換文字列'
+     *       ,'#ClassName#'   => 'MyPage'
+     *       ,'#date#'        => '2011-10-10 01:10:00'
+     *   );
+     */
+    function file_replace($file_path, $replace_pairs) {
+            //  ファイル取得
+        $buff = file_get_contents($file_path);
+        // 一括置換
+        $buff = strtr($buff, $replace_pairs);
+        // ファイル保存
+        file_put_contents($file_path, $buff);
+    }
+    
+    // 拠点コード一覧(26拠点)
+    function getKyotenList() {
+        $list = array(
+                'spk' => '北海道',
+                'aoj' => '青森',
+                'sdj' => '東北',
+                'tyo' => '関東',
+                'kij' => '新潟',
+                'mmj' => '長野',
+                'ngo' => '名古屋',
+                'szo' => '静岡',
+                'osa' => '関西',
+                'izo' => '山陰',
+                'okj' => '岡山',
+                'hij' => '広島',
+                'ubj' => '山口',
+                'tak' => '香川・徳島',
+                'myj' => '松山',
+                'kcz' => '高知',
+                'fuk' => '福岡',
+                'ngs' => '長崎',
+                'kmj' => '熊本',
+                'oit' => '大分',
+                'kmi' => '宮崎',
+                'koj' => '鹿児島',
+                'oka' => '沖縄',
+                'hkr' => '北陸',
+                'ibr' => '茨城',
+                'toy' => '富山',
+                'index' => '',
+        );
+        return $list;
+    }
+}
+
+
+$senmonKokunaiFileCopy = new SenmonKokunaiFileCopy();
+$senmonKokunaiFileCopy->main();
+
+
+
+?>

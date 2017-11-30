@@ -1,0 +1,580 @@
+@charset "UTF-8";
+
+.wr-banner3 {
+	background-color: #ebf0f1;
+}
+
+.wr-banner2 .right {
+	background-color: #ebf0f1;
+}
+
+
+.wr-banner2 .right .map li {
+	position: absolute;
+}
+
+.pg_10-01 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Hokkaido.png); }
+.pg_11 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Northeast.png); }
+.pg_11-02 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Aomori.png); }
+.pg_11-03 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Iwate.png); }
+.pg_11-04 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Miyagi.png); }
+.pg_11-05 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Akita.png); }
+.pg_11-06 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Yamagata.png); }
+.pg_11-07 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Fukushima.png); }
+.pg_12 .wr-banner3 {
+	background-image: url(/attending/senmon_kokunai/images/map/map_Kanto.png);
+	background-position-x: -50px;
+	background-repeat: no-repeat;}
+.pg_12-08 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Ibaraki.png); }
+.pg_12-09 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Tochigi.png); }
+.pg_12-10 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Gunma.png); }
+.pg_12-11 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Saitama.png); }
+
+.pg_12-13 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Tokyo_detail.png); }
+.pg_12-13 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Tokyo.png); }
+.pg_12-12 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Chiba.png); }
+.pg_12-14 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kanagawa.png); }
+.pg_13_14 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_ChubuHokuriku.png); }
+.pg_13-19 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Yamanashi.png); }
+.pg_13-15 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Niigata.png); }
+.pg_13-16 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Toyama.png); }
+.pg_13-17 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Ishikawa.png); }
+.pg_13-18 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Fukui.png); }
+.pg_13-20 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Nagano.png); }
+.pg_14-21 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Gifu.png); }
+.pg_14-22 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Shizuoka.png); }
+.pg_14-23 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Aichi.png); }
+.pg_14-24 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Triple.png); }
+.pg_16 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Kinki.png); }
+.pg_16-25 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Shiga.png); }
+.pg_16-26 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kyoto.png); }
+.pg_16-27 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Osaka.png); }
+.pg_16-29 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Nara.png); }
+.pg_16-28 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Hyogo.png); }
+.pg_16-30 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Wakayama.png); }
+.pg_17 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_SaninSanyo.png); }
+.pg_17-31 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Tottori.png); }
+.pg_17-32 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Shimane.png); }
+.pg_17-33 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Okayama.png); }
+.pg_17-34 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Hiroshima.png); }
+.pg_17-35 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Yamaguchi.png); }
+.pg_18 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Shikoku.png); }
+.pg_18-36 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Tokushima.png); }
+.pg_18-37 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kagawa.png); }
+.pg_18-39 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kochi.png); }
+.pg_18-38 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Ehime.png); }
+.pg_19 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Kyushu.png); }
+.pg_19-40 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Fukuoka.png); }
+.pg_19-41 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Saga.png); }
+.pg_19-42 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Nagasaki.png); }
+.pg_19-43 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kumamoto.png); }
+.pg_19-44 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Oita.png); }
+.pg_19-45 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Miyazaki.png); }
+.pg_19-46 .wr-banner2 .right { background-image: url(/attending/senmon_kokunai/images/map/map_Kagoshima.png); }
+.pg_20-47 .wr-banner3 { background-image: url(/attending/senmon_kokunai/images/map/map_Okinawa.png); }
+
+
+
+
+.pg_10-01 .map li.sapporo { left: 123px; top: 251px; }
+.pg_10-01 .map li.hakodate { left: 61px; top: 318px; }
+.pg_10-01 .map li.otaru { left: 58px; top: 208px; }
+.pg_10-01 .map li.noboribetsu { left: 153px; top: 295px; }
+.pg_10-01 .map li.furano { left: 166px; top: 212px; }
+.pg_10-01 .map li.wakkanai { left: 188px; top: 74px; }
+.pg_10-01 .map li.rishiri { left: 83px; top: 115px; }
+.pg_10-01 .map li.shiretoko { left: 360px; top: 175px; }
+.pg_10-01 .map li.niseko { left: 14px; top: 273px; }
+.pg_10-01 .map li.obihiro { left: 257px; top: 304px; }
+.pg_10-01 .map li.kushiro { left: 310px; top: 243px; }
+.pg_10-01 .map li.YunoRiverhotspring { left: 54px; top: 356px; }
+.pg_10-01 .map li.Asahikawa { left: 175px; top: 168px; }
+.pg_10-01 .map li.Abashiri { left: 268px; top: 168px; }
+.pg_10-01 .map li.Chitose { left: 218px; top: 258px; }
+
+.pg_11 .map li.aomori { left: 236px; top: 113px; }
+.pg_11-02 .map li.Aomoricity { left: 171px; top: 143px; }
+.pg_11-02 .map li.Hirosaki { left: 86px; top: 206px; }
+.pg_11-02 .map li.Hachinohe { left: 290px; top: 212px; }
+.pg_11-02 .map li.Tsugaru-goshogawara { left: 52px; top: 114px; }
+.pg_11-02 .map li.Misawa { left: 284px; top: 127px; }
+.pg_11-02 .map li.YoungandimmortalAjigasawa { left: 31px; top: 142px; }
+.pg_11-02 .map li.ShimokitaPeninsula { left: 179px; top: 74px; }
+.pg_11-02 .map li.AsamushiOnsen { left: 182px; top: 114px; }
+.pg_11-02 .map li.OwaniYukijo { left: 159px; top: 208px; }
+.pg_11-02 .map li.KuroishiAokiOnsen { left: 138px; top: 177px; }
+.pg_11-02 .map li.KogamiOnsen { left: 281px; top: 157px; }
+.pg_11 .map li.iwate { left: 282px; top: 221px; }
+.pg_11-03 .map li.Hiraizumi { left: 166px; top: 225px; }
+.pg_11-03 .map li.TsunagiJinshukuOnsen { left: 114px; top: 117px; }
+.pg_11-03 .map li.IchinosekiSekimiRiverNanjingRiver { left: 180px; top: 247px; }
+.pg_11-03 .map li.HanamakiOnsenTown { left: 78px; top: 163px; }
+.pg_11-03 .map li.Morioka { left: 197px; top: 77px; }
+.pg_11-03 .map li.KitakamiEsashiYuda { left: 98px; top: 195px; }
+.pg_11-03 .map li.Shizukuishitwodoors { left: 91px; top: 85px; }
+.pg_11-03 .map li.Miyako { left: 277px; top: 131px; }
+.pg_11-03 .map li.OfunatoRikuzentakadada { left: 243px; top: 197px; }
+.pg_11-03 .map li.Tono { left: 183px; top: 166px; }
+.pg_11-03 .map li.Kamaishi { left: 260px; top: 167px; }
+.pg_11 .map li.miyagi { left: 230px; top: 323px; }
+.pg_11-04 .map li.Sendaicity { left: 185px; top: 124px; }
+.pg_11-04 .map li.NarukoOnsenTownship { left: 161px; top: 92px; }
+.pg_11-04 .map li.AkiuOnsen { left: 146px; top: 176px; }
+.pg_11-04 .map li.Sakonamihotspring { left: 95px; top: 154px; }
+.pg_11-04 .map li.ZaoMiyagiShiroishiSasaniya { left: 122px; top: 212px; }
+.pg_11-04 .map li.OnikobeOnsenTown { left: 119px; top: 56px; }
+.pg_11-04 .map li.MinamiSanrikuKesennuma { left: 273px; top: 81px; }
+.pg_11-04 .map li.OshikaPeninsula { left: 91px; top: 135px; }
+.pg_11 .map li.akita { left: 205px; top: 176px; }
+.pg_11-05 .map li.Akitacity { left: 144px; top: 141px; }
+.pg_11-05 .map li.Kakunodate { left: 189px; top: 170px; }
+.pg_11-05 .map li.PapillaHotsprings { left: 218px; top: 122px; }
+.pg_11-05 .map li.TamagawaOnsen { left: 171px; top: 103px; }
+.pg_11-05 .map li.KazunoWreathYuseaseOnsen { left: 224px; top: 79px; }
+.pg_11-05 .map li.Oga { left: 100px; top: 105px; }
+.pg_11-05 .map li.Greatmusic { left: 175px; top: 201px; }
+.pg_11-05 .map li.YokoteYuzawa { left: 167px; top: 231px; }
+.pg_11-05 .map li.Odate { left: 150px; top: 79px; }
+.pg_11 .map li.yamagata { left: 189px; top: 269px; }
+.pg_11-06 .map li.Zao { left: 233px; top: 209px; }
+.pg_11-06 .map li.InYamagatacity { left: 205px; top: 181px; }
+.pg_11-06 .map li.TendohotspringHigashine { left: 215px; top: 150px; }
+.pg_11-06 .map li.Sakata { left: 135px; top: 62px; }
+.pg_11-06 .map li.Kamiyama { left: 146px; top: 209px; }
+.pg_11-06 .map li.Yonezawa { left: 126px; top: 239px; }
+.pg_11-06 .map li.GinzanOnsen { left: 231px; top: 111px; }
+.pg_11-06 .map li.AtsumiOnsen { left: 116px; top: 132px; }
+.pg_11-06 .map li.ShinjoTop { left: 216px; top: 79px; }
+.pg_11-06 .map li.AkayuOnsen { left: 201px; top: 238px; }
+.pg_11-06 .map li.TsuruokaYunohamaOnsen { left: 81px; top: 95px; }
+.pg_11 .map li.fukushima { left: 217px; top: 373px; }
+.pg_11-07 .map li.AizuWakamatsuHigashiyamaAshinomaki { left: 58px; top: 112px; }
+.pg_11-07 .map li.Inawashiro { left: 170px; top: 93px; }
+.pg_11-07 .map li.Fukushimacity { left: 250px; top: 101px; }
+.pg_11-07 .map li.TadamiHinoibranchimura { left: 74px; top: 153px; }
+.pg_11-07 .map li.Koriyama { left: 265px; top: 202px; }
+.pg_11-07 .map li.BandaiAtamiOnsen { left: 205px; top: 180px; }
+.pg_11-07 .map li.ShirakawaHatoriNiki { left: 99px; top: 210px; }
+.pg_11-07 .map li.IwakiHaramachiOnahama { left: 228px; top: 237px; }
+.pg_11-07 .map li.SotoyuTakayuhotspring { left: 224px; top: 127px; }
+.pg_11-07 .map li.Kitakatahotsalthotspring { left: 74px; top: 77px; }
+.pg_11-07 .map li.Soma { left: 325px; top: 83px; }
+.pg_11-07 .map li.IzakaOnsen { left: 233px; top: 74px; }
+.pg_11-07 .map li.Nihonmatsu-OnsenOnsen { left: 254px; top: 153px; }
+
+.pg_12 .map li.ibaraki { left: 250px; top: 174px; }
+.pg_12-08 .map li.Mitocity { left: 217px; top: 147px; }
+.pg_12-08 .map li.TsukubaAcademicCity { left: 72px; top: 205px; }
+.pg_12-08 .map li.OyakoMakuda { left: 148px; top: 80px; }
+.pg_12-08 .map li.Tsuchiura { left: 212px; top: 209px; }
+.pg_12-08 .map li.HitachiNakaKitaIbarakiOkuKuji { left: 194px; top: 113px; }
+.pg_12-08 .map li.Oarai { left: 219px; top: 177px; }
+.pg_12-08 .map li.KasamaYukiFurukawaChikusei { left: 46px; top: 160px; }
+.pg_12 .map li.tochigi { left: 191px; top: 120px; }
+.pg_12-09 .map li.sunlight { left: 196px; top: 123px; }
+.pg_12-09 .map li.KinugawaOnsen { left: 196px; top: 92px; }
+.pg_12-09 .map li.SanoAshikaga { left: 94px; top: 212px; }
+.pg_12-09 .map li.NasuShiobaraYabeKuroiso { left: 218px; top: 73px; }
+.pg_12-09 .map li.OyamaTochigi { left: 204px; top: 213px; }
+.pg_12-09 .map li.Utsunomiya-shi { left: 208px; top: 151px; }
+.pg_12-09 .map li.MashikoMoka { left: 237px; top: 182px; }
+.pg_12-09 .map li.Okuhiko { left: 110px; top: 104px; }
+.pg_12-09 .map li.YubukawaOnsen { left: 108px; top: 72px; }
+.pg_12 .map li.gunma { left: 109px; top: 178px; }
+.pg_12-10 .map li.Kusatsu { left: 63px; top: 161px; }
+.pg_12-10 .map li.ShiraneTsumagoiManza { left: 40px; top: 81px; }
+.pg_12-10 .map li.Okuonhotspringresort { left: 156px; top: 52px; }
+.pg_12-10 .map li.ShibukawaIkahoOnsen { left: 107px; top: 191px; }
+.pg_12-10 .map li.Numata { left: 191px; top: 135px; }
+.pg_12-10 .map li.Takasakicity { left: 131px; top: 230px; }
+.pg_12-10 .map li.KitaKaruizawa { left: 77px; top: 212px; }
+.pg_12-10 .map li.KiryuIsezakiOtaWatarase { left: 212px; top: 210px; }
+.pg_12-10 .map li.ShimaOnsenSawatariOnsen { left: 37px; top: 134px; }
+.pg_12-10 .map li.NakanojoKawaYubara { left: 135px; top: 163px; }
+.pg_12-10 .map li.MinakamiOnsen { left: 177px; top: 79px; }
+.pg_12-10 .map li.Tomioka { left: 131px; top: 251px; }
+.pg_12-10 .map li.Ogreshotspring { left: 252px; top: 118px; }
+.pg_12-10 .map li.MonkeiKeikyoMikuniOnsenTogoLawyer { left: 71px; top: 106px; }
+.pg_12 .map li.saitama { left: 122px; top: 226px; }
+.pg_12-11 .map li.NagaokaChichibuOgose { left: 223px; top: 124px; }
+.pg_12-11 .map li.SaitamaKawaguchiTodaAgeo { left: 212px; top: 175px; }
+.pg_12-11 .map li.Kawagoe { left: 134px; top: 174px; }
+.pg_12-11 .map li.TsurugashimaSakadoHigashimatsuyama { left: 43px; top: 140px; }
+.pg_12-11 .map li.TokorozawaSayamaHanno { left: 141px; top: 216px; }
+.pg_12 .map li.tokyo { left: 128px; top: 278px; }
+.pg_12-13 .map li.TokyostationNihonbashiGinzaYurakucho {left: 210px;top: 246px;}
+.pg_12-13 .map li.ShinagawaMeguroHanedaKamata {left: 110px;top: 347px;}
+.pg_12-13 .map li.UenoAsakusaBothcountriesAdachi {left: 191px;top: 125px;}
+.pg_12-13 .map li.AkasakaRoppongiToranomon {left: 110px;top: 212px;}
+.pg_12-13 .map li.ShinjukuNakanoSuginami {left: -15px;top: 152px;}
+.pg_12-13 .map li.ShimbashiShiodomeOdaiba {left: 200px;top: 280px;}
+.pg_12-13 .map li.OchanomizuAqueductBridgeIidabashi {left: 155px; top: 164px;}
+.pg_12-13 .map li.ShibuyaEbisuAoyama {left: 0px;top: 260px;}
+.pg_12-13 .map li.KotoEdogawaShinkoiwa {left: 318px;top: 210px;}
+.pg_12-13 .map li.IkebukuroMejiroAkabaneItabashiNerima {left: 158px;top: 83px;}
+.pg_12-13 .map li.MusashinoTachikawaFuchuMitakaChofu {left: 113px;top: 152px;display: none;}
+.pg_12-13 .map li.TamaMachida {left: 210px;top: 193px;display: none;}
+.pg_12-13 .map li.izu-Oshima {left: 144px;top: 290px;display: none;}
+.pg_12-13 .map li.OkutamaOme {left: 15px;top: 91px;display: none;}
+.pg_12-13 .map li.OgasawaraIslands {left: -7px;top: 240px;display: none;}
+.pg_12-13 .map li.Hachijojima {left: 158px;top: 363px;display: none;}
+.pg_12 .map li.chiba { left: 222px; top: 319px; }
+.pg_12-12 .map li.Maihama { left: 80px; top: 121px; }
+.pg_12-12 .map li.Chiba { left: 148px; top: 135px; }
+.pg_12-12 .map li.Makuhari { left: 146px; top: 110px; }
+.pg_12-12 .map li.Urayasu { left: 84px; top: 89px; }
+.pg_12-12 .map li.NaritaSakura { left: 202px; top: 93px; }
+.pg_12-12 .map li.TateyamaShirahamaChikura { left: 128px; top: 238px; }
+.pg_12-12 .map li.IchiharaKisarazuKimitsu { left: 127px; top: 164px; }
+.pg_12-12 .map li.KamogawaKatsuuraOnjukuKominato { left: 162px; top: 209px; }
+.pg_12-12 .map li.Choshi { left: 242px; top: 124px; }
+.pg_12-12 .map li.SawaraToganeKujukuriMobara { left: 128px; top: 71px; }
+.pg_12 .map li.kanagawa { left: 88px; top: 323px; }
+.pg_12-14 .map li.Yokohama { left: 248px; top: 124px; }
+.pg_12-14 .map li.Kamakura { left: 225px; top: 156px; }
+.pg_12-14 .map li.Hakone { left: 66px; top: 215px; }
+.pg_12-14 .map li.Odawara { left: 58px; top: 185px; }
+.pg_12-14 .map li.Kawasakicity { left: 247px; top: 73px; }
+.pg_12-14 .map li.ShonanChigasakiEnoshimaHayamaetc { left: 148px; top: 185px; }
+.pg_12-14 .map li.AtsugiTanzawaEbinaIsehara { left: 22px; top: 155px; }
+.pg_12-14 .map li.MiuraJokeshimaoilvase { left: 221px; top: 222px; }
+.pg_12-14 .map li.Shin-Yokohama { left: 229px; top: 94px; }
+.pg_12-14 .map li.Sagamihara { left: 141px; top: 85px; }
+.pg_12-14 .map li.Yokosuka { left: 296px; top: 155px; }
+
+.pg_13_14 .map li.yamanashi { left: 258px; top: 289px; }
+.pg_13-19 .map li.IsawaFuefuki-shiKatsunuma { left: 100px; top: 142px; }
+.pg_13-19 .map li.KiyosakiKiyosaki { left: 130px; top: 74px; }
+.pg_13-19 .map li.KofuYumuraOnsen { left: 40px; top: 109px; }
+.pg_13-19 .map li.OtsukiTsuru { left: 256px; top: 144px; }
+.pg_13-19 .map li.Narusawa { left: 176px; top: 176px; }
+.pg_13-19 .map li.YamanashicityShioyama { left: 176px; top: 107px; }
+.pg_13-19 .map li.MinobuLowerhotsprings { left: 47px; top: 176px; }
+.pg_13-19 .map li.Fujiyoshida { left: 244px; top: 179px; }
+.pg_13_14 .map li.niigata { left: 242px; top: 160px; }
+.pg_13-15 .map li.NiigataCityNiitsu { left: 257px; top: 114px; }
+.pg_13-15 .map li.EchigoYuzawa { left: 155px; top: 215px; }
+.pg_13-15 .map li.TsukiokaOnsenShibata { left: 256px; top: 95px; }
+.pg_13-15 .map li.SadoIsland { left: 92px; top: 93px; }
+.pg_13-15 .map li.YahikoIwamuro { left: 120px; top: 133px; }
+.pg_13-15 .map li.SanjoTsubameNagaokaKashiwazaki { left: 229px; top: 133px; }
+.pg_13-15 .map li.RokkaichiUrasa { left: 247px; top: 161px; }
+.pg_13-15 .map li.MurakamiSebaOnsen { left: 232px; top: 77px; }
+.pg_13-15 .map li.NaebaMitsumata { left: 187px; top: 251px; }
+.pg_13-15 .map li.TokamachiTsunanMatsunoyama { left: 189px; top: 189px; }
+.pg_13-15 .map li.TeradomariIzumozaki { left: 125px; top: 161px; }
+.pg_13-15 .map li.WestJoetsuTakadaNaoetsu { left: 21px; top: 197px; }
+.pg_13-15 .map li.MyokoArai { left: 104px; top: 233px; }
+.pg_13-15 .map li.Agano { left: 169px; top: 95px; }
+.pg_13-15 .map li.AkakuraOnsen { left: 31px; top: 249px; }
+.pg_13-15 .map li.YunotaniOnsenkyoOkutadedado { left: 247px; top: 217px; }
+.pg_13_14 .map li.toyama { left: 174px; top: 205px; }
+.pg_13-16 .map li.Cityoftoyama { left: 178px; top: 137px; }
+.pg_13-16 .map li.KurobeUnazuki { left: 239px; top: 74px; }
+.pg_13-16 .map li.TonamiShoukawa { left: 113px; top: 178px; }
+.pg_13-16 .map li.NamikawaUoitsuFabric { left: 249px; top: 114px; }
+.pg_13-16 .map li.ShinminatoOyabeShootingwater { left: 99px; top: 101px; }
+.pg_13-16 .map li.TakaokaHimi { left: 67px; top: 134px; }
+.pg_13_14 .map li.ishikawa { left: 115px; top: 160px; }
+.pg_13-17 .map li.Kanazawa { left: 194px; top: 158px; }
+.pg_13-17 .map li.YamashiroOnsen { left: 108px; top: 201px; }
+.pg_13-17 .map li.SuzuandWajima { left: 238px; top: 74px; }
+.pg_13-17 .map li.Yamanaka-choYamanakaOnsen { left: 92px; top: 232px; }
+.pg_13-17 .map li.WakuraOnsenNanao { left: 206px; top: 111px; }
+.pg_13-17 .map li.KomatsuAwazuOnsen { left: 208px; top: 201px; }
+.pg_13-17 .map li.KatayamatsuOnsen { left: 95px; top: 172px; }
+.pg_13_14 .map li.fukui { left: 74px; top: 261px; }
+.pg_13-18 .map li.AwaraOnsen { left: 164px; top: 53px; }
+.pg_13-18 .map li.Fukui-shi { left: 239px; top: 94px; }
+.pg_13-18 .map li.Eiheiji { left: 265px; top: 74px; }
+.pg_13-18 .map li.EchizenSabaeTakefu { left: 181px; top: 130px; }
+.pg_13-18 .map li.WakasaObama { left: 66px; top: 229px; }
+.pg_13-18 .map li.TsurugaMihama { left: 126px; top: 188px; }
+.pg_13-18 .map li.Katsuyama { left: 317px; top: 107px; }
+.pg_13_14 .map li.nagano { left: 233px; top: 242px; }
+.pg_13-20 .map li.Karuizawa { left: 316px; top: 138px; }
+.pg_13-20 .map li.HakubaHappo { left: 103px; top: 93px; }
+.pg_13-20 .map li.Naganocity { left: 220px; top: 115px; }
+.pg_13-20 .map li.ChikenUedaKomoroanotherplace { left: 147px; top: 137px; }
+.pg_13-20 .map li.MatsumotoAsamaShiojiriMikakeharaOnsen { left: 178px; top: 159px; }
+.pg_13-20 .map li.InaKomaganeTakashige { left: 185px; top: 208px; }
+.pg_13-20 .map li.IidaTenryugorgeDaygodhotspring { left: 103px; top: 226px; }
+.pg_13-20 .map li.ToyoshinaAzumino { left: 63px; top: 163px; }
+.pg_13-20 .map li.WhitehorseNorikura { left: 99px; top: 72px; }
+.pg_13-20 .map li.Tateshina { left: 272px; top: 187px; }
+.pg_13-20 .map li.Suwa-shiOkaya { left: 148px; top: 187px; }
+.pg_13-20 .map li.MadaraoNojiriKurohime { left: 209px; top: 93px; }
+.pg_13-20 .map li.Norikurawhitebone { left: 77px; top: 205px; }
+.pg_13-20 .map li.NagisoWifescageMagomebasket { left: 183px; top: 247px; }
+.pg_13-20 .map li.Togakushi { left: 98px; top: 51px; }
+.pg_13-20 .map li.TokuraKamiyamadaOnsen { left: 46px; top: 119px; }
+.pg_13_14 .map li.gifu { left: 171px; top: 280px; }
+.pg_14-21 .map li.TakayamaHidakagawa { left: 105px; top: 104px; }
+.pg_14-21 .map li.GeroOnsenMizukawaOnsen { left: 222px; top: 123px; }
+.pg_14-21 .map li.Okuhida { left: 221px; top: 83px; }
+.pg_14-21 .map li.GujoHachiman { left: 165px; top: 153px; }
+.pg_14-21 .map li.OgakiGifuHashimaSekigahara { left: 78px; top: 237px; }
+.pg_14-21 .map li.Gifu-shi { left: 131px; top: 207px; }
+.pg_14-21 .map li.MinoCityMinoko { left: 140px; top: 179px; }
+.pg_14-21 .map li.TajimiEnaNakatsugawa { left: 213px; top: 207px; }
+.pg_14-21 .map li.HidaCity { left: 137px; top: 133px; }
+.pg_13_14 .map li.shizuoka { left: 250px; top: 333px; }
+.pg_14-22 .map li.MinamiizuShimodaShimomo { left: 251px; top: 227px; }
+.pg_14-22 .map li.AtamiIzusama { left: 298px; top: 100px; }
+.pg_14-22 .map li.HigashiIzuAtagawaKawazuInatori { left: 232px; top: 206px; }
+.pg_14-22 .map li.NumazuMishima { left: 195px; top: 101px; }
+.pg_14-22 .map li.NakaizuNagaokaShuzenjiAmagiYukeshima { left: 191px; top: 151px; }
+.pg_14-22 .map li.ItoUsamiTsunade { left: 273px; top: 130px; }
+.pg_14-22 .map li.NishiIzuDoiTodaMatsuzakiDogashima { left: 188px; top: 173px; }
+.pg_14-22 .map li.ShimizuNipponbare { left: 20px; top: 186px; }
+.pg_14-22 .map li.Hamamatsu { left: 21px; top: 206px; }
+.pg_14-22 .map li.Fujinomiya { left: 180px; top: 71px; }
+.pg_14-22 .map li.KakegawaTenryuIwataFukuroi { left: 68px; top: 226px; }
+.pg_14-22 .map li.YaizuFujieda { left: 118px; top: 205px; }
+.pg_14-22 .map li.ShizuokaCity { left: 105px; top: 165px; }
+.pg_14-22 .map li.Gotemba { left: 261px; top: 77px; }
+.pg_13_14 .map li.aichi { left: 156px; top: 330px; }
+.pg_14-23 .map li.NagoyacitynamestationSakae { left: 97px; top: 97px; }
+.pg_14-23 .map li.ToyotaOkazakiAssuke { left: 178px; top: 157px; }
+.pg_14-23 .map li.AtsumiPeninsula { left: 208px; top: 227px; }
+.pg_14-23 .map li.InuyamaMeijiVillageKomaki { left: 148px; top: 72px; }
+.pg_14-23 .map li.Chitapeninsula { left: 129px; top: 197px; }
+.pg_14-23 .map li.KanayamaTsurumaiChikusen { left: 122px; top: 125px; }
+.pg_13_14 .map li.mie { left: 98px; top: 374px; }
+.pg_14-24 .map li.Ise { left: 194px; top: 152px; }
+.pg_14-24 .map li.ShimaIsobeHamajima { left: 233px; top: 187px; }
+.pg_14-24 .map li.Toba { left: 268px; top: 152px; }
+.pg_14-24 .map li.KumanoOwase { left: 146px; top: 218px; }
+.pg_14-24 .map li.NagashimaOnsen { left: 246px; top: 73px; }
+.pg_14-24 .map li.MatsusakaChubuIse { left: 216px; top: 123px; }
+.pg_14-24 .map li.Iga { left: 136px; top: 118px; }
+.pg_14-24 .map li.YunoyamaOnsen { left: 140px; top: 64px; }
+.pg_14-24 .map li.YokkaichiSuzuka { left: 216px; top: 94px; }
+
+.pg_16 .map li.shiga { left: 218px; top: 175px; }
+.pg_16-25 .map li.Otsu { left: 133px; top: 236px; }
+.pg_16-25 .map li.HubeiNagahamaYuharaYuuIbuki { left: 195px; top: 110px; }
+.pg_16-25 .map li.KusatsuRitto { left: 141px; top: 212px; }
+.pg_16-25 .map li.Hikone { left: 230px; top: 150px; }
+.pg_16-25 .map li.Omihachiman-Azuchi { left: 198px; top: 180px; }
+.pg_16-25 .map li.ShigarakiKokaHunan { left: 248px; top: 220px; }
+.pg_16-25 .map li.Ogcheonhotspring { left: 99px; top: 176px; }
+.pg_16-25 .map li.KosaiShigaMaikoOmiImazu { left: 109px; top: 130px; }
+.pg_16 .map li.kyoto { left: 125px; top: 140px; }
+.pg_16-26 .map li.KyotoStationarea { left: 148px; top: 209px; }
+.pg_16-26 .map li.OtherinKyotocity { left: 220px; top: 132px; }
+.pg_16-26 .map li.ArashiyamaTaitoKaohsiungandSagano { left: 136px; top: 188px; }
+.pg_16-26 .map li.KawaramachoKarasumaShijyoOmiya { left: 243px; top: 160px; }
+.pg_16-26 .map li.GionHigashiyamaFushimiYamashina { left: 254px; top: 217px; }
+.pg_16-26 .map li.KameokaYunohanaOnsen { left: 102px; top: 158px; }
+.pg_16-26 .map li.UjiNagaokakyo { left: 197px; top: 247px; }
+.pg_16-26 .map li.TambaAyabeFukuchiyama { left: 64px; top: 129px; }
+.pg_16-26 .map li.TangoPeninsulaIne { left: 107px; top: 48px; }
+.pg_16-26 .map li.Maizuru { left: 167px; top: 95px; }
+.pg_16-26 .map li.Kumihama { left: 81px; top: 78px; }
+.pg_16 .map li.osaka { left: 173px; top: 243px; }
+.pg_16-27 .map li.ShinOsakaUmedaOsakacitynorthernpart { left: 157px; top: 117px; }
+.pg_16-27 .map li.ShinsaibashiNambaOsakaCitySouth { left: 185px; top: 183px; }
+.pg_16-27 .map li.UniversalCityDance { left: 67px; top: 163px; }
+.pg_16-27 .map li.EsakaToyonaka { left: 148px; top: 75px; }
+.pg_16-27 .map li.SakaiKishiwadaSouthofOsaka { left: 146px; top: 234px; }
+.pg_16-27 .map li.OsakaBayArea { left: 60px; top: 142px; }
+.pg_16-27 .map li.OsakaCastleKyobashiOsakacityeasternpart { left: 194px; top: 142px; }
+.pg_16-27 .map li.TakatsukiIbarakiIkedaOsakanorthernpart { left: 41px; top: 49px; }
+.pg_16-27 .map li.HirakataMoriguchiKawauchiOsakaeasternpart { left: 172px; top: 96px; }
+.pg_16-27 .map li.YaoKawachinaganoOsaka-southeasternpart { left: 199px; top: 204px; }
+.pg_16 .map li.nara { left: 261px; top: 290px; }
+.pg_16-29 .map li.Nara-shi { left: 195px; top: 58px; }
+.pg_16-29 .map li.Yoshino { left: 224px; top: 192px; }
+.pg_16-29 .map li.KashiharaAsuka { left: 135px; top: 165px; }
+.pg_16-29 .map li.SakuraiMiwaTakemori { left: 211px; top: 126px; }
+.pg_16-29 .map li.Ikaruga { left: 149px; top: 107px; }
+.pg_16-29 .map li.TenriGojo { left: 202px; top: 107px; }
+.pg_16-29 .map li.TotsukawaYunizumiOnsen { left: 138px; top: 226px; }
+.pg_16-29 .map li.Yamatokoriyama { left: 190px; top: 79px; }
+.pg_16-29 .map li.TenkawaGreattower { left: 130px; top: 195px; }
+.pg_16-29 .map li.FlatgroupMisato { left: 123px; top: 144px; }
+.pg_16-29 .map li.MuroUdaHasevali { left: 247px; top: 164px; }
+.pg_16-29 .map li.Ikoma { left: 131px; top: 69px; }
+.pg_16 .map li.hyogo { left: 82px; top: 190px; }
+.pg_16-28 .map li.Takarazuka { left: 263px; top: 151px; }
+.pg_16-28 .map li.KobecityNadaRokkoIsland { left: 192px; top: 227px; }
+.pg_16-28 .map li.Himeji { left: 97px; top: 151px; }
+.pg_16-28 .map li.MitaShinoyama { left: 154px; top: 122px; }
+.pg_16-28 .map li.AwajiIsland { left: 128px; top: 245px; }
+.pg_16-28 .map li.ArimaOnsen { left: 168px; top: 151px; }
+.pg_16-28 .map li.KinosakiOnsen {left: 152px;top: 42px;}
+.pg_16-28 .map li.Rokko { left: 198px; top: 207px; }
+.pg_16-28 .map li.KakogawaMikiKasai { left: 57px; top: 181px; }
+.pg_16-28 .map li.AshiyaNishinomiyaItamiAmagasaki { left: 213px; top: 180px; }
+.pg_16-28 .map li.KasumiTakenoHamasaka { left: 172px; top: 72px; }
+.pg_16-28 .map li.ToyookaIzushi { left: 164px; top: 91px; }
+.pg_16-28 .map li.Akashi { left: 129px; top: 207px; }
+.pg_16-28 .map li.AkoUeigami { left: 63px; top: 128px; }
+.pg_16-28 .map li.YumuraOnsen {left: 78px;top: 60px;}
+.pg_16 .map li.wakayama { left: 159px; top: 333px; }
+.pg_16-30 .map li.Nachikatsuura { left: 262px; top: 210px; }
+.pg_16-30 .map li.Shirahama { left: 145px; top: 208px; }
+.pg_16-30 .map li.Wakayama-shi { left: 85px; top: 68px; }
+.pg_16-30 .map li.Southernpart { left: 118px; top: 180px; }
+.pg_16-30 .map li.Kumano { left: 202px; top: 186px; }
+.pg_16-30 .map li.KushimotoShionomisaki { left: 194px; top: 243px; }
+.pg_16-30 .map li.HainanAritaYuasaGoboRyujin { left: 74px; top: 106px; }
+.pg_16-30 .map li.HashimotoKihoku { left: 198px; top: 74px; }
+
+.pg_17 .map li.tottori { left: 380px; top: 136px; }
+.pg_17-31 .map li.OnsenOnsen { left: 88px; top: 106px; }
+.pg_17-31 .map li.Yonago { left: 68px; top: 134px; }
+.pg_17-31 .map li.TottoriCityTottoriOnsen { left: 275px; top: 94px; }
+.pg_17-31 .map li.Sakai { left: 58px; top: 78px; }
+.pg_17-31 .map li.Misasa-choMisasaOnsen { left: 195px; top: 134px; }
+.pg_17-31 .map li.Hawaiihotspring { left: 183px; top: 111px; }
+.pg_17-31 .map li.KurayoshiYufanhamaKankinOnsen { left: 138px; top: 154px; }
+.pg_17 .map li.shimane { left: 180px; top: 193px; }
+.pg_17-32 .map li.Izumo { left: 188px; top: 111px; }
+.pg_17-32 .map li.Matsue { left: 285px; top: 76px; }
+.pg_17-32 .map li.TamayuOnsen { left: 254px; top: 97px; }
+.pg_17-32 .map li.Tsuwano { left: 81px; top: 232px; }
+.pg_17-32 .map li.OkiIsland { left: 70px; top: 83px; }
+.pg_17-32 .map li.HamadaGotsu { left: 109px; top: 161px; }
+.pg_17 .map li.okayama { left: 379px; top: 204px; }
+.pg_17-33 .map li.Kurashiki { left: 119px; top: 205px; }
+.pg_17-33 .map li.Okayamacity { left: 189px; top: 206px; }
+.pg_17-33 .map li.YuushiOnsenMimasakaCity { left: 185px; top: 130px; }
+.pg_17-33 .map li.ShimotsuiWashiwaki { left: 163px; top: 240px; }
+.pg_17-33 .map li.BeefwindowBizen { left: 277px; top: 219px; }
+.pg_17-33 .map li.YuharaOnsenManiwa { left: 137px; top: 94px; }
+.pg_17-33 .map li.Kibiji-shi { left: 159px; top: 177px; }
+.pg_17-33 .map li.OkutsuOnsenMikanoTsuyama { left: 214px; top: 72px; }
+.pg_17 .map li.hiroshima { left: 218px; top: 267px; }
+.pg_17-34 .map li.InHiroshimacity { left: 143px; top: 185px; }
+.pg_17-34 .map li.Miyajima { left: 92px; top: 210px; }
+.pg_17-34 .map li.Onomichi { left: 234px; top: 184px; }
+.pg_17-34 .map li.Kure { left: 169px; top: 206px; }
+.pg_17-34 .map li.NojimaIkujima { left: 230px; top: 209px; }
+.pg_17-34 .map li.Fukuyama { left: 305px; top: 180px; }
+.pg_17-34 .map li.ShobaraThird { left: 208px; top: 93px; }
+.pg_17-34 .map li.HatsukaichiOotake { left: 27px; top: 185px; }
+.pg_17 .map li.yamaguchi { left: 40px; top: 296px; }
+.pg_17-35 .map li.HagiNagato { left: 130px; top: 105px; }
+.pg_17-35 .map li.Shimonoseki { left: 34px; top: 201px; }
+.pg_17-35 .map li.YamaguchiCityShinYamaguchiYudaOnsenOguri { left: 72px; top: 171px; }
+.pg_17-35 .map li.IwakuniZhounanYanai { left: 262px; top: 205px; }
+.pg_17-35 .map li.UbeOnoda { left: 81px; top: 225px; }
+.pg_17-35 .map li.Yumoto-TawarayamaOnsen { left: 52px; top: 135px; }
+.pg_17-35 .map li.SenzakiQinghaijimaOilValley { left: 21px; top: 85px; }
+.pg_17-35 .map li.Hofu { left: 192px; top: 205px; }
+
+.pg_18 .map li.tokushima { left: 339px; top: 166px; }
+.pg_18-36 .map li.TokushimacityKomatsushima { left: 196px; top: 133px; }
+.pg_18-36 .map li.NarutonorthernpartofTokushima { left: 208px; top: 85px; }
+.pg_18-36 .map li.AnanHiwasaShishidosouthernpartofTokushima { left: 159px; top: 205px; }
+.pg_18 .map li.kagawa { left: 300px; top: 94px; }
+.pg_18-37 .map li.KotohiraZentsuji { left: 67px; top: 175px; }
+.pg_18-37 .map li.Takamatsucity { left: 217px; top: 142px; }
+.pg_18-37 .map li.ShodoshimaIslandRemoteIslandArea { left: 262px; top: 81px; }
+.pg_18-37 .map li.UtazuMarugameandTutatsu { left: 48px; top: 141px; }
+.pg_18-37 .map li.Shioji-choShioehotspringYaoshima { left: 87px; top: 206px; }
+.pg_18-37 .map li.SanukiHigashigakawa { left: 259px; top: 177px; }
+.pg_18-37 .map li.Sakaide { left: 163px; top: 110px; }
+.pg_18 .map li.kochi { left: 200px; top: 218px; }
+.pg_18-39 .map li.KochiCity { left: 154px; top: 112px; }
+.pg_18-39 .map li.Tosashimizu { left: 124px; top: 242px; }
+.pg_18-39 .map li.ShimantoNakamura { left: 100px; top: 203px; }
+.pg_18-39 .map li.AkiMuroto { left: 280px; top: 186px; }
+.pg_18-39 .map li.Tanaguni-shiTosayamadaTown { left: 243px; top: 82px; }
+.pg_18-39 .map li.Sukumo { left: 41px; top: 234px; }
+.pg_18-39 .map li.Konishi { left: 265px; top: 119px; }
+.pg_18 .map li.ehime { left: 86px; top: 188px; }
+.pg_18-38 .map li.MatsuyamacityDogoOnsen { left: 77px; top: 121px; }
+.pg_18-38 .map li.Uwajima { left: 94px; top: 229px; }
+.pg_18-38 .map li.ImabariSaijo { left: 162px; top: 86px; }
+.pg_18-38 .map li.NiihamaShikokuChuo { left: 133px; top: 60px; }
+.pg_18-38 .map li.UchikoOsuYawatahama { left: 103px; top: 187px; }
+.pg_18-38 .map li.KawanoeIyoMishima { left: 275px; top: 85px; }
+
+.pg_19 .map li.fukuoka { left: 277px; top: 90px; }
+.pg_19-40 .map li.Hakata { left: 178px; top: 115px; }
+.pg_19-40 .map li.FukuokaCity { left: 98px; top: 117px; }
+.pg_19-40 .map li.KitakyushucityOguraMoji { left: 210px; top: 69px; }
+.pg_19-40 .map li.YameChikugoYanagawaOkawa { left: 142px; top: 177px; }
+.pg_19-40 .map li.Kurume { left: 197px; top: 146px; }
+.pg_19-40 .map li.MunakataFukutsu { left: 127px; top: 88px; }
+.pg_19-40 .map li.HaruCherChikugoRiverOnsen { left: 233px; top: 207px; }
+.pg_19-40 .map li.Omuta { left: 156px; top: 237px; }
+.pg_19 .map li.saga { left: 188px; top: 127px; }
+.pg_19-41 .map li.KaratsuYoko { left: 70px; top: 67px; }
+.pg_19-41 .map li.NagoyahotspringinSagacity { left: 114px; top: 112px; }
+.pg_19-41 .map li.UreshinoOnsenTaku { left: 122px; top: 239px; }
+.pg_19-41 .map li.ImariArita { left: 93px; top: 166px; }
+.pg_19-41 .map li.TakeoCityTakeoOnsen { left: 149px; top: 200px; }
+.pg_19-41 .map li.TosuBasayamaMiyaki { left: 263px; top: 112px; }
+.pg_19 .map li.nagasaki { left: 139px; top: 167px; }
+.pg_19-42 .map li.Nagasakicity { left: 257px; top: 197px; }
+.pg_19-42 .map li.UnzenhotspringObamahotspring { left: 263px; top: 229px; }
+.pg_19-42 .map li.SaikaiKinkaiNishisonogiPeninsula { left: 208px; top: 135px; }
+.pg_19-42 .map li.HiradoSaseboMatsuuraTadaira { left: 210px; top: 87px; }
+.pg_19-42 .map li.Iki { left: 56px; top: 107px; }
+.pg_19-42 .map li.GotoIslandsIsland { left: 105px; top: 171px; }
+.pg_19-42 .map li.Shimabara-shiShimabaraOnsen { left: 276px; top: 168px; }
+.pg_19-42 .map li.IsahayaOmuraHigashisonosuNagasakiairport { left: 196px; top: 111px; }
+.pg_19-42 .map li.Tsushima { left: 41px; top: 62px; }
+.pg_19 .map li.kumamoto { left: 243px; top: 201px; }
+.pg_19-43 .map li.Kumamotocity { left: 165px; top: 154px; }
+.pg_19-43 .map li.Aso { left: 225px; top: 108px; }
+.pg_19-43 .map li.SmallcountrybasinstandingKurokawaOnsen { left: 84px; top: 56px; }
+.pg_19-43 .map li.KikuchiKikuchiOnsen { left: 185px; top: 78px; }
+.pg_19-43 .map li.Hitoyoshi { left: 171px; top: 230px; }
+.pg_19-43 .map li.YamagaYamagaOnsen { left: 96px; top: 108px; }
+.pg_19-43 .map li.AmakusaHondo { left: 69px; top: 178px; }
+.pg_19 .map li.oita { left: 320px; top: 155px; }
+.pg_19-44 .map li.BeppucityBeppuHotspring { left: 241px; top: 130px; }
+.pg_19-44 .map li.Yufuin { left: 159px; top: 130px; }
+.pg_19-44 .map li.Oitacity { left: 228px; top: 166px; }
+.pg_19-44 .map li.Kusumi-NagayuOnsen { left: 168px; top: 201px; }
+.pg_19-44 .map li.HitaHitaOnsen { left: 48px; top: 96px; }
+.pg_19-44 .map li.TenkaseOnsen { left: 177px; top: 92px; }
+.pg_19-44 .map li.UsaNakatsu { left: 169px; top: 56px; }
+.pg_19-44 .map li.KunisakiKunisaki { left: 277px; top: 78px; }
+.pg_19-44 .map li.HohsenjiOnsen { left: 117px; top: 165px; }
+.pg_19-44 .map li.UsukiSaeki { left: 297px; top: 201px; }
+.pg_19 .map li.miyazaki { left: 310px; top: 260px; }
+.pg_19-45 .map li.Miyazaki { left: 212px; top: 160px; }
+.pg_19-45 .map li.TakachihoNobeoka { left: 176px; top: 70px; }
+.pg_19-45 .map li.Qingdao { left: 228px; top: 194px; }
+.pg_19-45 .map li.HyugaShiiba { left: 177px; top: 108px; }
+.pg_19-45 .map li.Nichinan { left: 200px; top: 228px; }
+.pg_19-45 .map li.Miyakonojo { left: 148px; top: 192px; }
+.pg_19 .map li.kagoshima { left: 210px; top: 307px; }
+.pg_19-46 .map li.Kagoshimacity { left: 37px; top: 92px; }
+.pg_19-46 .map li.IbusukiOnsen { left: 109px; top: 151px; }
+.pg_19-46 .map li.Kirishima { left: 116px; top: 73px; }
+.pg_19-46 .map li.AmamiOshima { left: 326px; top: 189px; }
+.pg_19-46 .map li.Exercise { left: 113px; top: 123px; }
+.pg_19-46 .map li.Yakushima { left: 63px; top: 243px; }
+.pg_19-46 .map li.Sakurajima { left: 147px; top: 93px; }
+.pg_19-46 .map li.YoronIsland { left: 213px; top: 247px; }
+.pg_19-46 .map li.Tanegashima { left: 149px; top: 211px; }
+.pg_19-46 .map li.OkinoerabuIsland { left: 300px; top: 240px; }
+.pg_19-46 .map li.Tokunoshima { left: 243px; top: 199px; }
+.pg_19-46 .map li.KawauchiMiyanojoKita-Satsuma { left: 31px; top: 53px; }
+.pg_19-46 .map li.MyokumiOnsenShinkawaGorgevalleyhotspringsvillage { left: 190px; top: 76px; }
+.pg_19-46 .map li.KanoyaTarumiOsumiPeninsula { left: 187px; top: 126px; }
+.pg_19-46 .map li.TakumiIs { left: 295px; top: 169px; }
+
+.pg_20-47 .map li.naha { left: 0px; top: 300px; }
+.pg_20-47 .map li.onna { left: 0px; top: 160px; }
+.pg_20-47 .map li.nago { left: 105px; top: 160px; }
+.pg_20-47 .map li.ishigaki { left: 390px; top: 325px; }
+.pg_20-47 .map li.iriomote { left: 290px; top: 325px; }
+.pg_20-47 .map li.miyako { left: 345px; top: 209px; }
+.pg_20-47 .map li.yonaguni { left: 135px; top: 370px; }
+.pg_20-47 .map li.KitayaYomitani { left: 0px; top: 230px; }
+.pg_20-47 .map li.HeadquartersNakijinIeIsland { left: 59px; top: 125px; }
+.pg_20-47 .map li.OkinawaCity { left: 0px; top: 195px; }
+.pg_20-47 .map li.ItoumiTamakiChinenTomigusukuMizunori { left: -35px; top: 335px; }
+.pg_20-47 .map li.GinowanUrasoe { left: 0px; top: 265px; }
+.pg_20-47 .map li.Kunitachi { left: 175px; top: 90px; }
+.pg_20-47 .map li.TaketomiObamaKuroshima { left: 340px; top: 370px; }
+.pg_20-47 .map li.UrumaIkeijimaKatsuragipeninsula { left: 105px; top: 195px; }
+.pg_20-47 .map li.KeramaMunicipalityZamamiTokashiki { left: 285px; top: 115px; }

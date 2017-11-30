@@ -1,0 +1,235 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns2="http://service.search.ds.hankyu_travel.com/xsd" xmlns:ns1="http://request.dto.search_common.ds.hankyu_travel.com/xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:ns0="http://response.dto.search_common.ds.hankyu_travel.com/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:axis2="http://ws.apache.org/axis2" targetNamespace="http://ws.apache.org/axis2">
+<wsdl:types>
+<xs:schema xmlns:stn_80="http://response.dto.search_common.ds.hankyu_travel.com/xsd" targetNamespace="http://response.dto.search_common.ds.hankyu_travel.com/xsd" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+<xs:element name="special" type="ns0:special" />
+<xs:complexType name="special">
+<xs:sequence>
+<xs:element name="p_dome_special_response" maxOccurs="unbounded" type="ns0:p_dome_special_response" minOccurs="0" />
+<xs:element name="p_ab_special_response" maxOccurs="unbounded" type="ns0:p_ab_special_response" minOccurs="0" />
+<xs:element name="p_db_access_time" type="xs:string" />
+<xs:element name="p_all_price_min_max" type="xs:string" />
+<xs:element name="p_error_code" type="xs:string" />
+<xs:element name="p_error_message" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_dome_special_response" type="ns0:p_dome_special_response" />
+<xs:complexType name="p_dome_special_response">
+<xs:sequence>
+<xs:element name="p_id" type="xs:string" />
+<xs:element name="p_divide" type="xs:string" />
+<xs:element name="p_hei" type="xs:string" />
+<xs:element name="p_course_id" type="xs:string" />
+<xs:element name="p_parameter" type="xs:string" />
+<xs:element name="p_naigai" type="xs:string" />
+<xs:element name="p_course_no" type="xs:string" />
+<xs:element name="p_course_divide_code" type="xs:string" />
+<xs:element name="p_course_name" type="xs:string" />
+<xs:element name="p_sub_title" type="xs:string" />
+<xs:element name="p_price_min" type="xs:string" />
+<xs:element name="p_price_max" type="xs:string" />
+<xs:element name="p_point1" type="xs:string" />
+<xs:element name="p_point2" type="xs:string" />
+<xs:element name="p_point3" type="xs:string" />
+<xs:element name="p_img1_filepath" type="xs:string" />
+<xs:element name="p_img1_caption" type="xs:string" />
+<xs:element name="p_img2_filepath" type="xs:string" />
+<xs:element name="p_img2_caption" type="xs:string" />
+<xs:element name="p_img3_filepath" type="xs:string" />
+<xs:element name="p_img3_caption" type="xs:string" />
+<xs:element name="p_web_brand_code" type="xs:string" />
+<xs:element name="p_stock" type="xs:string" />
+<xs:element name="p_invalid" type="xs:string" />
+<xs:element name="p_dome_departure_info" maxOccurs="unbounded" type="ns0:p_dome_departure_info" minOccurs="0" />
+<xs:element name="p_dome_destinarion_info" maxOccurs="unbounded" type="ns0:p_dome_destinarion_info" minOccurs="0" />
+<xs:element name="p_type" type="xs:string" />
+<xs:element name="p_dome_land_dep_info" maxOccurs="unbounded" type="ns0:p_dome_land_dep_info" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_dome_departure_info" type="ns0:p_dome_departure_info" />
+<xs:complexType name="p_dome_departure_info">
+<xs:sequence>
+<xs:element name="p_hatsu_sub" type="xs:string" />
+<xs:element name="p_hatsu_sub_name" type="xs:string" />
+<xs:element name="p_hatsu" type="xs:string" />
+<xs:element name="p_hatsu_name_pref" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_dome_destinarion_info" type="ns0:p_dome_destinarion_info" />
+<xs:complexType name="p_dome_destinarion_info">
+<xs:sequence>
+<xs:element name="p_region_code" type="xs:string" />
+<xs:element name="p_region_name" type="xs:string" />
+<xs:element name="p_prefecture_code" type="xs:string" />
+<xs:element name="p_prefecture_name" type="xs:string" />
+<xs:element name="p_destination_code" type="xs:string" />
+<xs:element name="p_destination_name" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_dome_land_dep_info" type="ns0:p_dome_land_dep_info" />
+<xs:complexType name="p_dome_land_dep_info">
+<xs:sequence>
+<xs:element name="p_dep_region_code" type="xs:string" />
+<xs:element name="p_dep_region_name" type="xs:string" />
+<xs:element name="p_dep_prefecture_code" type="xs:string" />
+<xs:element name="p_dep_prefecture_name" type="xs:string" />
+<xs:element name="p_dep_destination_code" type="xs:string" />
+<xs:element name="p_dep_destination_name" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_ab_special_response" type="ns0:p_ab_special_response" />
+<xs:complexType name="p_ab_special_response">
+<xs:sequence>
+<xs:element name="p_id" type="xs:string" />
+<xs:element name="p_divide" type="xs:string" />
+<xs:element name="p_hei" type="xs:string" />
+<xs:element name="p_course_id" type="xs:string" />
+<xs:element name="p_parameter" type="xs:string" />
+<xs:element name="p_naigai" type="xs:string" />
+<xs:element name="p_course_no" type="xs:string" />
+<xs:element name="p_course_divide_code" type="xs:string" />
+<xs:element name="p_course_name" type="xs:string" />
+<xs:element name="p_sub_title" type="xs:string" />
+<xs:element name="p_price_min" type="xs:string" />
+<xs:element name="p_price_max" type="xs:string" />
+<xs:element name="p_point1" type="xs:string" />
+<xs:element name="p_point2" type="xs:string" />
+<xs:element name="p_point3" type="xs:string" />
+<xs:element name="p_img1_filepath" type="xs:string" />
+<xs:element name="p_img1_caption" type="xs:string" />
+<xs:element name="p_img2_filepath" type="xs:string" />
+<xs:element name="p_img2_caption" type="xs:string" />
+<xs:element name="p_img3_filepath" type="xs:string" />
+<xs:element name="p_img3_caption" type="xs:string" />
+<xs:element name="p_web_brand_code" type="xs:string" />
+<xs:element name="p_hatsu" type="xs:string" />
+<xs:element name="p_hatsu_name" type="xs:string" />
+<xs:element name="p_stock" type="xs:string" />
+<xs:element name="p_invalid" type="xs:string" />
+<xs:element name="p_ab_destinarion_info" maxOccurs="unbounded" type="ns0:p_ab_destinarion_info" minOccurs="0" />
+<xs:element name="p_type" type="xs:string" />
+<xs:element name="p_ab_land_dep_info" maxOccurs="unbounded" type="ns0:p_ab_land_dep_info" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_ab_destinarion_info" type="ns0:p_ab_destinarion_info" />
+<xs:complexType name="p_ab_destinarion_info">
+<xs:sequence>
+<xs:element name="p_city_code" type="xs:string" />
+<xs:element name="p_city_name" type="xs:string" />
+<xs:element name="p_country_code" type="xs:string" />
+<xs:element name="p_country_name" type="xs:string" />
+<xs:element name="p_destination_code" type="xs:string" />
+<xs:element name="p_destination_name" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_ab_land_dep_info" type="ns0:p_ab_land_dep_info" />
+<xs:complexType name="p_ab_land_dep_info">
+<xs:sequence>
+<xs:element name="p_dep_city_code" type="xs:string" />
+<xs:element name="p_dep_city_name" type="xs:string" />
+<xs:element name="p_dep_country_code" type="xs:string" />
+<xs:element name="p_dep_country_name" type="xs:string" />
+<xs:element name="p_dep_dest_code" type="xs:string" />
+<xs:element name="p_dep_dest_name" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+<xs:schema xmlns:stn_77="http://request.dto.search_common.ds.hankyu_travel.com/xsd" targetNamespace="http://request.dto.search_common.ds.hankyu_travel.com/xsd" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+<xs:element name="special" type="stn_77:special" />
+<xs:complexType name="special">
+<xs:sequence>
+<xs:element name="p_special_request" maxOccurs="unbounded" type="ns0:p_special_request" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+<xs:element name="p_special_request" type="ns0:p_special_request" />
+<xs:complexType name="p_special_request">
+<xs:sequence>
+<xs:element name="p_id" type="xs:string" />
+<xs:element name="p_divide" type="xs:string" />
+<xs:element name="p_hei" type="xs:string" />
+<xs:element name="p_course_id" type="xs:string" />
+<xs:element name="p_parameter" type="xs:string" />
+<xs:element name="p_naigai" type="xs:string" />
+<xs:element name="p_departure_request" type="xs:string" />
+<xs:element name="p_destination_request" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+<xs:schema xmlns:ns="http://service.search.ds.hankyu_travel.com/xsd" xmlns:stn_88="http://response.dto.search_common.ds.hankyu_travel.com/xsd" xmlns:stn_87="http://request.dto.search_common.ds.hankyu_travel.com/xsd" targetNamespace="http://service.search.ds.hankyu_travel.com/xsd" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+<xs:import namespace="http://request.dto.search_common.ds.hankyu_travel.com/xsd" />
+<xs:import namespace="http://response.dto.search_common.ds.hankyu_travel.com/xsd" />
+<xs:element name="searchSpecial">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="requestDto" type="stn_87:special" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="searchSpecialResponse">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="return" type="stn_88:special" />
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+</wsdl:types>
+<wsdl:message name="searchSpecialMessage">
+<wsdl:part element="ns2:searchSpecial" name="part1" />
+</wsdl:message>
+<wsdl:message name="searchSpecialResponse">
+<wsdl:part element="ns2:searchSpecialResponse" name="part1" />
+</wsdl:message>
+<wsdl:portType name="WSSearchSpecialServicePortType">
+<wsdl:operation name="searchSpecial">
+<wsdl:input message="axis2:searchSpecialMessage" />
+<wsdl:output message="axis2:searchSpecialResponse" />
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="WSSearchSpecialServiceSOAP11Binding" type="axis2:WSSearchSpecialServicePortType">
+<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+<wsdl:operation name="searchSpecial">
+<soap:operation style="document" soapAction="urn:searchSpecial" />
+<wsdl:input>
+<soap:body use="literal" namespace="http://ws.apache.org/axis2" />
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal" namespace="http://ws.apache.org/axis2" />
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="WSSearchSpecialServiceSOAP12Binding" type="axis2:WSSearchSpecialServicePortType">
+<soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+<wsdl:operation name="searchSpecial">
+<soap12:operation style="document" soapAction="urn:searchSpecial" />
+<wsdl:input>
+<soap12:body use="literal" namespace="http://ws.apache.org/axis2" />
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal" namespace="http://ws.apache.org/axis2" />
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="WSSearchSpecialServiceHttpBinding" type="axis2:WSSearchSpecialServicePortType">
+<http:binding verb="POST" />
+<wsdl:operation name="searchSpecial">
+<http:operation location="searchSpecial" />
+<wsdl:input>
+<mime:content type="text/xml" />
+</wsdl:input>
+<wsdl:output>
+<mime:content type="text/xml" />
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="WSSearchSpecialService">
+<wsdl:port binding="axis2:WSSearchSpecialServiceSOAP11Binding" name="WSSearchSpecialServiceSOAP11port0">
+<soap:address location="http://sr.hankyu-travel.com/s/services/WSSearchSpecialService" />
+</wsdl:port>
+<wsdl:port binding="axis2:WSSearchSpecialServiceSOAP12Binding" name="WSSearchSpecialServiceSOAP12port0">
+<soap12:address location="http://sr.hankyu-travel.com/s/services/WSSearchSpecialService" />
+</wsdl:port>
+<wsdl:port binding="axis2:WSSearchSpecialServiceHttpBinding" name="WSSearchSpecialServiceHttpport0">
+<http:address location="http://sr.hankyu-travel.com/s/rest/WSSearchSpecialService" />
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>

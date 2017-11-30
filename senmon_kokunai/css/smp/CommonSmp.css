@@ -1,0 +1,216 @@
+/* CSS Document */
+/* レスポンシブのCommonになる予定です */
+
+/*----------------------------------初期設定----------------------------------*/
+
+/*---------------
+	書式のクリア
+-----------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, img, fieldset, form, label, legend, caption, tbody, tfoot, thead {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	margin:0;
+	padding:0;
+}
+
+a{
+	color:#0066cc;
+	text-decoration:none;
+}
+a:visited{
+	color:#9933cc;
+	text-decoration:none;
+}
+a:hover{
+	color:#ff9933;
+	text-decoration:underline;
+}
+
+/*----------------------------------全ページ共通----------------------------------*/
+html{ font-size: 10px; }
+body{
+	font-family:"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro", "メイリオ","Meiryo", "ＭＳ Ｐゴシック","MS PGothic", sans-serif;
+	font-size: 12px; font-size: 1.2rem;
+	line-height: 140%;
+	color:#4c4c4c;
+}
+
+input, button, select {
+	font-size: 12px; font-size: 1.2rem;
+}
+
+/*フロート対策一式*/
+.OnFLeft{
+	float:left;
+}
+.OnFRight{
+	float:right;
+}
+.FClear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*オーバーレイ用*/
+.overlay{
+	background-color:#FFFFFF;
+	opacity:0.8;
+	position:absolute;
+	filter:alpha(opacity=80);
+	top:0;
+	left:0;
+	z-index:100;
+}
+.overlayOpa{
+	background-color:#FFFFFF;
+	opacity:1;
+	position:absolute;
+	filter:alpha(opacity=100);
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+/*メッセージボックス*/
+.MesBox{
+	position:absolute;
+	top:50%;
+	left:50%;
+	z-index:200;
+}
+/*  ######################################### ここまで 初期設定 #########################################  */
+
+
+
+/*最小単位で非表示一式*/
+.Tagline, .Menu, .HdSrch, .HacchiCng, .GlobalNavi, .FreeSpace{
+	display:none;
+}
+.UpPageBlock, .FooterAll .AnchorBox, .Footer, .CopyL{
+	display:none;
+}
+
+/*========== ヘッダ ==========*/
+.Logo{
+	text-align:center;
+}
+.Logo img{
+	margin-left:0px;
+}
+.HdAll{
+	border-bottom:2px solid #0099FF;
+	margin-bottom:5px;
+}
+.Header{
+	position:relative;
+}
+/* パンくず */
+.AnchorBox{
+	display:none;/*やっぱり非表示にする*/
+	margin:10px; margin:1rem;
+	padding-left: 10px;
+	background: url(/sharing/images/header_footer.png) no-repeat;
+	background-position: -1150px -1070px;
+}
+.AnchorBox>p{
+	display:inline-block;
+}
+.AnchorBox .MySelf{
+}
+
+/*========== コンテンツ ==========*/
+.CtsMainBox{
+	margin:0 10px; margin:0 1rem;
+}
+
+
+/*========== フッタ ==========*/
+.CopyR{
+	text-align:center;
+	margin-top:10px; margin-top:1rem;
+	padding-top:5px; padding-top:.5rem;
+	padding-bottom:5px; padding-bottom:.5rem;
+	font-size: 10px; font-size: 1rem;
+	border-top:2px solid #0099FF;
+}
+.CopyR a, .CopyR a:visited, .CopyR a:hover, .CopyR a:active{
+	color:#fff;
+	text-decoration:none;
+}
+
+
+/*  ######################################### 2014 リニューアル後 #########################################  */
+
+/*最小単位で非表示一式*/
+.tgline, .headerCtsBox01, .slectAreaBox, .headerSrchBox, .gBtnBox, .gBtnResBox, .breadcrumb{
+	display:none;
+}
+.ftrAncDtxtBox, .footer, .ftrInfo, .ftrTagline{
+	display:none;
+}
+
+/*========== ヘッダ ==========*/
+.logo{
+	text-align:center;
+}
+.logo img{
+	margin-left:0px;
+}
+.header{
+	border-bottom:2px solid #0099FF;
+	margin-bottom:5px;
+}
+
+/*========== フッタ ==========*/
+.copy {
+	text-align:center;
+	margin-top:10px; margin-top:1rem;
+	padding-top:5px; padding-top:.5rem;
+	padding-bottom:5px; padding-bottom:.5rem;
+	font-size: 10px; font-size: 1rem;
+	border-top:2px solid #0099FF;
+}
+.copy a, .copy a:visited, .copy a:hover, .copy a:active{
+	color:#666;
+	text-decoration:none;
+}
+
+.change-start-point.fixed{
+	position: fixed;
+    top: 0;
+    right: 0px;
+    width: 236px;
+    z-index: 100;
+    margin-right: 0px;
+}
+
+.color-red {
+    color: #cc0000;
+}

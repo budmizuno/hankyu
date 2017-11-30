@@ -1,0 +1,68 @@
+q_category	name	caption	guide_url	guide_image1	guide_image_alt1	sort
+表示ページ	国名	キャプション	ガイドページURL	ガイド画像	ガイド画像ALT	順番
+北海道	北海道	大自然に囲まれた広大な大地、北海道。白銀に覆われた季節はもちろん、新緑が輝く夏もおすすめです。	http://www.hankyu-travel.com/guide/hokkaido/	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00021-EBP09-07648.jpg		1
+北海道	札幌	北の大地の玄関口、札幌。YOSAKOIソーラン祭りやさっぽろ雪まつりなどイベントも盛りだくさんです。	http://www.hankyu-travel.com/guide/hokkaido/sapporo.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP15_-01154.jpg		2
+北海道	函館	いち早く世界に開かれた港町・函館は、レトロな赤レンガ倉庫や夜景の美しい函館山など見所がいっぱいです。	http://www.hankyu-travel.com/guide/hokkaido/hakodate.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00699-BL13--00014.jpg		3
+北海道	小樽	ガラス工芸の街・小樽。夜間は小樽運河にガス灯がともり、ライトアップされる倉庫群はロマンチックです。	http://www.hankyu-travel.com/guide/hokkaido/center.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00056-ALLUP-44874.jpg		4
+北海道	旭山動物園	日本最北の動物園ながらユニークな催しで大人気の動物園。動物たちの生き生きとした姿を見に行こう♪	http://www.hankyu-travel.com/guide/hokkaido/hiking.php			
+北海道	登別			http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL15_-00348.jpg		5
+北海道	富良野・美瑛	広い夏の空に、色とりどりの花が鮮やかに咲き揃う風景が感動的な富良野・美瑛。ラベンダー畑や美瑛の丘は必見です。	http://www.hankyu-travel.com/guide/hokkaido/north.php			
+北海道	稚内			http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00312-ALLUP-40706.jpg		6
+北海道	利尻島・礼文島	湿性植物や高山植物が咲き乱れる利尻島・礼文島。花の浮島ベストシーズンに、絶景をめざして登山もおすすめ。	http://www.hankyu-travel.com/guide/hokkaido/rishiri.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL16_-00472.jpg		7
+北海道	知床		http://www.hankyu-travel.com/guide/hokkaido/shiretoko.php			8
+北海道	ニセコ					
+北海道	帯広・十勝					
+東北	青森	本州の最北端にある青森。世界遺産の白神山地や奥入瀬渓流など、豊かな自然に恵まれています。	http://www.hankyu-travel.com/guide/tohoku/aomori.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL15_-00399.jpg		1
+東北	岩手	童話作家、宮沢賢治を育んだ岩手。県庁所在地の盛岡は、わんこそばや冷麺などの食文化でも知られます。	http://www.hankyu-travel.com/guide/tohoku/iwate.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP16_-03595.jpg		2
+東北	宮城	城下町として繁栄した宮城・仙台では、伊達家ゆかりの史跡めぐりや牛タンなどのグルメが楽しめます。	http://www.hankyu-travel.com/guide/tohoku/miyagi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00021-EBP10-03787.jpg		3
+東北	秋田	7割が森林という「森の国」秋田。世界自然遺産にも登録された白神山地や大曲で行われる全国花火競技大会は必見です。	http://www.hankyu-travel.com/guide/tohoku/akita.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL13_-00044.jpg		4
+東北	山形	桜の名所の鶴岡公園や、樹氷やスキーの基地として賑わう蔵王など、山形では季節によって様々な景観を楽しむことができます。	http://www.hankyu-travel.com/guide/tohoku/yamagata.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP15_-06750.jpg		5
+東北	福島	磐梯山や安達太良山、猪苗代湖などの豊かな自然に恵まれた福島。城下町の風情を色濃く残す歴史都市も多く点在しています。	http://www.hankyu-travel.com/guide/tohoku/fukushima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL15_-00697.jpg		6
+関東	東京	東京スカイツリー®をはじめ多くの観光地を楽しめるのはもちろん、グルメシティ・東京ではあらゆる「うまいもの」が味わえます。	http://www.hankyu-travel.com/guide/tokyo/	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00032-EBP08-04886.jpg		1
+関東	神奈川	風光明媚な温泉リゾートの箱根、歴史に彩られた古都鎌倉など、神奈川には多くの観光地があります。	http://www.hankyu-travel.com/guide/kanto/kanagawa.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00021-EBP10-02700.jpg		2
+関東	千葉	人気のマザー牧場や温暖な地・南房総など、千葉にはテーマパークから自然まで観光スポットが豊富です。	http://www.hankyu-travel.com/guide/kanto/chiba.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-SP15_-11972.jpg		3
+関東	埼玉	「彩の国」埼玉。大都市の景観を持ちながら自然が色濃く残る地域もあり、四季の彩りや伝統文化を楽しむことができます。	http://www.hankyu-travel.com/guide/kanto/saitama.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00699-EBP16-00010.jpg		4
+関東	茨城	全国有数の梅の名所として名高い偕楽園をはじめ、茨城は御三家・三名園・三名瀑の三づくしです。	http://www.hankyu-travel.com/guide/kanto/ibaraki.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP13_-02679.jpg		5
+関東	栃木	世界遺産の日光東照宮や四季折々の花々が楽しめるあしかがフラワーパークなど栃木は見どころ豊富です。	http://www.hankyu-travel.com/guide/kanto/tochigi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00410-webbn-17339.jpg		6
+関東	群馬	大自然の景観と全国屈指の名湯満喫できる群馬。世界遺産に登録された富岡製糸場もあります。	http://www.hankyu-travel.com/guide/kanto/gunma.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP12_-00414.jpg		7
+中部・北陸	愛知	尾張徳川家と「ものづくり王国」の地・愛知。ひつまぶしや小倉トーストなどの名古屋めしも見逃せません。	http://www.hankyu-travel.com/guide/tokai/aichi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00032-EBP09-10412.jpg		1
+中部・北陸	岐阜	独特の美しい景観をつくる世界遺産・白川郷は人気の観光地。北アルプスなどの雄大な山々に抱かれた飛騨も見逃せません。	http://www.hankyu-travel.com/guide/tokai/gifu.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP14_-03527.jpg		2
+中部・北陸	三重	世界遺産の熊野古道や伊勢神宮、伊賀流忍者など多くの歴史文化が残る三重。食材の宝庫であることから「御食国」とも呼ばれています。	http://www.hankyu-travel.com/guide/tokai/mie.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00056-ALLUP-00647.jpg		3
+中部・北陸	山梨	南アルプスや八ヶ岳に囲まれ、雄大な自然を存分に満喫できる山梨。ワイナリー見学やぶどう狩りも楽しむことができます。	http://www.hankyu-travel.com/guide/koshinetsu/yamanashi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-SP13_-10874.jpg		4
+中部・北陸	長野	北・中央・南アルプスが連なる「日本の屋根」長野。軽井沢や上高地など日本屈指の山岳・高原のリゾートが点在しています。	http://www.hankyu-travel.com/guide/koshinetsu/nagano.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP16_-06575.jpg		5
+中部・北陸	静岡	波穏やかな駿河湾が広がり、一面の茶畑の彼方に霊峰富士を仰ぐ風光明媚な静岡。冬も温暖な伊豆半島は温泉地としても有名です。	http://www.hankyu-travel.com/guide/tokai/shizuoka.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP15_-07269.jpg		6
+中部・北陸	新潟	「米どころ」として知られる新潟。上杉謙信をはじめ、歴史に名をとどめる偉人たちの史跡が点在しています。	http://www.hankyu-travel.com/guide/koshinetsu/niigata.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-SP13_-06152.jpg		7
+中部・北陸	富山	北アルプスを横断する立山黒部アルペンルートは富山観光のハイライト。雪の大谷や巨大な黒部ダムなど絶景の連続です。	http://www.hankyu-travel.com/guide/chubu-hokuriku/toyama.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00056-ALLUP-20429.jpg		8
+中部・北陸	石川	加賀藩前田家百万石の城下町として繁栄した金沢。能登半島の輪島で朝市を訪れるのもおすすめです。	http://www.hankyu-travel.com/guide/chubu-hokuriku/ishikawa.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00051-BP14--00034.jpg		9
+中部・北陸	福井	日本海の雄大な自然が味わえる福井。東尋坊や越前岬など、越前加賀海岸国定公園に指定された景勝の地が続きます。	http://www.hankyu-travel.com/guide/chubu-hokuriku/fukui.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00410-BL12--00025.jpg		10
+近畿	大阪	大阪城などの名所や海遊館をはじめとしたテーマパーク・遊園地など、大阪にはおもしろエリアが目白押しです。	http://www.hankyu-travel.com/guide/kansai/osaka.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00133-SP15-00003.jpg		1
+近畿	京都	祇園祭や大文字五山送り火など古式ゆかしい年中行事とともに四季を通じて楽しめる古都です。	http://www.hankyu-travel.com/guide/kansai/kyoto.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-AM16_-01155.jpg		2
+近畿	兵庫	神戸から足を延ばせば世界遺産の姫路城、日本海側には外湯めぐりで有名な城崎温泉など、旅の魅力に事欠かない兵庫です。	http://www.hankyu-travel.com/guide/kansai/hyogo.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP15_-06248.jpg		3
+近畿	奈良	古くから桜の名所として名高い吉野山、全山燃え立つツツジに覆われる葛城山など、奈良は美しい自然の景観に恵まれています。	http://www.hankyu-travel.com/guide/kansai/nara.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL16_-00299.jpg		4
+近畿	滋賀	琵琶湖が満々と水をたたえる滋賀。周囲は湖南、湖東、湖北、湖西と呼ばれ、それぞれに異なる表情があります。	http://www.hankyu-travel.com/guide/kansai/shiga.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL16_-00122.jpg		5
+近畿	和歌山	和歌山には熊野三山へと人々が目指した信仰の道・熊野古道と弘法大師空海が開いた高野山、世界遺産の2つの聖地があります。	http://www.hankyu-travel.com/guide/kansai/wakayama.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00032-EBP10-04476.jpg		6
+山陰・山陽	岡山	歴史と文化に彩られた自然豊かな場所、岡山。倉敷美観地区や日本三名園の岡山後楽園、瀬戸大橋など見どころ満載です。	http://www.hankyu-travel.com/guide/saninsanyo/okayama.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL15_-00666.jpg		1
+山陰・山陽	広島	瀬戸内海に抱かれ自然美豊かな広島。広島市の原爆ドームと宮島の嚴島神社、2つの世界遺産があり、世界的にも注目されてます。	http://www.hankyu-travel.com/guide/saninsanyo/hiroshima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-EBL12-00008.jpg		2
+山陰・山陽	山口	瀬戸内海と日本海に抱かれ本州最西端に位置する山口。錦帯橋や壇の浦古戦場址、巌流島など名所旧跡に事欠きません。	http://www.hankyu-travel.com/guide/saninsanyo/yamaguchi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00266-webph-01162.jpg		3
+山陰・山陽	鳥取	砂丘と名峰、アニメでも人気の鳥取。雄大な自然の景観に恵まれ、見どころが目白押しです。	http://www.hankyu-travel.com/guide/saninsanyo/tottori.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP12_-01597.jpg		4
+山陰・山陽	島根	古代ロマンと城下町、離島の荒々しい自然が織りなす島根。縁結びで有名な出雲大社があります。	http://www.hankyu-travel.com/guide/saninsanyo/shimane.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-ALLUP-46479.jpg		5
+四国	香川	日本三大水城に数えられる高松城や江戸時代の大名庭園・栗林公園など城下町の風情を残しています。	http://www.hankyu-travel.com/guide/chuushikoku/kagawa.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00140-webph-01985.jpg		1
+四国	徳島	大塚国際美術館や大歩危峡、大鳴門橋、四国霊場1番札所・霊山寺など、見どころ満載です。	http://www.hankyu-travel.com/guide/chuushikoku/tokushima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP16_-09587.jpg		2
+四国	愛媛	大樹海に抱かれた面河渓や四国カルストなどの大自然の景観が広がる愛媛。小説『坊っちゃん』にも登場する道後温泉も有名です。	http://www.hankyu-travel.com/guide/chuushikoku/ehime.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00140-webph-01812.jpg		3
+四国	高知	坂本龍馬が生きた町、高知。清流四万十川や黒潮の海が洗う足摺岬、室戸岬の雄大な景観が広がっています。	http://www.hankyu-travel.com/guide/chuushikoku/kochi.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00021-EBP10-02383.jpg		4
+九州	福岡	東京よりも釜山やソウルに近く、アジアへ開かれた玄関口、福岡。屋台から話題のニュースポットまで、新旧の魅力がいっぱい。	http://www.hankyu-travel.com/guide/kyushu/fukuoka.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00140-webph-01815.jpg		1
+九州	佐賀	古くから大陸や半島との交流が深かった佐賀。吉野ヶ里遺跡や焼き物が盛んな有田・伊万里など、日本文化のルーツが見えます。	http://www.hankyu-travel.com/guide/kyushu/saga.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP15_-04677.jpg		2
+九州	長崎	古くから大陸との懸け橋だった長崎。今も残る古い教会や洋館、極彩色の中国寺院が異国情緒を放っています。	http://www.hankyu-travel.com/guide/kyushu/nagasaki.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL14_-00491.jpg		3
+九州	熊本	世界最大級の複式火山・阿蘇や、キリシタンの哀史を秘めた天草の島々等、雄大な景色を堪能できます。	http://www.hankyu-travel.com/guide/kyushu/aso.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP14_-03606.jpg		4
+九州	大分	別府と由布院、全国屈指の温泉地を抱える大分。紅葉の名所・耶馬渓で知られる山紫水明の地でもあります。	http://www.hankyu-travel.com/guide/kyushu/ooita.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-SP12_-08452.jpg		5
+九州	宮崎	古くは「日向国」と呼ばれた宮崎。高千穂や霧島連山の麓には、高千穂峡やえびの高原など、スケールの大きな自然が広がります。	http://www.hankyu-travel.com/guide/kyushu/takachiho.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP17_-01373.jpg		6
+九州	鹿児島	世界自然遺産の島・屋久島や亜熱帯の深い森が広がる奄美大島など、遥か洋上に浮かぶ島々も鹿児島です。	http://www.hankyu-travel.com/guide/kyushu/sakurajima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00151-webph-02036.jpg		7
+沖縄	沖縄	沖縄は首里城跡をはじめ、琉球文化を彷彿させる9カ所の遺跡が世界遺産に登録されています。	http://www.hankyu-travel.com/guide/okinawa/	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP12_-02482.jpg		
+沖縄	那覇	琉球文化や海の青さに魅せられたら、街歩きは大都市・那覇におまかせ。南国の異文化タウンを満喫できます。	http://www.hankyu-travel.com/guide/okinawa/naha.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BP14_-03319.jpg		1
+沖縄	恩納村					
+沖縄	名護					
+沖縄	沖縄美ら海水族館	巨大なジンベエザメやナンヨウマンタが悠々と泳ぐ沖縄美ら海水族館は、沖縄本島屈指の人気観光スポットです。	http://www.hankyu-travel.com/guide/okinawa/hokubu.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-webbn-16406.jpg		2
+沖縄	石垣島	サンゴ礁の海に囲まれ日本の最南端に連なる八重山諸島の主島・石垣島。一年の平均気温が24度という温暖な島です。	http://www.hankyu-travel.com/guide/okinawa/ishigakijima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-EBL13-00004.jpg		3
+沖縄	西表島	島の90％が亜熱帯の原生林に覆われた西表島。森に生息する珍しい動植物たちやマングローブのジャングルなど、大自然に圧倒されます。	http://www.hankyu-travel.com/guide/okinawa/iriomotejima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00156-ewbbn-00000.jpg		4
+沖縄	宮古島・久米島	沖縄の中でも特に海のキレイさで知られる宮古島。自然の造形や日の出から夕日まで、海の様々な表情を満喫できます。	http://www.hankyu-travel.com/guide/okinawa/miyakojima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL17_-00059.jpg		5
+沖縄	与那国島・波照間島	海底遺跡で有名な日本最西端の島・与那国島、南十字星が見えることで有名な日本最南端の島・波照間島など個性派揃いの島々です。	http://www.hankyu-travel.com/guide/okinawa/iriomotejima.php	http://x.hankyu-travel.com/cms_photo_image/image_search_kikan4.php?p_photo_mno=00000-BL14_-00517.jpg		6

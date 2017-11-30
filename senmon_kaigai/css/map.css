@@ -1,0 +1,815 @@
+@charset "UTF-8";
+
+.wr-banner3 {
+	background-color: #ebf0f1;
+}
+
+.wr-banner2 .right {
+	background-color: #ebf0f1;
+}
+
+
+.wr-banner2 .right .map li {
+	position: absolute;
+}
+
+.AAS .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_Asia.png); }
+.AAS-CN_MN .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_China.png); }
+.AAS-KR .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Korea.png); }
+.AAS-TW .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Taiwan.png); }
+.AAS-HK-HKG .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_HongKong.png); }
+.AAS-MO-MFM .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Macau.png); }
+.AAS-TH .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Thailand.png); }
+.AAS-SG .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Singapore.png); }
+.AAS-MY .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Malaysia.png); }
+.AAS-PH .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Philippines.png); }
+.AAS-ID_BN .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Indonesia.png); }
+.AAS-VN_LA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Vietnam.png); }
+.AAS-KH .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Cambodia.png); }
+.AAS-LA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Laos.png); }
+.AAS-IN_BT_PK .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_India.png); }
+.AAS-NP .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Nepal.png); }
+.AAS-MM .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Myanmar.png); }
+.AAS-LK .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_SriLanka.png); }
+.AAS-MV .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Maldives.png); }
+.BEU .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_Europe.png); }
+.BEU-FR_MC .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_France.png); }
+.BEU-GB .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_England.png); }
+.BEU-IT_SM_VT .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Italy.png); }
+.BEU-IE .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Ireland.png); }
+.BEU-DE .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Germany.png); }
+.BEU-ES .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Spain.png); }
+.BEU-MT_CY .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Malta.png); }
+.BEU-GR .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Greece.png); }
+.BEU-CH_LI .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Switzerland.png); }
+.BEU-NL .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Netherlands.png); }
+.BEU-BE_LU .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Belgium.png); }
+.BEU-PT .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Portugal.png); }
+.BEU-FI_NO_SE_DK_IS .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Scandinavia.png); }
+.BEU-DK .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Denmark.png); }
+.BEU-NO .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Norway.png); }
+.BEU-SE .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Sweden.png); }
+.BEU-FI .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Finland.png); }
+.BEU-IS .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Iceland.png); }
+.BEU-RU .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Russia.png); }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_EasternEuropeCentralEurope.png); }
+.BEU-AT .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Austria.png); }
+.BEU-CZ .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_CzechRepublic.png); }
+.BEU-SK .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Slovakia.png); }
+.BEU-HU .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Hungary.png); }
+.BEU-PL .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Poland.png); }
+.BEU-RO .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Romania.png); }
+.BEU-BG .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Bulgaria.png); }
+.BEU-HR_SI .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_CroatiaSlovenia.png); }
+.BEU-EE_LV_LT .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_BalticStates.png); }
+.CAF .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_Africa.png); }
+.CAF-EG .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Egypt.png); }
+.CAF-TN .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Tunisia.png); }
+.CAF-MA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Morocco.png); }
+.CAF-ZA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_SouthAfrica.png); }
+.CAF-KE_UG .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Kenya.png); }
+.CAF-BW_NA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Botswana.png); }
+.CAF-ZW_ZM .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_ZimbabweandZambia.png); }
+.CAF-TZ .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Tanzania.png); }
+.DNU .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_NorthAmerica.png); }
+.DNU-US .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_America.png); }
+.DNU-CA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Canada.png); }
+.FOC-AU_NZ .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_Oceania.png); }
+.FOC-AU .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Australia.png); }
+.FOC-NZ .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_NewZealand.png); }
+.FOC-PF_NC_FJ_PG_VU .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_SouthPacific.png); }
+.FOC-PF .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Tahiti.png); }
+.FOC-NC_PG_VU .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_NewCaledonia.png); }
+.FOC-FJ .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Fiji.png); }
+.MNA .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_Micronesia.png); }
+.MNA-GU_PW .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Guam.png); }
+.MNA-SP .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Saipan.png); }
+.ESU .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_LatinAmerica.png); }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Mexico.png); }
+.ESU-BR .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Brazil.png); }
+.ESU-EC .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Ecuador.png); }
+.ESU-VE_CO_GY .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Venezuela.png); }
+.ESU-PE_BO .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Peru.png); }
+.ESU-AR_CL_PY_UY .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Argentina.png); }
+.CHT .wr-banner3 { background-image: url(/attending/senmon_kaigai/images/map/map_MiddleEast.png); }
+.CHT-TR .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Turkey.png); }
+.CHT-JO .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Jordan.png); }
+.CHT-IL .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Israel.png); }
+.CHT-AE .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_UnitedArabEmirates.png); }
+.CHT-UZ .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Uzbekistan.png); }
+.CHT-IR .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Iran.png); }
+.HWI .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Hawaii.png); }
+.HWI-HA-804_HNL .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Oahu(Honolulu).png); }
+.HWI-HA-803 .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_IslandofHawaii.png); }
+.HWI-HA-802 .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Maui.png); }
+.HWI-HA-813 .wr-banner2 .right { background-image: url(/attending/senmon_kaigai/images/map/map_Kauai.png); }
+
+
+
+
+
+
+
+
+
+.AAS .map li.china { left: 185px; top: 70px; }
+.AAS-CN_MN .map li.beijing { left: 279px; top: 111px; }
+.AAS-CN_MN .map li.shanghai { left: 323px; top: 161px; }
+.AAS-CN_MN .map li.dalian { left: 317px; top: 132px; }
+.AAS-CN_MN .map li.hangzhou { left: 289px; top: 196px; }
+.AAS-CN_MN .map li.chengdu { left: 189px; top: 158px; }
+.AAS-CN_MN .map li.xian { left: 248px; top: 133px; }
+.AAS-CN_MN .map li.jiuzhaigou { left: 132px; top: 140px; }
+.AAS-CN_MN .map li.tibet { left: 101px; top: 176px; }
+.AAS-CN_MN .map li.wuxi { left: 256px; top: 158px; }
+.AAS-CN_MN .map li.suzhou { left: 282px; top: 178px; }
+.AAS-CN_MN .map li.dunhuang { left: 136px; top: 114px; }
+.AAS-CN_MN .map li.urumqi_susu { left: 107px; top: 77px; }
+.AAS-CN_MN .map li.guilin { left: 232px; top: 219px; }
+.AAS-CN_MN .map li.turpan { left: 122px; top: 94px; }
+.AAS-CN_MN .map li.leshan { left: 213px; top: 176px; }
+.AAS .map li.korea { left: 406px; top: 88px; }
+.AAS-KR .map li.seoul { left: 195px; top: 70px; }
+.AAS-KR .map li.busan { left: 290px; top: 195px; }
+.AAS-KR .map li.jeju { left: 150px; top: 265px; }
+.AAS-KR .map li.gyeongju { left: 295px; top: 177px; }
+.AAS-KR .map li.suwon { left: 214px; top: 106px; }
+.AAS-KR .map li.buyeo { left: 193px; top: 142px; }
+.AAS-KR .map li.haeinsatemple { left: 208px; top: 180px; }
+.AAS-KR .map li.gongju { left: 138px; top: 142px; }
+.AAS-KR .map li.all_states { left: 193px; top: 160px; }
+.AAS-KR .map li.daegu { left: 262px; top: 160px; }
+.AAS-KR .map li.incheon { left: 185px; top: 88px; }
+.AAS-KR .map li.yuyang_hot_spring { left: 188px; top: 125px; }
+.AAS-KR .map li.zhenhai { left: 220px; top: 195px; }
+.AAS-KR .map li.gwangju { left: 175px; top: 210px; }
+.AAS .map li.taiwan { left: 365px; top: 148px; }
+.AAS-TW .map li.taipei { left: 204px; top: 88px; }
+.AAS-TW .map li.taichung { left: 145px; top: 139px; }
+.AAS-TW .map li.tainan { left: 142px; top: 194px; }
+.AAS-TW .map li.kaohsiung { left: 143px; top: 227px; }
+.AAS-TW .map li.nine { left: 275px; top: 79px; }
+.AAS-TW .map li.sufficient { left: 241px; top: 107px; }
+.AAS-TW .map li.keelung { left: 205px; top: 70px; }
+.AAS-TW .map li.freshwater { left: 144px; top: 53px; }
+.AAS-TW .map li.taoyuan { left: 147px; top: 103px; }
+.AAS-TW .map li.willow { left: 211px; top: 53px; }
+.AAS-TW .map li.taito { left: 194px; top: 210px; }
+.AAS-TW .map li.threegorges { left: 187px; top: 122px; }
+.AAS-TW .map li.beitouonsen { left: 109px; top: 76px; }
+.AAS-TW .map li.crow { left: 230px; top: 144px; }
+.AAS .map li.hongkong { left: 306px; top: 199px; }
+.AAS-HK-HKG .map li.hongkongisland { left: 238px; top: 212px; }
+.AAS-HK-HKG .map li.kowloon { left: 226px; top: 167px; }
+.AAS-HK-HKG .map li.lantauisland { left: 79px; top: 205px; }
+.AAS .map li.macau { left: 263px; top: 162px; }
+.AAS .map li.thailand { left: 170px; top: 221px; }
+.AAS-TH .map li.bangkok { left: 195px; top: 139px; }
+.AAS-TH .map li.phuket { left: 106px; top: 219px; }
+.AAS-TH .map li.ayutthaya { left: 193px; top: 120px; }
+.AAS-TH .map li.chiangmai { left: 124px; top: 82px; }
+.AAS-TH .map li.pattaya { left: 177px; top: 157px; }
+.AAS-TH .map li.samui { left: 166px; top: 201px; }
+.AAS-TH .map li.kanchanaburi { left: 76px; top: 119px; }
+.AAS-TH .map li.phiphiislands { left: 125px; top: 140px; }
+.AAS-TH .map li.kohkood { left: 202px; top: 175px; }
+.AAS-TH .map li.sukhothai { left: 149px; top: 99px; }
+.AAS-TH .map li.maesai { left: 167px; top: 48px; }
+.AAS-TH .map li.chiangrai { left: 173px; top: 65px; }
+.AAS .map li.singapore { left: 206px; top: 360px; }
+.AAS-SG .map li.singapore { left: 164px; top: 182px; }
+.AAS-SG .map li.saintsauisland { left: 183px; top: 231px; }
+.AAS .map li.malaysia { left: 255px; top: 324px; }
+.AAS-MY .map li.kualalumpur { left: 117px; top: 156px; }
+.AAS-MY .map li.penang { left: 39px; top: 98px; }
+.AAS-MY .map li.melaka { left: 35px; top: 205px; }
+.AAS-MY .map li.kotakinabalu { left: 291px; top: 121px; }
+.AAS-MY .map li.johorbahru { left: 133px; top: 206px; }
+.AAS-MY .map li.cameronhighlands { left: 88px; top: 137px; }
+.AAS-MY .map li.langkawi { left: 37px; top: 78px; }
+.AAS-MY .map li.portkaelan { left: 28px; top: 173px; }
+.AAS-MY .map li.putrajaya { left: 120px; top: 187px; }
+.AAS-MY .map li.bukittemera { left: 28px; top: 121px; }
+.AAS .map li.philippines { left: 369px; top: 251px; }
+.AAS-PH .map li.cebu { left: 175px; top: 184px; }
+.AAS-PH .map li.mactanisland { left: 246px; top: 183px; }
+.AAS-PH .map li.manila { left: 186px; top: 120px; }
+.AAS-PH .map li.boholisland { left: 220px; top: 204px; }
+.AAS-PH .map li.vigan { left: 154px; top: 70px; }
+.AAS-PH .map li.laoag { left: 170px; top: 53px; }
+.AAS-PH .map li.luzon { left: 191px; top: 88px; }
+.AAS .map li.asian-beach { left: 351px; top: 372px; }
+.AAS-ID_BN .map li.bali { left: 182px; top: 176px; }
+.AAS-ID_BN .map li.denpasar { left: 259px; top: 201px; }
+.AAS-ID_BN .map li.jimbaran { left: 209px; top: 238px; }
+.AAS-ID_BN .map li.nusadua { left: 112px; top: 128px; }
+.AAS-ID_BN .map li.kuta { left: 157px; top: 220px; }
+.AAS-ID_BN .map li.ubud { left: 265px; top: 169px; }
+.AAS-ID_BN .map li.yogyakarta { left: 33px; top: 185px; }
+.AAS-ID_BN .map li.seminyak { left: 134px; top: 203px; }
+.AAS-ID_BN .map li.sanur { left: 257px; top: 219px; }
+.AAS-ID_BN .map li.jakarta { left: 71px; top: 165px; }
+.AAS-ID_BN .map li.balikpapan { left: 179px; top: 147px; }
+.AAS .map li.vietnam { left: 269px; top: 290px; }
+.AAS-VN_LA .map li.hanoi { left: 190px; top: 48px; }
+.AAS-VN_LA .map li.hoian { left: 261px; top: 186px; }
+.AAS-VN_LA .map li.hochiminh { left: 224px; top: 236px; }
+.AAS-VN_LA .map li.danang { left: 260px; top: 150px; }
+.AAS-VN_LA .map li.mason { left: 207px; top: 167px; }
+.AAS-VN_LA .map li.hue { left: 185px; top: 145px; }
+.AAS-VN_LA .map li.mito { left: 176px; top: 252px; }
+.AAS-VN_LA .map li.bachchan { left: 199px; top: 71px; }
+.AAS-VN_LA .map li.nhatrang { left: 266px; top: 207px; }
+.AAS-VN_LA .map li.cut { left: 181px; top: 220px; }
+.AAS-VN_LA .map li.ninhbinh { left: 137px; top: 89px; }
+.AAS-VN_LA .map li.donghui { left: 199px; top: 123px; }
+.AAS-VN_LA .map li.haiphong { left: 234px; top: 91px; }
+.AAS-VN_LA .map li.sapa { left: 129px; top: 69px; }
+.AAS-VN_LA .map li.laocai { left: 93px; top: 50px; }
+.AAS .map li.cambodia { left: 187px; top: 256px; }
+.AAS-KH .map li.siemreap { left: 121px; top: 107px; }
+.AAS-KH .map li.sihanoukville { left: 140px; top: 219px; }
+.AAS-KH .map li.phnompenh { left: 186px; top: 187px; }
+.AAS .map li.laos { left: 154px; top: 185px; }
+.AAS-LA .map li.luangprabang { left: 140px; top: 101px; }
+.AAS-LA .map li.vientiane { left: 155px; top: 150px; }
+.AAS-LA .map li.bambien { left: 150px; top: 126px; }
+.AAS .map li.india { left: 20px; top: 187px; }
+.AAS-IN_BT_PK .map li.delhi { left: 150px; top: 84px; }
+.AAS-IN_BT_PK .map li.agra { left: 164px; top: 102px; }
+.AAS-IN_BT_PK .map li.jaipur { left: 43px; top: 102px; }
+.AAS-IN_BT_PK .map li.benares { left: 166px; top: 128px; }
+.AAS-IN_BT_PK .map li.buddhagaya { left: 259px; top: 133px; }
+.AAS-IN_BT_PK .map li.aurangabad { left: 144px; top: 182px; }
+.AAS-IN_BT_PK .map li.mumbai { left: 106px; top: 206px; }
+.AAS-IN_BT_PK .map li.udaipur { left: 46px; top: 132px; }
+.AAS-IN_BT_PK .map li.kochi { left: 132px; top: 249px; }
+.AAS-IN_BT_PK .map li.sarunat { left: 162px; top: 148px; }
+.AAS-IN_BT_PK .map li.madras { left: 197px; top: 229px; }
+.AAS-IN_BT_PK .map li.goa { left: 127px; top: 226px; }
+.AAS-IN_BT_PK .map li.darjeeling { left: 247px; top: 95px; }
+.AAS .map li.nepal { left: 86px; top: 112px; }
+.AAS-NP .map li.kathmandu { left: 149px; top: 174px; }
+.AAS-NP .map li.nagarcot { left: 256px; top: 173px; }
+.AAS-NP .map li.bhaktapur { left: 266px; top: 196px; }
+.AAS-NP .map li.pattern { left: 181px; top: 195px; }
+.AAS-NP .map li.pokhara { left: 132px; top: 146px; }
+.AAS .map li.myanmar { left: 127px; top: 150px; }
+.AAS-MM .map li.yangon { left: 174px; top: 208px; }
+.AAS-MM .map li.bago { left: 177px; top: 172px; }
+.AAS-MM .map li.bagan { left: 175px; top: 146px; }
+.AAS-MM .map li.mandalay { left: 186px; top: 122px; }
+.AAS-MM .map li.chaityey { left: 216px; top: 189px; }
+.AAS .map li.srilanka { left: 31px; top: 295px; }
+.AAS-LK .map li.sigiriya { left: 180px; top: 124px; }
+.AAS-LK .map li.candy { left: 261px; top: 168px; }
+.AAS-LK .map li.dambulla { left: 180px; top: 103px; }
+.AAS-LK .map li.negombo { left: 164px; top: 161px; }
+.AAS-LK .map li.polonnaruwa { left: 274px; top: 124px; }
+.AAS-LK .map li.anuradapura { left: 202px; top: 79px; }
+.AAS-LK .map li.colombo { left: 162px; top: 180px; }
+.AAS-LK .map li.pinauera { left: 188px; top: 210px; }
+.AAS-LK .map li.nuwaraeliia { left: 259px; top: 189px; }
+.AAS-LK .map li.goal { left: 204px; top: 249px; }
+.AAS .map li.maldives { left: 43px; top: 361px; }
+.AAS-MV .map li.mare { left: 221px; top: 125px; }
+.AAS-MV .map li.moldova { left: 210px; top: 168px; }
+.AAS-MV .map li.chisynov { left: 208px; top: 188px; }
+
+.BEU .map li.france { left: 60px; top: 250px; }
+.BEU-FR_MC .map li.paris { left: 200px; top: 105px; }
+.BEU-FR_MC .map li.montstmichel { left: 46px; top: 105px; }
+.BEU-FR_MC .map li.loire { left: 163px; top: 167px; }
+.BEU-FR_MC .map li.nice { left: 289px; top: 223px; }
+.BEU-FR_MC .map li.provence { left: 259px; top: 206px; }
+.BEU-FR_MC .map li.chamonix { left: 270px; top: 174px; }
+.BEU-FR_MC .map li.versailles { left: 163px; top: 127px; }
+.BEU-FR_MC .map li.carcassonne { left: 146px; top: 224px; }
+.BEU-FR_MC .map li.chartres { left: 163px; top: 146px; }
+.BEU-FR_MC .map li.rouen { left: 168px; top: 75px; }
+.BEU-FR_MC .map li.strasbourg { left: 277px; top: 99px; }
+.BEU-FR_MC .map li.avignon { left: 146px; top: 204px; }
+.BEU-FR_MC .map li.lourdes { left: 127px; top: 244px; }
+.BEU-FR_MC .map li.colmar { left: 273px; top: 120px; }
+.BEU-FR_MC .map li.marseille { left: 221px; top: 241px; }
+.BEU .map li.uk { left: -6px; top: 188px; }
+.BEU-GB .map li.london { left: 316px; top: 245px; }
+.BEU-GB .map li.lakedistrict { left: 193px; top: 141px; }
+.BEU-GB .map li.cotswolds { left: 112px; top: 225px; }
+.BEU-GB .map li.edinburgh { left: 186px; top: 102px; }
+.BEU-GB .map li.stratford-upon-avon { left: 190px; top: 201px; }
+.BEU-GB .map li.liverpool { left: 114px; top: 161px; }
+.BEU-GB .map li.chester { left: 120px; top: 179px; }
+.BEU-GB .map li.bath { left: 122px; top: 247px; }
+.BEU-GB .map li.stonehenge { left: 197px; top: 266px; }
+.BEU-GB .map li.oxford { left: 245px; top: 223px; }
+.BEU-GB .map li.windermere { left: 192px; top: 123px; }
+.BEU-GB .map li.manchester { left: 223px; top: 165px; }
+.BEU-GB .map li.windsor { left: 206px; top: 245px; }
+.BEU-GB .map li.birmingham { left: 231px; top: 182px; }
+.BEU-GB .map li.chippingcampden { left: 32px; top: 200px; }
+.BEU .map li.italy { left: 105px; top: 290px; }
+.BEU-IT_SM_VT .map li.roma { left: 192px; top: 141px; }
+.BEU-IT_SM_VT .map li.venezia { left: 190px; top: 84px; }
+.BEU-IT_SM_VT .map li.milano { left: 104px; top: 84px; }
+.BEU-IT_SM_VT .map li.firenze { left: 183px; top: 102px; }
+.BEU-IT_SM_VT .map li.napoli { left: 101px; top: 161px; }
+.BEU-IT_SM_VT .map li.capri { left: 198px; top: 210px; }
+.BEU-IT_SM_VT .map li.alberobello { left: 278px; top: 162px; }
+.BEU-IT_SM_VT .map li.amalfi { left: 208px; top: 178px; }
+.BEU-IT_SM_VT .map li.pisa { left: 151px; top: 118px; }
+.BEU-IT_SM_VT .map li.sicilia { left: 214px; top: 247px; }
+.BEU-IT_SM_VT .map li.matera { left: 262px; top: 195px; }
+.BEU-IT_SM_VT .map li.pompeii { left: 184px; top: 161px; }
+.BEU-IT_SM_VT .map li.verona { left: 157px; top: 66px; }
+.BEU-IT_SM_VT .map li.cortinad_ampezio { left: 98px; top: 46px; }
+.BEU-IT_SM_VT .map li.taormina { left: 250px; top: 228px; }
+.BEU .map li.ireland { left: -16px; top: 138px; }
+.BEU-IE .map li.dublin { left: 255px; top: 165px; }
+.BEU-IE .map li.galway { left: 140px; top: 173px; }
+.BEU-IE .map li.inishmore { left: 81px; top: 155px; }
+.BEU-IE .map li.cong { left: 131px; top: 128px; }
+.BEU-IE .map li.kilkenny { left: 195px; top: 202px; }
+.BEU-IE .map li.sligo { left: 143px; top: 86px; }
+.BEU .map li.germany { left: 222px; top: 196px; }
+.BEU-DE .map li.rothenburg { left: 234px; top: 196px; }
+.BEU-DE .map li.frankfurt { left: 143px; top: 155px; }
+.BEU-DE .map li.heidelberg { left: 103px; top: 198px; }
+.BEU-DE .map li.berlin { left: 281px; top: 79px; }
+.BEU-DE .map li.munchen { left: 233px; top: 232px; }
+.BEU-DE .map li.cologne { left: 134px; top: 90px; }
+.BEU-DE .map li.ruedesheim { left: 77px; top: 179px; }
+.BEU-DE .map li.dresden { left: 301px; top: 151px; }
+.BEU-DE .map li.meissen { left: 312px; top: 135px; }
+.BEU-DE .map li.nuremberg { left: 248px; top: 177px; }
+.BEU-DE .map li.weimar { left: 193px; top: 136px; }
+.BEU-DE .map li.eisenach { left: 181px; top: 119px; }
+.BEU-DE .map li.aachen { left: 94px; top: 137px; }
+.BEU-DE .map li.bonn { left: 112px; top: 118px; }
+.BEU-DE .map li.leipzig { left: 274px; top: 102px; }
+.BEU .map li.spain { left: 22px; top: 329px; }
+.BEU-ES .map li.barcelona { left: 305px; top: 104px; }
+.BEU-ES .map li.madrid { left: 191px; top: 133px; }
+.BEU-ES .map li.toledo { left: 174px; top: 154px; }
+.BEU-ES .map li.mijas { left: 217px; top: 242px; }
+.BEU-ES .map li.la-mancha { left: 191px; top: 176px; }
+.BEU-ES .map li.segovia { left: 178px; top: 113px; }
+.BEU-ES .map li.sevilla { left: 137px; top: 219px; }
+.BEU-ES .map li.granada { left: 234px; top: 221px; }
+.BEU-ES .map li.santiago { left: 29px; top: 77px; }
+.BEU-ES .map li.cordoba { left: 171px; top: 200px; }
+.BEU-ES .map li.valencia { left: 282px; top: 160px; }
+.BEU-ES .map li.tarragona { left: 300px; top: 125px; }
+.BEU-ES .map li.ronda { left: 129px; top: 241px; }
+.BEU-ES .map li.sansebastian { left: 271px; top: 79px; }
+.BEU-ES .map li.bilbao { left: 177px; top: 57px; }
+.BEU .map li.malta { left: 154px; top: 352px; }
+.BEU-MT_CY .map li.islandofmalta { left: 225px; top: 212px; }
+.BEU-MT_CY .map li.valletta { left: 270px; top: 173px; }
+.BEU-MT_CY .map li.islandofgozo { left: 96px; top: 70px; }
+.BEU-MT_CY .map li.saintjulien { left: 244px; top: 156px; }
+.BEU-MT_CY .map li.mdina { left: 200px; top: 192px; }
+.BEU-MT_CY .map li.rabat { left: 117px; top: 194px; }
+.BEU .map li.greece { left: 240px; top: 286px; }
+.BEU-GR .map li.athens { left: 207px; top: 150px; }
+.BEU-GR .map li.santorini { left: 162px; top: 219px; }
+.BEU-GR .map li.mykonos { left: 205px; top: 187px; }
+.BEU-GR .map li.crete { left: 184px; top: 253px; }
+.BEU-GR .map li.patmos { left: 302px; top: 178px; }
+.BEU-GR .map li.meteora { left: 98px; top: 86px; }
+.BEU-GR .map li.kalambaka { left: 99px; top: 102px; }
+.BEU-GR .map li.delphi { left: 130px; top: 132px; }
+.BEU-GR .map li.thessaloniki { left: 157px; top: 67px; }
+.BEU-GR .map li.olympia { left: 93px; top: 150px; }
+.BEU-GR .map li.rhodes { left: 291px; top: 218px; }
+.BEU-GR .map li.catacolon { left: 46px; top: 168px; }
+.BEU-GR .map li.mycenae { left: 107px; top: 187px; }
+.BEU-GR .map li.corinth { left: 153px; top: 169px; }
+.BEU .map li.swiss { left: 174px; top: 250px; }
+.BEU-CH_LI .map li.zermatt { left: 136px; top: 252px; }
+.BEU-CH_LI .map li.zurich { left: 205px; top: 89px; }
+.BEU-CH_LI .map li.stmoritz { left: 296px; top: 204px; }
+.BEU-CH_LI .map li.grindelwald { left: 186px; top: 180px; }
+.BEU-CH_LI .map li.geneve { left: 23px; top: 211px; }
+.BEU-CH_LI .map li.bern { left: 121px; top: 132px; }
+.BEU-CH_LI .map li.interlaken { left: 168px; top: 159px; }
+.BEU-CH_LI .map li.maienfeld { left: 267px; top: 141px; }
+.BEU-CH_LI .map li.saasfee { left: 189px; top: 226px; }
+.BEU-CH_LI .map li.tash { left: 95px; top: 235px; }
+.BEU-CH_LI .map li.stgallen { left: 284px; top: 107px; }
+.BEU-CH_LI .map li.lucerne { left: 172px; top: 111px; }
+.BEU-CH_LI .map li.andermatt { left: 167px; top: 206px; }
+.BEU-CH_LI .map li.montreux { left: 72px; top: 188px; }
+.BEU .map li.holland { left: 122px; top: 157px; }
+.BEU-NL .map li.amsterdam { left: 234px; top: 129px; }
+.BEU-NL .map li.haag { left: 132px; top: 157px; }
+.BEU-NL .map li.kinderdijk { left: 161px; top: 217px; }
+.BEU-NL .map li.keukenhof { left: 114px; top: 113px; }
+.BEU-NL .map li.lisse { left: 148px; top: 134px; }
+.BEU-NL .map li.delft { left: 124px; top: 177px; }
+.BEU-NL .map li.maastricht { left: 238px; top: 247px; }
+.BEU-NL .map li.rotterdam { left: 139px; top: 196px; }
+.BEU-NL .map li.ottelau { left: 227px; top: 168px; }
+.BEU .map li.belgium { left: 108px; top: 203px; }
+.BEU-BE_LU .map li.bruxelles { left: 180px; top: 127px; }
+.BEU-BE_LU .map li.bruges { left: 77px; top: 71px; }
+.BEU-BE_LU .map li.antwerp { left: 205px; top: 75px; }
+.BEU-BE_LU .map li.gent { left: 146px; top: 91px; }
+.BEU-BE_LU .map li.durbuy { left: 288px; top: 173px; }
+.BEU-BE_LU .map li.ardennesregion { left: 275px; top: 204px; }
+.BEU-BE_LU .map li.dinan { left: 194px; top: 179px; }
+.BEU-BE_LU .map li.thenamur { left: 195px; top: 154px; }
+.BEU-BE_LU .map li.mechelen { left: 217px; top: 107px; }
+.BEU .map li.portugal { left: -28px; top: 290px; }
+.BEU-PT .map li.lisbon { left: 247px; top: 208px; }
+.BEU-PT .map li.porto { left: 190px; top: 91px; }
+.BEU-PT .map li.coimbra { left: 212px; top: 132px; }
+.BEU-PT .map li.obidos { left: 177px; top: 176px; }
+.BEU-PT .map li.nazareth { left: 142px; top: 157px; }
+.BEU-PT .map li.evora { left: 229px; top: 230px; }
+.BEU-PT .map li.sintra { left: 155px; top: 199px; }
+.BEU-PT .map li.fatima { left: 277px; top: 175px; }
+.BEU-PT .map li.batalha { left: 228px; top: 157px; }
+.BEU-PT .map li.funchal { left: 36px; top: 253px; }
+.BEU-PT .map li.gimarays { left: 174px; top: 73px; }
+.BEU-PT .map li.aveiro { left: 208px; top: 115px; }
+.BEU-PT .map li.portosanto { left: 55px; top: 232px; }
+.BEU .map li.northern-eur { left: 148px; top: 80px; }
+.BEU-FI_NO_SE_DK_IS .map li.denmark { left: 222px; top: 217px; }
+.BEU-DK .map li.copenhagen { left: 281px; top: 183px; }
+.BEU-DK .map li.ozense { left: 194px; top: 230px; }
+.BEU-DK .map li.biland { left: 117px; top: 177px; }
+.BEU-DK .map li.arhus { left: 193px; top: 144px; }
+.BEU-DK .map li.rothkire { left: 274px; top: 207px; }
+.BEU-DK .map li.skagen { left: 115px; top: 124px; }
+.BEU-FI_NO_SE_DK_IS .map li.norway { left: 207px; top: 131px; }
+.BEU-NO .map li.oslo { left: 153px; top: 255px; }
+.BEU-NO .map li.bergen { left: 20px; top: 235px; }
+.BEU-NO .map li.from { left: 62px; top: 198px; }
+.BEU-NO .map li.muledahl { left: 27px; top: 217px; }
+.BEU-NO .map li.geylangel { left: 69px; top: 179px; }
+.BEU-NO .map li.vos { left: 120px; top: 237px; }
+.BEU-NO .map li.yairo { left: 160px; top: 221px; }
+.BEU-NO .map li.alesund { left: 63px; top: 161px; }
+.BEU-NO .map li.trondheim { left: 123px; top: 144px; }
+.BEU-NO .map li.loftfuss { left: 146px; top: 201px; }
+.BEU-NO .map li.tromso { left: 178px; top: 68px; }
+.BEU-NO .map li.kirkenes { left: 310px; top: 99px; }
+.BEU-NO .map li.honningsvag { left: 271px; top: 78px; }
+.BEU-NO .map li.stavanger { left: 32px; top: 254px; }
+.BEU-NO .map li.bode { left: 163px; top: 109px; }
+.BEU-FI_NO_SE_DK_IS .map li.sweden { left: 258px; top: 172px; }
+.BEU-SE .map li.stockholm { left: 212px; top: 203px; }
+.BEU-SE .map li.sorentuner { left: 209px; top: 181px; }
+.BEU-SE .map li.karlstad { left: 78px; top: 185px; }
+.BEU-SE .map li.kiruna { left: 194px; top: 63px; }
+.BEU-SE .map li.gothenburg { left: 101px; top: 207px; }
+.BEU-SE .map li.helsingborg { left: 70px; top: 231px; }
+.BEU-SE .map li.malmo { left: 103px; top: 250px; }
+.BEU-SE .map li.kalmar { left: 187px; top: 245px; }
+.BEU-FI_NO_SE_DK_IS .map li.finland { left: 303px; top: 153px; }
+.BEU-FI .map li.helsinki { left: 201px; top: 246px; }
+.BEU-FI .map li.saariselka { left: 223px; top: 92px; }
+.BEU-FI .map li.rovaniemi { left: 183px; top: 145px; }
+.BEU-FI .map li.ivalo { left: 225px; top: 74px; }
+.BEU-FI .map li.chemitornio { left: 203px; top: 193px; }
+.BEU-FI .map li.ruost { left: 235px; top: 125px; }
+.BEU-FI .map li.naantali { left: 111px; top: 227px; }
+.BEU-FI .map li.levi { left: 179px; top: 109px; }
+.BEU-FI .map li.tampere { left: 154px; top: 209px; }
+.BEU-FI .map li.turku { left: 218px; top: 227px; }
+.BEU-FI_NO_SE_DK_IS .map li.iceland { left: 42px; top: 122px; }
+.BEU-IS .map li.reykjavik { left: 103px; top: 176px; }
+.BEU-IS .map li.grindavik { left: 66px; top: 219px; }
+.BEU-IS .map li.selfoss { left: 171px; top: 202px; }
+.BEU-IS .map li.hetra { left: 160px; top: 239px; }
+.BEU-IS .map li.kirkvyelcroisol { left: 193px; top: 146px; }
+.BEU-IS .map li.etherfjordol { left: 47px; top: 90px; }
+.BEU-IS .map li.scaffafettel { left: 245px; top: 220px; }
+.BEU-IS .map li.akureiri { left: 222px; top: 110px; }
+.BEU-IS .map li.keflavik { left: 52px; top: 198px; }
+.BEU .map li.russia { left: 337px; top: 93px; }
+.BEU-RU .map li.stpetersburg { left: 36px; top: 103px; }
+.BEU-RU .map li.moscow { left: 43px; top: 158px; }
+.BEU-RU .map li.sergiyevposado { left: 34px; top: 138px; }
+.BEU-RU .map li.vladimir { left: 81px; top: 176px; }
+.BEU-RU .map li.suzari { left: 132px; top: 158px; }
+.BEU-RU .map li.korsakov { left: 310px; top: 192px; }
+.BEU-RU .map li.vladivostok { left: 194px; top: 195px; }
+.BEU-RU .map li.khabarovsk { left: 222px; top: 155px; }
+.BEU-RU .map li.yuzhno-sakhalinsk { left: 222px; top: 175px; }
+.BEU-RU .map li.palatuca { left: 293px; top: 135px; }
+.BEU-RU .map li.petropavlovsk { left: 259px; top: 117px; }
+.BEU .map li.east-eur { left: 321px; top: 218px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.austria { left: 108px; top: 150px; }
+.BEU-AT .map li.salzburg { left: 159px; top: 135px; }
+.BEU-AT .map li.salzkammergut { left: 124px; top: 116px; }
+.BEU-AT .map li.graz { left: 271px; top: 192px; }
+.BEU-AT .map li.innsbruck { left: 21px; top: 169px; }
+.BEU-AT .map li.wien { left: 326px; top: 134px; }
+.BEU-AT .map li.hallstatt { left: 203px; top: 173px; }
+.BEU-AT .map li.stwolfgang { left: 185px; top: 155px; }
+.BEU-AT .map li.seefeld { left: 61px; top: 150px; }
+.BEU-AT .map li.merck { left: 293px; top: 115px; }
+.BEU-AT .map li.heiligenflute { left: 155px; top: 212px; }
+.BEU-AT .map li.durnstein { left: 258px; top: 81px; }
+.BEU-AT .map li.zellamsee { left: 134px; top: 191px; }
+.BEU-AT .map li.linz { left: 212px; top: 97px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.czech { left: 124px; top: 124px; }
+.BEU-CZ .map li.prague { left: 110px; top: 129px; }
+.BEU-CZ .map li.ceskykrumlov { left: 106px; top: 214px; }
+.BEU-CZ .map li.telc { left: 193px; top: 191px; }
+.BEU-CZ .map li.brno { left: 265px; top: 192px; }
+.BEU-CZ .map li.kutnahora { left: 188px; top: 145px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.slovakia { left: 228px; top: 133px; }
+.BEU-SK .map li.bratislava { left: 62px; top: 205px; }
+.BEU-SK .map li.kosice { left: 281px; top: 158px; }
+.BEU-SK .map li.presov { left: 276px; top: 140px; }
+.BEU-SK .map li.zilina { left: 145px; top: 121px; }
+.BEU-SK .map li.twotiger { left: 109px; top: 186px; }
+.BEU-SK .map li.banskabystrica { left: 98px; top: 159px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.hungary { left: 192px; top: 170px; }
+.BEU-HU .map li.budapest { left: 183px; top: 127px; }
+.BEU-HU .map li.donnawentwood { left: 197px; top: 156px; }
+.BEU-HU .map li.eger { left: 250px; top: 106px; }
+.BEU-HU .map li.sopron { left: 68px; top: 135px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.poland { left: 192px; top: 86px; }
+.BEU-PL .map li.warsaw { left: 278px; top: 130px; }
+.BEU-PL .map li.krakow { left: 244px; top: 217px; }
+.BEU-PL .map li.wieliczka { left: 248px; top: 235px; }
+.BEU-PL .map li.jelazobabora { left: 214px; top: 154px; }
+.BEU-PL .map li.wroclaw { left: 148px; top: 177px; }
+.BEU-PL .map li.poznan { left: 140px; top: 134px; }
+.BEU-PL .map li.torun { left: 212px; top: 114px; }
+.BEU-PL .map li.zamosc { left: 314px; top: 208px; }
+.BEU-PL .map li.chestjova { left: 193px; top: 198px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.rumania { left: 290px; top: 190px; }
+.BEU-RO .map li.bucharest { left: 222px; top: 201px; }
+.BEU-RO .map li.brasov { left: 213px; top: 145px; }
+.BEU-RO .map li.sighisoara { left: 189px; top: 115px; }
+.BEU-RO .map li.sinaia { left: 117px; top: 133px; }
+.BEU-RO .map li.constanta { left: 287px; top: 220px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.bulgaria { left: 254px; top: 230px; }
+.BEU-BG .map li.sofia { left: 81px; top: 161px; }
+.BEU-BG .map li.vericotarnovo { left: 203px; top: 120px; }
+.BEU-BG .map li.plovdiv { left: 135px; top: 188px; }
+.BEU-BG .map li.kazanlake { left: 183px; top: 166px; }
+.BEU-BG .map li.albanash { left: 199px; top: 138px; }
+.BEU-BG .map li.ruse { left: 239px; top: 79px; }
+.BEU-CZ_HU_PL_SK_RO_BG_HR_SI_UA_EE_LV_LT_BA_CS_ME_MK_AL .map li.croatia-slovenia { left: 109px; top: 196px; }
+.BEU-HR_SI .map li.dubrovnik { left: 272px; top: 248px; }
+.BEU-HR_SI .map li.plitvice { left: 177px; top: 155px; }
+.BEU-HR_SI .map li.split { left: 216px; top: 221px; }
+.BEU-HR_SI .map li.trogir { left: 110px; top: 220px; }
+.BEU-HR_SI .map li.sibenik { left: 180px; top: 198px; }
+.BEU-HR_SI .map li.zagreb { left: 221px; top: 93px; }
+.BEU-HR_SI .map li.porec { left: 44px; top: 114px; }
+.BEU-HR_SI .map li.rovinj { left: 54px; top: 134px; }
+.BEU-HR_SI .map li.opatija { left: 139px; top: 115px; }
+.BEU-HR_SI .map li.pula { left: 96px; top: 153px; }
+.BEU-HR_SI .map li.podstrana { left: 151px; top: 137px; }
+.BEU-HR_SI .map li.zadar { left: 145px; top: 175px; }
+.BEU-HR_SI .map li.bread { left: 69px; top: 57px; }
+.BEU-HR_SI .map li.postoina { left: 105px; top: 92px; }
+.BEU-HR_SI .map li.ljubljana { left: 126px; top: 72px; }
+.BEU .map li.baltic { left: 250px; top: 143px; }
+.BEU-EE_LV_LT .map li.estonia { left: 245px; top: 82px; }
+.BEU-EE_LV_LT .map li.latvia { left: 234px; top: 140px; }
+.BEU-EE_LV_LT .map li.lithuania { left: 191px; top: 186px; }
+
+.CAF .map li.egypt { left: 248px; top: 115px; }
+.CAF-EG .map li.cairo { left: 214px; top: 90px; }
+.CAF-EG .map li.giza { left: 197px; top: 110px; }
+.CAF-EG .map li.abusimbel { left: 211px; top: 232px; }
+.CAF-EG .map li.luxor { left: 212px; top: 145px; }
+.CAF-EG .map li.aswan { left: 251px; top: 205px; }
+.CAF-EG .map li.combolbo { left: 252px; top: 185px; }
+.CAF-EG .map li.edf { left: 239px; top: 167px; }
+.CAF .map li.tunisia { left: 157px; top: 75px; }
+.CAF-TN .map li.tunis { left: 166px; top: 70px; }
+.CAF-TN .map li.eljam { left: 188px; top: 113px; }
+.CAF-TN .map li.djerba { left: 190px; top: 170px; }
+.CAF-TN .map li.sidibeside { left: 137px; top: 51px; }
+.CAF-TN .map li.sousse { left: 186px; top: 94px; }
+.CAF-TN .map li.tozeur { left: 116px; top: 152px; }
+.CAF-TN .map li.sfax { left: 189px; top: 132px; }
+.CAF .map li.morocco { left: 36px; top: 79px; }
+.CAF-MA .map li.casablanca { left: 169px; top: 121px; }
+.CAF-MA .map li.marrakech { left: 185px; top: 161px; }
+.CAF-MA .map li.fez { left: 270px; top: 102px; }
+.CAF-MA .map li.rabat { left: 188px; top: 98px; }
+.CAF-MA .map li.chefchaouen { left: 269px; top: 77px; }
+.CAF-MA .map li.ouarzazate { left: 216px; top: 202px; }
+.CAF-MA .map li.erfoud { left: 159px; top: 181px; }
+.CAF-MA .map li.meruzuka { left: 267px; top: 180px; }
+.CAF-MA .map li.tanger { left: 180px; top: 55px; }
+.CAF-MA .map li.meknes { left: 246px; top: 140px; }
+.CAF .map li.south-africa { left: 195px; top: 381px; }
+.CAF-ZA .map li.capetown { left: 65px; top: 227px; }
+.CAF-ZA .map li.johannesburg { left: 223px; top: 125px; }
+.CAF-ZA .map li.pretoria { left: 232px; top: 103px; }
+.CAF-ZA .map li.kimberly { left: 180px; top: 146px; }
+.CAF-ZA .map li.krugerarea { left: 183px; top: 227px; }
+.CAF-ZA .map li.sabisabi { left: 297px; top: 83px; }
+.CAF-ZA .map li.springbock { left: 97px; top: 166px; }
+.CAF-ZA .map li.namakwaland { left: 223px; top: 189px; }
+.CAF-ZA .map li.franshook { left: 158px; top: 209px; }
+.CAF-ZA .map li.lambert_sbay { left: 88px; top: 189px; }
+.CAF .map li.kenya { left: 328px; top: 222px; }
+.CAF-KE_UG .map li.nairobi { left: 188px; top: 173px; }
+.CAF-KE_UG .map li.masaimara { left: 126px; top: 192px; }
+.CAF-KE_UG .map li.amboseli { left: 193px; top: 224px; }
+.CAF-KE_UG .map li.nakuru { left: 149px; top: 150px; }
+.CAF .map li.namibia { left: 208px;top: 290px; }
+.CAF .map li.botswana { left: 208px; top: 337px; }
+.CAF-BW_NA .map li.chobe { left: 187px; top: 109px; }
+.CAF-BW_NA .map li.kasane { left: 205px; top: 73px; }
+.CAF .map li.jinbabue-zanvia { left: 310px; top: 299px; }
+.CAF-ZW_ZM .map li.victoriafalls { left: 143px; top: 204px; }
+.CAF-ZW_ZM .map li.hanje { left: 186px; top: 227px; }
+.CAF-ZW_ZM .map li.livingston { left: 153px; top: 187px; }
+.CAF-ZW_ZM .map li.zambezi { left: 100px; top: 143px; }
+.CAF .map li.tanzania { left: 329px; top: 261px; }
+.CAF-TZ .map li.ngorongoro { left: 161px; top: 120px; }
+.CAF-TZ .map li.serengeti { left: 156px; top: 82px; }
+.CAF-TZ .map li.manala { left: 187px; top: 140px; }
+.CAF-TZ .map li.kilimanjaro { left: 237px; top: 102px; }
+
+.DNU .map li.america { left: 224px; top: 320px; }
+.DNU-US .map li.la { left: 142px; top: 224px; }
+.DNU-US .map li.lasvegas { left: 189px; top: 180px; }
+.DNU-US .map li.sanfrancisco { left: 51px; top: 204px; }
+.DNU-US .map li.seattle { left: 128px; top: 140px; }
+.DNU-US .map li.ny { left: 301px; top: 183px; }
+.DNU-US .map li.boston { left: 321px; top: 160px; }
+.DNU-US .map li.orlando { left: 302px; top: 247px; }
+.DNU-US .map li.alaska { left: 20px; top: 53px; }
+.DNU-US .map li.anaheim { left: 175px; top: 242px; }
+.DNU-US .map li.sedona { left: 112px; top: 180px; }
+.DNU-US .map li.page { left: 194px; top: 199px; }
+.DNU-US .map li.washington { left: 274px; top: 199px; }
+.DNU-US .map li.philadelphia { left: 277px; top: 216px; }
+.DNU-US .map li.miami { left: 321px; top: 267px; }
+.DNU-US .map li.kayenta { left: 180px; top: 158px; }
+.DNU .map li.canada { left: 140px; top: 167px; }
+.DNU-CA .map li.vancouver { left: 38px; top: 197px; }
+.DNU-CA .map li.toronto { left: 133px; top: 221px; }
+.DNU-CA .map li.quebec { left: 312px; top: 177px; }
+.DNU-CA .map li.montreal { left: 245px; top: 196px; }
+.DNU-CA .map li.pei { left: 233px; top: 221px; }
+.DNU-CA .map li.yellowknife { left: 111px; top: 81px; }
+.DNU-CA .map li.banff { left: 151px; top: 153px; }
+.DNU-CA .map li.victoria { left: 39px; top: 221px; }
+.DNU-CA .map li.jasper { left: 115px; top: 133px; }
+.DNU-CA .map li.whistler { left: 43px; top: 177px; }
+.DNU-CA .map li.niagara { left: 233px; top: 240px; }
+.DNU-CA .map li.okanagan { left: 151px; top: 172px; }
+.DNU-CA .map li.whitehorse { left: 25px; top: 107px; }
+.DNU-CA .map li.kamloops { left: 28px; top: 154px; }
+.DNU-CA .map li.kelowna { left: 164px; top: 191px; }
+
+.FOC-AU_NZ .map li.australia { left: 70px; top: 180px; }
+.FOC-AU .map li.sydney { left: 163px; top: 196px; }
+.FOC-AU .map li.goldcoast { left: 248px; top: 148px; }
+.FOC-AU .map li.cairns { left: 249px; top: 100px; }
+.FOC-AU .map li.melbourne { left: 205px; top: 212px; }
+.FOC-AU .map li.perth { left: 107px; top: 141px; }
+.FOC-AU .map li.tasmania { left: 261px; top: 241px; }
+.FOC-AU .map li.brisbane { left: 283px; top: 130px; }
+.FOC-AU .map li.greenisland { left: 287px; top: 82px; }
+.FOC-AU .map li.fremantle { left: 83px; top: 177px; }
+.FOC-AU .map li.newcastle { left: 256px; top: 193px; }
+.FOC-AU .map li.rottnestisland { left: 40px; top: 159px; }
+.FOC-AU_NZ .map li.newzealand { left: 310px; top: 320px; }
+.FOC-NZ .map li.teanau { left: 103px; top: 256px; }
+.FOC-NZ .map li.auckland { left: 158px; top: 66px; }
+.FOC-NZ .map li.christchurch { left: 213px; top: 192px; }
+.FOC-NZ .map li.queenstown { left: 36px; top: 222px; }
+.FOC-NZ .map li.tekapo { left: 154px; top: 167px; }
+.FOC-NZ .map li.rotorua { left: 271px; top: 106px; }
+.FOC-NZ .map li.waitomo { left: 177px; top: 106px; }
+.FOC-NZ .map li.arrowtown { left: 80px; top: 239px; }
+.FOC-NZ .map li.wanaka { left: 125px; top: 206px; }
+.FOC-NZ .map li.omaru { left: 198px; top: 240px; }
+.FOC-NZ .map li.tongariro { left: 237px; top: 146px; }
+.FOC-NZ .map li.taupo { left: 250px; top: 126px; }
+.FOC-NZ .map li.timaru { left: 207px; top: 211px; }
+.FOC-NZ .map li.hamilton { left: 224px; top: 86px; }
+.FOC-NZ .map li.twizel { left: 116px; top: 187px; }
+
+.FOC-PF_NC_FJ_PG_VU .map li.tahiti { left: 383px; top: 211px; }
+.FOC-PF .map li.papeete { left: 174px; top: 249px; }
+.FOC-PF .map li.borabora { left: 22px; top: 187px; }
+.FOC-PF .map li.mooreaisland { left: 147px; top: 228px; }
+.FOC-PF .map li.rangiroa { left: 300px; top: 97px; }
+.FOC-PF .map li.fahineisland { left: 81px; top: 207px; }
+.FOC-PF .map li.raiathia { left: 24px; top: 234px; }
+.FOC-PF .map li.tikehau { left: 249px; top: 77px; }
+.FOC-PF_NC_FJ_PG_VU .map li.vanuatu { left: 0px;top: 125px; }
+.FOC-PF_NC_FJ_PG_VU .map li.newcaledonia { left: 27px; top: 250px; }
+.FOC-NC_PG_VU .map li.noumea { left: 155px; top: 184px; }
+.FOC-NC_PG_VU .map li.lifou { left: 248px; top: 142px; }
+.FOC-NC_PG_VU .map li.iledespins { left: 258px; top: 226px; }
+.FOC-NC_PG_VU .map li.ouveaisland { left: 221px; top: 120px; }
+.FOC-NC_PG_VU .map li.mettleisland { left: 172px; top: 206px; }
+.FOC-PF_NC_FJ_PG_VU .map li.fiji { left: 165px; top: 185px; }
+.FOC-FJ .map li.savusavu { left: 242px; top: 114px; }
+.FOC-FJ .map li.suva { left: 191px; top: 239px; }
+.FOC-FJ .map li.nadi { left: 89px; top: 200px; }
+
+.MNA .map li.guam { left: 69px; top: 337px; }
+.MNA .map li.saipan { left: 184px; top: 101px; }
+
+.ESU .map li.mexico { left: 143px; top: 91px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.chichenitza { left: 278px; top: 193px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.mexicocity { left: 124px; top: 205px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.teotihuacan { left: 159px; top: 169px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.cancun { left: 319px; top: 171px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.cozumel { left: 307px; top: 216px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.merida { left: 296px; top: 149px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.puebla { left: 207px; top: 225px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.uxmal { left: 283px; top: 256px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.ensenada { left: 66px; top: 73px; }
+.ESU-MX_CU_BS_GT_JM_DM_CR_PA .map li.cabosanlucas { left: 67px; top: 140px; }
+.ESU .map li.brazil { left: 344px; top: 178px; }
+.ESU-BR .map li.riodejaneiro { left: 262px; top: 193px; }
+.ESU-BR .map li.sanluis { left: 251px; top: 81px; }
+.ESU-BR .map li.ballerinha { left: 188px; top: 148px; }
+.ESU-BR .map li.saopaulo { left: 206px; top: 211px; }
+.ESU-BR .map li.brasilia { left: 226px; top: 168px; }
+.ESU-BR .map li.boavista { left: 163px; top: 57px; }
+.ESU-BR .map li.manaus { left: 176px; top: 99px; }
+.ESU-BR .map li.santos { left: 227px; top: 232px; }
+.ESU .map li.ecuador { left: 164px; top: 168px; }
+.ESU-EC .map li.galapagosislands { left: 51px; top: 148px; }
+.ESU-EC .map li.quito { left: 310px; top: 130px; }
+.ESU-EC .map li.santacruz { left: 100px; top: 114px; }
+.ESU .map li.venezuela { left: 298px; top: 100px; }
+.ESU-VE_CO_GY .map li.canaima { left: 225px; top: 159px; }
+.ESU-VE_CO_GY .map li.puertoaldas { left: 216px; top: 111px; }
+.ESU-VE_CO_GY .map li.santaelena { left: 254px; top: 190px; }
+.ESU .map li.peru { left: 181px; top: 210px; }
+.ESU-PE_BO .map li.lima { left: 121px; top: 145px; }
+.ESU-PE_BO .map li.cuzco { left: 197px; top: 188px; }
+.ESU-PE_BO .map li.nazca { left: 197px; top: 216px; }
+.ESU-PE_BO .map li.pisco { left: 94px; top: 171px; }
+.ESU-PE_BO .map li.urubamba { left: 180px; top: 165px; }
+.ESU-PE_BO .map li.paracas { left: 97px; top: 189px; }
+.ESU-PE_BO .map li.puno { left: 247px; top: 239px; }
+.ESU-PE_BO .map li.juliaca { left: 276px; top: 206px; }
+.ESU-PE_BO .map li.squid { left: 127px; top: 210px; }
+.ESU .map li.argentina { left: 291px; top: 273px; }
+.ESU-AR_CL_PY_UY .map li.buenosaires { left: 220px; top: 117px; }
+.ESU-AR_CL_PY_UY .map li.elcalafate { left: 121px; top: 230px; }
+.ESU-AR_CL_PY_UY .map li.ushuaia { left: 194px; top: 247px; }
+.ESU-AR_CL_PY_UY .map li.elchalten { left: 116px; top: 211px; }
+
+.CHT .map li.turkey { left: 68px; top: 168px; }
+.CHT-TR .map li.istanbul { left: 57px; top: 101px; }
+.CHT-TR .map li.cappadocia { left: 195px; top: 154px; }
+.CHT-TR .map li.troy { left: 76px; top: 82px; }
+.CHT-TR .map li.ephesus { left: 45px; top: 202px; }
+.CHT-TR .map li.kusadasi { left: 18px; top: 184px; }
+.CHT-TR .map li.konya { left: 200px; top: 178px; }
+.CHT-TR .map li.boazukare { left: 221px; top: 119px; }
+.CHT-TR .map li.izmir { left: 51px; top: 165px; }
+.CHT-TR .map li.ayvalik { left: 30px; top: 126px; }
+.CHT-TR .map li.ankara { left: 164px; top: 136px; }
+.CHT-TR .map li.bergama { left: 52px; top: 147px; }
+.CHT-TR .map li.bodrum { left: 56px; top: 220px; }
+.CHT-TR .map li.kayseri { left: 320px; top: 155px; }
+.CHT-TR .map li.antalya { left: 174px; top: 211px; }
+.CHT-TR .map li.nemrut { left: 289px; top: 176px; }
+.CHT-TR .map li.pamukkale { left: 154px; top: 193px; }
+
+.CHT .map li.jordan { left: 134px; top: 266px; }
+.CHT-JO .map li.amman { left: 176px; top: 122px; }
+.CHT-JO .map li.petra { left: 153px; top: 194px; }
+.CHT .map li.israel { left: 111px; top: 225px; }
+.CHT-IL .map li.telaviv { left: 151px; top: 105px; }
+.CHT-IL .map li.jerusalem { left: 205px; top: 133px; }
+.CHT-IL .map li.eilat { left: 165px; top: 228px; }
+.CHT-IL .map li.tiberias { left: 232px; top: 80px; }
+.CHT .map li.uae { left: 173px; top: 369px; }
+.CHT-AE .map li.dubai { left: 230px; top: 107px; }
+.CHT-AE .map li.abudhabi { left: 145px; top: 177px; }
+.CHT-AE .map li.alain { left: 265px; top: 150px; }
+.CHT-AE .map li.sharjah { left: 282px; top: 126px; }
+.CHT-AE .map li.fujairah { left: 307px; top: 93px; }
+.CHT-AE .map li.rasalkhaimah { left: 262px; top: 75px; }
+.CHT .map li.uzbekistan { left: 358px; top: 165px; }
+.CHT-UZ .map li.tashkent { left: 319px; top: 135px; }
+.CHT-UZ .map li.bukhara { left: 187px; top: 194px; }
+.CHT-UZ .map li.samarkand { left: 276px; top: 195px; }
+.CHT-UZ .map li.urgench { left: 136px; top: 142px; }
+.CHT .map li.iran { left: 294px; top: 260px; }
+.CHT-IR .map li.isfan { left: 143px; top: 133px; }
+.CHT-IR .map li.shiraz { left: 184px; top: 211px; }
+.CHT-IR .map li.tehran { left: 142px; top: 86px; }
+.CHT-IR .map li.persepolis { left: 192px; top: 191px; }
+.CHT-IR .map li.yazd { left: 226px; top: 152px; }
+
+.HWI .map li.oahu { left: 140px; top: 90px; }
+.HWI .map li.bigisland { left: 298px; top: 215px; }
+.HWI .map li.maui { left: 240px; top: 134px; }
+.HWI .map li.kauai { left: 67px; top: 64px; }
