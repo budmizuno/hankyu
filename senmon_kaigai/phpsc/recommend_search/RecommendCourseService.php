@@ -207,51 +207,92 @@ class RecommendCourseService {
 			}
 		}
 
+
+
 		if(empty($tour_url_merge)) return array();
 
-		// urlが100個未満なら
-		if(count($tour_url_merge) < 100 || $severEnvironment == LEAFNET){
+		if($severEnvironment == LEAFNET){
 			// 特集IFからオススメコースの詳細情報を取得する
 			$special_tour_list = $this->search($tour_url_merge);
 		}else {
-			// DS商品でないもの
+
+			// 重複値のkeyを取得
+			$multi_array = array();
+			// 値を入れるkeyだけ取得
+			$multi_array_slice = array();
+			foreach ((array)$tour_url_merge as $key => $value) {
+				foreach ((array)$tour_url_merge as $key2 => $value2) {
+					if($value == $value2 && $key != $key2){
+						if(!in_array($key2.','.$key, $multi_array)){
+							$multi_array[] = $key.','.$key2;
+							$multi_array_slice[] = $key2;
+						}
+					}
+				}
+			}
+
+			sort($multi_array_slice);
+			//配列で重複している物を削除する
+			$multi_array_slice = array_unique($multi_array_slice);
+			//キーが飛び飛びになっているので、キーを振り直す
+			$multi_array_slice = array_values($multi_array_slice);
+
+			// DS商品でないものや海外のツアー
 			$no_ds_array =  array();
-			// $sub_naigai_array = array();
+			$sub_naigai_array = array();
 			foreach ($tour_url_merge as $key => $value) {
+				if(strpos($value,'search_d') !== false || strpos($value,'detail_d') !== false ){
+					$sub_naigai_array[] = $key;
+				}
 				if(strpos($value,'search') === false && strpos($value,'detail') === false ){
 					$no_ds_array[] = $key;
 					$tour_url_merge[$key] = '';	// DS商品でないものでもspecialで値が返ってくる時があるので空にする
 				}
 			}
 
+
 			// 50本ごとに区切れる特集IFの関数を使う
 			$inUrlList = $tour_url_merge;
-			$inUrlList = array_filter($inUrlList);
-			foreach($inUrlList as $key => $val){
-				$inUrlList[$key] = str_replace('"','',$val);
-			}
-
 			//SOQP情報取得
 			$this->soapObj = new SoapSpecial();
 
-			$special_tour_list = $this->soapObj->special_response;
+			$special_tour_list = $this->soapObj->result->return->p_ab_special_response;
 
-			// urlをkeyにして配列にする
-			$_special_tour_list = array();
-			foreach ($special_tour_list as $key => $value) {
-				foreach ($tour_url_merge as $key2 => $value2) {
-					if($key == $value2){
-						$_special_tour_list[$key2] = $value;
-					}
-				}
-			}
+			$sub_special_tour_list = $this->soapObj->result->return->p_dome_special_response;
 
-			ksort($_special_tour_list);
-			$special_tour_list = $_special_tour_list;
+
+			// 空や重複地、他内外の配列
+			$kari_array = array_merge($no_ds_array, $sub_naigai_array,$multi_array_slice);
+
+			//配列で重複している物を削除する
+			$kari_array = array_unique($kari_array);
+			//キーが飛び飛びになっているので、キーを振り直す
+			$kari_array = array_values($kari_array);
+
+			sort($kari_array);
 
 			// ''だけ該当keyに入れる
-			foreach ($no_ds_array as $value) {
-				$special_tour_list[$value] = '';
+			foreach ($kari_array as $value) {
+				array_splice($special_tour_list, $value, 0, '');
+			}
+
+			// 他内外のツアーが複数かどうか
+			$sub_special_tour_list_array =  array();
+			if(is_array($sub_special_tour_list)){
+				$sub_special_tour_list_array = $sub_special_tour_list;
+			}else{
+				$sub_special_tour_list_array[] =  $sub_special_tour_list;
+			}
+
+			// 他内外のツアーをいれる
+			foreach ((array)$sub_naigai_array as $key => $value) {
+				$special_tour_list[$value] = $sub_special_tour_list_array[$key];
+			}
+
+			// 重複値をコピー
+			foreach ((array)$multi_array as $value) {
+				$array = explode(",", $value);
+				$special_tour_list[$array[1]] = $special_tour_list[$array[0]];
 			}
 		}
 
@@ -324,7 +365,7 @@ class RecommendCourseService {
 			if((!isset($newArray[$key]['p_course_name']) || strlen($newArray[$key]['p_course_name']) == 0) && !empty($special_tour->p_course_name))
 			{
 				$p_course_name = $special_tour->p_course_name;
-				$newArray[$key]['p_course_name'] = mb_convert_kana($p_course_name, "KV","UTF-8"); // 半角ｶﾅを全角カナ;
+				$newArray[$key]['p_course_name'] = $p_course_name;
 			}
 			if((!isset($newArray[$key]['p_point1']) || strlen($newArray[$key]['p_point1']) == 0) && !empty($special_tour->p_point1))
 			{

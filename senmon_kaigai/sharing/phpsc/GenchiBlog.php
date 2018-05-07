@@ -25,12 +25,12 @@
 		}else{
 			$disp_blog_num_max = 3;
 		}
-
-
+		
+		
 		if (isset($masterCsv[KEY_MASTER_CSV_BLOG_NUM_PC]) && is_numeric($masterCsv[KEY_MASTER_CSV_BLOG_NUM_PC])) {
 			$disp_blog_num_max = $masterCsv[KEY_MASTER_CSV_BLOG_NUM_PC];
 		}
-
+		
 		$blog = new blogDisp('GenchiSenmon',$naigai,$disp_blog_num_max);//海外現地情報
 	}
 
@@ -43,7 +43,7 @@
 		<ul class="list-home-link  clearfix">
 			<?php echo $blog->Blog;?>
 		</ul>
-		<p class="btn-more"><a href="<?php e($blog->LinkUrl)?>" target="_blank"><span>記事一覧を見る</span> <span class="icon icon-arr-left"></span></a></p>
+		<p class="btn-more"><a href="<?php e($blog->LinkUrl)?>"><span>記事一覧を見る</span> <span class="icon icon-arr-left"></span></a></p>
 	<?php // 国、都市ページなら?>
 	<?php else:?>
 		<div class="aside right">
@@ -52,7 +52,7 @@
 	            <div class="aside-index">
 					<?php echo $blog->Blog;?>
 	            </div>
-				<p class="btn_more_right"><a href="<?php e($blog->LinkUrl)?>" target="_blank"><span>記事一覧を見る</span> <span class="icon icon-arr-left"></span></a></p>
+				<p class="btn_more_right"><a href="<?php e($blog->LinkUrl)?>"><span>記事一覧を見る</span> <span class="icon icon-arr-left"></span></a></p>
 			</div>
 	    </div>
 	<?php endif; ?>

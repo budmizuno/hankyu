@@ -1,0 +1,8 @@
+<Files ~ "^\.ht">
+deny from all
+</Files>
+
+# AccessControl Extension
+<Files ~ "(\.csv)$">
+deny from all
+</Files>

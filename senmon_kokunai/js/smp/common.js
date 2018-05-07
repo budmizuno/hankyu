@@ -178,14 +178,8 @@ $(function() {
     setTimeout(function() {
         var href = window.location.href ;
 
-        var tab_g_flag = false;
-        // URLに?tab=gがあるかフラグ
-        if(href.match(/tab=g&/) != null || href.match(/tab=g$/) != null){
-            tab_g_flag = true;
-        }
-
         // URLに?tab=gがあるなら
-        if ( ((href.match(/tab=g&/) != null || href.match(/tab=g$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(HACCHAKU_TAB_FLAG) == 'true' && 0 < $('.tab_genchihacchaku').length && $(".tab_genchihacchaku").css('display') !== 'none')) {
+        if ( (href.indexOf('tab=g') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(HACCHAKU_TAB_FLAG) == 'true' && 0 < $('.tab_genchihacchaku').length && $(".tab_genchihacchaku").css('display') !== 'none')) {
             set_senmon2017_cookie(HACCHAKU_TAB_FLAG,true);
             // 発着タブが開いた状態にする
             if ($('#tab_ct_genchihacchaku').length > 0) {
@@ -194,18 +188,17 @@ $(function() {
             setGlobalNaviAction();
         }
 
-        if(!tab_g_flag){
-            // URLに?tab=fがあるなら
-            if ( ((href.match(/tab=f&/) != null || href.match(/tab=f$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
-                // フリープランタブのフラグを設定
-                set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
-                // フリープランタブが開いた状態にする
-                if ($('.tab-ct.free_plan').length > 0) {
-                    $('.tab-menu>li:nth-child(2)').click();
-                }
-                setGlobalNaviAction();
+        // URLに?tab=fがあるなら
+        if ( (href.indexOf('tab=f') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
+            // フリープランタブのフラグを設定
+            set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
+            // フリープランタブが開いた状態にする
+            if ($('.tab-ct.free_plan').length > 0) {
+                $('.tab-menu>li:nth-child(2)').click();
             }
+            setGlobalNaviAction();
         }
+
 
     }, 1000);
 

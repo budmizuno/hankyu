@@ -10,23 +10,15 @@ class setSearch
 	function __construct($type){
 
 		global $PathSenmonCommon,$SettingData,$masterCsv;
-		global $def_kyotenName,$p_hatsu,$mokuteki,$def_dest_name,$def_country_name,$def_city_name,$categoryType,$p_hatsuAry;	// 検索で使用するグローバル変数を定義
-
-		// 発地をmasterCSVから取得
-		$KyotenListAry = new MakeKyotenSimpleGList;
-		$p_hatsu_array = array();
-		foreach ($p_hatsuAry->TgDataAry['i'] as $key => $value) {
-			$_array = array();
-			$_array = array_keys($value);
-
-			$p_hatsu_array[$KyotenListAry->TgDataAry[$key]] = $_array;
-		}
+		global $def_kyotenName,$p_hatsu,$mokuteki,$def_dest_name,$def_country_name,$def_city_name,$categoryType;	// 検索で使用するグローバル変数を定義
 
 		// ツアー検索なら
-		if($type == TOUR_STRING){
+		if($type == TOUR_STRING)
+		{
 			$senmonFreeFlag = false;
 		}
-		else{
+		else
+		{
 			$senmonFreeFlag = true;
 		}
 

@@ -3,7 +3,36 @@
  * 出発地
  */
 
-var twoenty_five_kyoten;
+var twoenty_five_kyoten =
+	[
+	 // 25発地,何番目の要素か
+	 ['北海道',0],
+	 ['青森',[1,2]],
+	 ['東北',[3,4,5,6,7,8,9]],
+	 ['北関東',15],
+	 ['関東',[10,11,12,13,14]],
+	 ['新潟',16],
+	 ['富山',19],
+	 ['石川',20],
+	 ['長野',17],
+	 ['名古屋',18],
+	 ['静岡',21],
+	 ['関西',[22,23,24,25,26,27,28,29,30,31,32]],
+	 ['山陰',[34,35,36]],
+	 ['岡山',33],
+	 ['広島',[37,39]],
+	 ['山口',38],
+	 ['香川・徳島',[40,41]],
+	 ['松山',42],
+	 ['高知',43],
+	 ['福岡',[44,45,46]],
+	 ['長崎',47],
+	 ['熊本',48],
+	 ['大分',49],
+	 ['宮崎',50],
+	 ['鹿児島',51],
+	 ['沖縄',52],
+	];
 
 // 親（複数の子）の子の要素数の配列
 var childrenNum = [];
@@ -81,8 +110,6 @@ window.onload = function() {
 }
 
 $(function(){
-
-	twoenty_five_kyoten = $.parseJSON($('#p_hatsu_array').val());
 
 	// 親（子が複数）拠点チェックしたら
 	$(this).on('click','.open_ktn', function(e){
@@ -454,6 +481,13 @@ function getDept(ptn){
 				//エラー
 			}else{
 
+				// 外注環境では、子発地に神戸がないため無理やり入れる。共通ファイルの問題
+				if(location.host == 'oflex-659-1.kagoya.net')
+				{
+					//var kobe = { check:false,facet:1,key:143,name:'神戸' };
+					//json.p_hatsu_name.osa.push(kobe);
+				}
+
 				if(ptn == true)
 				{
 					// 出発地表示
@@ -497,7 +531,7 @@ function dispDespInitIP(hatsuAry)
 	$.each(hatsuAry,function(index,val){
 		$.each(val,function(index2,val2){
 			// 多次元配列を扱いやすいように1次元配列にする。
-			hatsuOneArray[val2['key']] = val2;
+			hatsuOneArray.push(val2)
 		});
 	});
 
@@ -507,14 +541,14 @@ function dispDespInitIP(hatsuAry)
 	$.each(twoenty_five_kyoten,function(index,val){
 
 		// 親だけなら（子なし）
-		if(!$.isArray(val))
+		if(!$.isArray(val[1]))
 		{
 			// 親の名前が同じなら
-			if(index == oyaHatsuName)
+			if(val[0] == oyaHatsuName)
 			{
-				html += '<li><div><input type="button" class="del_hatsu" value="削除" data-value="'+ hatsuOneArray[val].key +'"><a class="decided_link" href="#modal_hatsu"><span style="display: inline-block; color: #000000;" class="decided_text" href="#modal_hatsu">' + index + '発</span></a></div></li>';
-				hit = hatsuOneArray[val].facet;
-				tatalValue = hatsuOneArray[val].key;
+				html += '<li><div><input type="button" class="del_hatsu" value="削除" data-value="'+ hatsuOneArray[val[1]].key +'"><a class="decided_link" href="#modal_hatsu"><span style="display: inline-block; color: #000000;" class="decided_text" href="#modal_hatsu">' + val[0] + '発</span></a></div></li>';
+				hit = hatsuOneArray[val[1]].facet;
+				tatalValue = hatsuOneArray[val[1]].key;
 				return true;
 			}
 		}
@@ -522,10 +556,10 @@ function dispDespInitIP(hatsuAry)
 		else
 		{
 			// 親の名前が同じなら
-			if(index == oyaHatsuName)
+			if(val[0] == oyaHatsuName)
 			{
 				// hatsuIdを求める
-				$.each(val,function(index2,val2){
+				$.each(val[1],function(index2,val2){
 
 					if(0 < hatsuOneArray[val2].facet)
 					{
@@ -535,7 +569,7 @@ function dispDespInitIP(hatsuAry)
 					}
 				});
 
-				html += '<li><div><input type="button" class="del_hatsu" value="削除" data-value="'+ tatalValue +'"><a class="decided_link" href="#modal_hatsu"><span style="display: inline-block; color: #000000;" class="decided_text" href="#modal_hatsu">' + index+ '発</span></a></div></li>';
+				html += '<li><div><input type="button" class="del_hatsu" value="削除" data-value="'+ tatalValue +'"><a class="decided_link" href="#modal_hatsu"><span style="display: inline-block; color: #000000;" class="decided_text" href="#modal_hatsu">' + val[0]+ '発</span></a></div></li>';
 				return true;
 			}
 		}
@@ -585,8 +619,7 @@ function dispDesptListInit(hatsuAry)
 	$.each(hatsuAry,function(index,val){
 		$.each(val,function(index2,val2){
 			// 多次元配列を扱いやすいように1次元配列にする。
-//			hatsuOneArray.push(val2)
-			hatsuOneArray[val2['key']] = val2;
+			hatsuOneArray.push(val2)
 		});
 	});
 
@@ -594,21 +627,40 @@ function dispDesptListInit(hatsuAry)
 	$.each(twoenty_five_kyoten,function(index,val){
 
 		// 親だけなら（子なし）
-		if(!$.isArray(val))
+		if(!$.isArray(val[1]))
 		{
 			html += '<li>';
-
-			if(hatsuOneArray[val].check == true)
+			// 茨城なら北関東に変える
+			if(hatsuOneArray[val[1]].key == 134)
 			{
-				html += '<span class="active"><label for="' + req_para_name + '_cb' + hatsuOneArray[val].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val].key + '" checked>' + hatsuOneArray[val].name + '発[' + hatsuOneArray[val].facet + ']</label></span>';
-			}
-			else if(hatsuOneArray[val].facet < 1)
-			{
-				html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val].key + '" style="color:#9d9c9c"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val].key + '" disabled>' + hatsuOneArray[val].name + '発[' + hatsuOneArray[val].facet + ']</label></span>';
+				// チェック済みなら
+				if(hatsuOneArray[val[1]].check == true)
+				{
+					html += '<span class="active"><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '" checked>北関東発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
+				else if(hatsuOneArray[val[1]].facet < 1)
+				{
+					html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" style="color:#9d9c9c"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '" disabled>北関東発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
+				else
+				{
+					html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '">北関東発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
 			}
 			else
 			{
-				html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val].key + '">' + hatsuOneArray[val].name + '発[' + hatsuOneArray[val].facet + ']</label></span>';
+				if(hatsuOneArray[val[1]].check == true)
+				{
+					html += '<span class="active"><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '" checked>' + hatsuOneArray[val[1]].name + '発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
+				else if(hatsuOneArray[val[1]].facet < 1)
+				{
+					html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" style="color:#9d9c9c"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '" disabled>' + hatsuOneArray[val[1]].name + '発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
+				else
+				{
+					html += '<span><label for="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '"><input type="checkbox" class="single_parent" id="' + req_para_name + '_cb' + hatsuOneArray[val[1]].key + '" name="' + req_para_name + '_cb" data-value="' + hatsuOneArray[val[1]].key + '">' + hatsuOneArray[val[1]].name + '発[' + hatsuOneArray[val[1]].facet + ']</label></span>';
+				}
 			}
 			html += '</li>';
 		}
@@ -620,7 +672,7 @@ function dispDesptListInit(hatsuAry)
 			var totalCheck = 0;
 			var totalCount = 0;
 			// ファセットの合計値、チェック済みか確認するために前もってループ
-			$.each(val,function(index2,val2){
+			$.each(val[1],function(index2,val2){
 
 				totalFacet += hatsuOneArray[val2].facet;
 
@@ -645,11 +697,11 @@ function dispDesptListInit(hatsuAry)
 			{
 				if(totalFacet < 1)
 				{
-					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" checked disabled>' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" checked disabled>' + val[0] + '発[' + totalFacet + ']</label></span>';
 				}
 				else
 				{
-					html += '<span class="active"><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" checked>' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span class="active"><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" checked>' + val[0] + '発[' + totalFacet + ']</label></span>';
 					sel_ktn.push(index);
 				}
 			}
@@ -658,11 +710,11 @@ function dispDesptListInit(hatsuAry)
 			{
 				if(totalFacet < 1)
 				{
-					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" disabled>' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" disabled>' + val[0] + '発[' + totalFacet + ']</label></span>';
 				}
 				else
 				{
-					html += '<span><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '">' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '">' + val[0] + '発[' + totalFacet + ']</label></span>';
 					sel_ktn.push(index);
 				}
 			}
@@ -670,17 +722,17 @@ function dispDesptListInit(hatsuAry)
 			{
 				if(totalFacet < 1)
 				{
-					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" disabled>' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span><label for="' + req_para_name + '_cb' + index + '" style="color:#9d9c9c"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '" disabled>' + val[0] + '発[' + totalFacet + ']</label></span>';
 				}
 				else
 				{
-					html += '<span><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '">' + index + '発[' + totalFacet + ']</label></span>';
+					html += '<span><label for="' + req_para_name + '_cb' + index + '"><input type="checkbox" class="open_ktn" id="' + req_para_name + '_cb' + index + '" name="' + req_para_name + '_cb" data-value="'+tatalValue+'" data-ktn="' + index + '">' + val[0] + '発[' + totalFacet + ']</label></span>';
 				}
 			}
 
 			html += '<ul id="ktn_' + index + '" style="display:none">';
 
-			$.each(val,function(index2,val2){
+			$.each(val[1],function(index2,val2){
 
 				html += '<li>';
 

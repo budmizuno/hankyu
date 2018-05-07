@@ -6,7 +6,7 @@ window.onload = function() {
 
     var href = window.location.href ;
     // URLに?tab=fがある、クッキーにフリープランタブフラグがあるなら
-    if ( ((href.match(/tab=f&/) != null || href.match(/tab=f$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
+    if ( (href.indexOf('tab=f') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
         set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
         // フリープランタブが開いた状態にする
         $("#bltai3 li:eq(1)").parent().children().removeClass('active');
@@ -264,7 +264,7 @@ $(function() {
         $('.mfp-close-hawaii').click(function(){
             $('.mfp-close').click();
         });
-
+        
         //モーダルの閉じるリンクの設定
         $(document).on('click', '#friend_pop_close', function (e) {
             e.preventDefault();
@@ -555,18 +555,18 @@ $(function() {
 // $(document).on('click','.next',function(){
 //     var prev = $(this).parent().find('.prev').eq(0);
 //     var next = $(this).parent().find('.next').eq(0);
-//
+// 
 //     var parentFrame = $(this).parent().parent();
 //     var parentUL = parentFrame.find('ul').eq(0);
 //     var liNum = parentUL.children('li').length;
-//
+// 
 //     var widthFrame = parentFrame.eq(0).width();
 //     var widthLi = parentUL.children('li').eq(0).width();
-//
+// 
 //     var displayCount = Math.floor( widthFrame / widthLi );
-//
+// 
 //     var activeNum = 0;
-//
+// 
 //     // 表示個数が2個以上の場合
 //     if (displayCount > 1) {
 //         parentUL.children('li').each(function(index, el) {
@@ -575,7 +575,7 @@ $(function() {
 //             }
 //         });
 //         activeNum++; // 移動前のため加算
-//
+// 
 //         if ((liNum - 1) <= activeNum) {
 //             $(this).addClass('disabled');
 //         }
@@ -585,18 +585,18 @@ $(function() {
 // $(document).on('click','.prev',function(){
 //     var prev = $(this).parent().find('.prev').eq(0);
 //     var next = $(this).parent().find('.next').eq(0);
-//
+// 
 //     var parentFrame = $(this).parent().parent();
 //     var parentUL = parentFrame.find('ul').eq(0);
 //     var liNum = parentUL.children('li').length;
-//
+// 
 //     var widthFrame = parentFrame.eq(0).width();
 //     var widthLi = parentUL.children('li').eq(0).width();
-//
+// 
 //     var displayCount = Math.floor( widthFrame / widthLi );
-//
+// 
 //     var activeNum = 0;
-//
+// 
 //     // 表示個数が2個以上の場合
 //     if (displayCount > 1) {
 //         parentUL.children('li').each(function(index, el) {
@@ -605,7 +605,7 @@ $(function() {
 //             }
 //         });
 //         activeNum--; // 移動前のため減算
-//
+// 
 //         if (activeNum <= 0) {
 //             $(this).addClass('disabled');
 //         }
@@ -689,7 +689,7 @@ function sly(a) {
                 // SCROLLBAR_TANTOSHA_OSUSUMEって変数がないので毎回エラー出てる？とりあえずコメントアウト
                 // if(num <= SCROLLBAR_TANTOSHA_OSUSUME){
                 //   $wrap.find('.pages').hide();
-                // }
+                // } 
                 break;
             case 'uresuzi':
                 // SCROLLBAR_URESUZIって変数がないので毎回エラー出てる？とりあえずコメントアウト

@@ -14,8 +14,6 @@ $(function() {$('.containner').append('<div class="idx_ancBtn"><img src="/sharin
 
 <?php include_once($PathSenmonCommon . 'sharing/inc/temp_otherHatsu.php');//他の出発地の情報を見る?>
 
-<?php include_once($PathSenmonCommon . 'inc/temp_news.php'); // ニュースリリース ?>
-
 <?php include_once($PathSharing16.'inc/temp_GuestInfo.php');//お客様へのお知らせ?>
 
 <p class="txt_d">※写真・イラストは全てイメージです。ご旅行中に必ずしも同じ角度・高度・天候での風景をご覧いただけるとは限りませんのでご了承ください</p>

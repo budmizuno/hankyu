@@ -165,7 +165,7 @@ class getCsvItemClass
                         {
                             $value[KEY_Q_THEME] = mb_substr($value[KEY_Q_THEME],0,40,"UTF-8").'...';
                         }
-                        $array[$value[KEY_Q_GROUP]][$value[KEY_Q_FLAG]][KEY_Q_THEME] = mb_convert_kana($value[KEY_Q_THEME], "KV","UTF-8"); // 半角ｶﾅを全角カナ;
+                        $array[$value[KEY_Q_GROUP]][$value[KEY_Q_FLAG]][KEY_Q_THEME] = $value[KEY_Q_THEME];
                     }
 
                     $array[$value[KEY_Q_GROUP]][$value[KEY_Q_FLAG]][KEY_Q_IMG_PATH][] = $value[KEY_Q_IMG_PATH];
@@ -240,7 +240,7 @@ class getCsvItemClass
                     {
                         $value[KEY_Q_THEME] = mb_substr($value[KEY_Q_THEME],0,20, "UTF-8").'...';
                     }
-                    $array[$type][$value[KEY_Q_FLAG]][KEY_Q_THEME] = mb_convert_kana($value[KEY_Q_THEME], "KV","UTF-8"); // 半角ｶﾅを全角カナ;
+                    $array[$type][$value[KEY_Q_FLAG]][KEY_Q_THEME] = $value[KEY_Q_THEME];
                 }
 
                     $display_type = KYOTEN_TOKUSYU_DISPLAY_TYPE_YOMIMONO_1;

@@ -186,7 +186,7 @@ $(function() {
     setTimeout(function() {
         var href = window.location.href ;
         // URLに?tab=fがあるなら
-        if ( ((href.match(/tab=f&/) != null || href.match(/tab=f$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
+        if ( (href.indexOf('tab=f') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
             set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
             // フリープランタブが開いた状態にする
             if ($('.tab-ct.free_plan').length > 0) {
@@ -471,13 +471,6 @@ $(function () {
             $(".tab-ct.tour #search_tour_contents").hide();
             $(".tab-ct.tour").find('section').eq(0).hide();
         }
-
-        // クリスタル、フレンドツアーの内容がない時非表示
-        $('.crystal-grey-list').each(function(index, el) {
-            if($(this).find('li').length <= 0){
-                $(this).closest("section").hide();
-            }
-        });
     }
 
 });

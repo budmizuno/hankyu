@@ -416,7 +416,7 @@ if ($popularCountryCityCsv != false && !empty($popularCountryCityCsv)) {
                     $popular_tour_url .= 'p_hatsu=124&p_hatsu_local=124';
                     break;
                 case 'hkr': //石川・福井発（石川、福井）
-                    $popular_tour_url .= 'p_hatsu=114,164&p_hatsu_local=114,164';
+                    $popular_tour_url .= 'p_hatsu=114&p_hatsu_local=114';
                     break;
                 case 'mmj': //長野発（長野）
                     $popular_tour_url .= 'p_hatsu=139&p_hatsu_local=139';
@@ -428,7 +428,7 @@ if ($popularCountryCityCsv != false && !empty($popularCountryCityCsv)) {
                     $popular_tour_url .= 'p_hatsu=112&p_hatsu_local=112';
                     break;
                 case 'osa': //関西発（滋賀、京都、大阪、兵庫、奈良、和歌山）
-                    $popular_tour_url .= 'p_hatsu=102,143,152,153,154,155,156,157,158,160,161,163&p_hatsu_local=102,143,152,153,154,155,156,157,158,160,161,163';
+                    $popular_tour_url .= 'p_hatsu=102,143,152,153,154,155,156,157,158,160,161&p_hatsu_local=102,143,152,153,154,155,156,157,158,160,161';
                     break;
                 case 'izo': //山陰発（鳥取、島根）
                     $popular_tour_url .= 'p_hatsu=131,135,136&p_hatsu_local=131,135,136';
@@ -443,7 +443,7 @@ if ($popularCountryCityCsv != false && !empty($popularCountryCityCsv)) {
                     $popular_tour_url .= 'p_hatsu=132,138&p_hatsu_local=132,138';
                     break;
                 case 'tak': //香川・徳島発（香川、徳島）
-                    $popular_tour_url .= 'p_hatsu=115,111,165&p_hatsu_local=115,111,165';
+                    $popular_tour_url .= 'p_hatsu=115,111&p_hatsu_local=115,111';
                     break;
                 case 'myj': //松山発（愛媛）
                     $popular_tour_url .= 'p_hatsu=108&p_hatsu_local=108';

@@ -17,6 +17,6 @@
 	<ul class="list-home-link">
 		<?php echo $blog->Blog;?>
 	</ul>
-	<p class="btmLink"><a href="<?php e($blog->LinkUrl)?>" target="_blank"><span>記事一覧を見る</span></a></p>
+	<p class="btmLink"><a href="<?php e($blog->LinkUrl)?>"><span>記事一覧を見る</span></a></p>
 <?php endif; ?>
 <!-- 現地情報ブログ -->

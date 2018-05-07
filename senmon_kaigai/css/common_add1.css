@@ -19,7 +19,7 @@
     height:360px;
     background-size:contain;
 }
-/* イチオシツアー */
+/* イチオシツアー　*/
 .osusume .slider-title{
     height: 45px;
 }
@@ -36,22 +36,18 @@
 .txt-point-title {
     font-size:16px;
 }
-/* フレンドツアー */
-.close_bottom{
-    text-align: center;
+/* フリープランの検索枠*/
+#tab_ct_freeplan .simpleSrchBlk{
+    min-height: 421px;
 }
-
-/* フリープランの検索枠 */
-#tab_ct_freeplan .searchBlk {
-    min-height: 432px;
-}
-#tab_ct_freeplan .searchBlk .clBtn {position: absolute;bottom: 2px;right: 10px;}
-#tab_ct_freeplan .searchBlk .clBtn a {font-size: 1.4rem;font-weight: 400;color: white;text-decoration: underline;}
-#tab_ct_freeplan .tab-tt{position: relative;}
+#tab_ct_freeplan .simpleSrchBlk .clBtn {position: absolute;bottom: 2px;right: 10px;}
+#tab_ct_freeplan .simpleSrchBlk .clBtn a {font-size: 1.4rem;font-weight: 400;color: white;text-decoration: underline;}
+#tab_ct_freeplan .tab-tt{position: relative;padding: 5px 0;}
 /* お住まいの地域設定枠 */
 .wrap_botBox01 {
     border-bottom: none;
 }
+
 /* 検索枠 */
 .tab-content-search .tab-tt{
     font-size:16px;
@@ -66,10 +62,6 @@
 	height: 285px;
     background: url(/sharing/common14/images/noimage390.png) no-repeat;
     background-size:contain;
-}
-/* フリープラン検索の検索を追加するボタン */
-.searchBlk .topSearchAdd a{
-	width: 160px !important;
 }
 /* イチオシツアーの金額 */
 .osusume .slider-price{
@@ -93,49 +85,69 @@
     font-size: 12px;
 }
 /* 最近見たツアー、おすすめツアー */
-#historyWrapper h2,#ppz_recommend_pckaigaisenmon01 h2,#ppz_recommend_pckaigaisenmon02 h2{
+#historyWrapper h2,#ppz_recommend_pckokunaisenmon01 h2,#ppz_recommend_pckokunaisenmon02 h2{
     font-weight: bold;
+    font-size: 24px;
 }
-/* IEの表示崩れ用 */
-#RankigPht02 .best01 { margin-right:0;}
-#RankigPht02 .best02 { float:right;}
-#RankigPht02 .best03 { float:right;}
-#RankigPht02 .best06 { margin-right:0;}
-#RankigPht02 .best07 { float:right;}
-/* 国ページの観光情報 */
-.charmBox{
-    float: left;
+/* 現地情報ブログ */
+.charmGuideBtm{
+	float:left;
 }
-/* フリープラン検索 */
-.overlayMds04{
-	width:auto;
+.basicinfo_1 .aside.right{
+	margin-bottom: 40px;
 }
-/* フリープランの日数 */
-.kikan_list td{
-	cursor: pointer;
+/* クリスタルハート */
+.group-crystal-num li {
+    min-height:45px;
+}
+/* クリスタルハート */
+.group-crystal-list li dd span{
+	font-size:14px;
+	font-weight:bold;
+	color: #e60012;
+}
+/* ガイド枠 */
+#AnimeImages {
+	position:relative;
+	height:386px;
+}
+#AnimeImages img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	opacity:0.0;
+}
+#AnimeImages img.active {
+	z-index:10;
+	opacity:1.0;
+}
+#AnimeImages img.last-active {
+	z-index:9;
+}
+
+#AnimeImg{
+	position:relative;
+}
+
+#AnimeImg img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:8;
+	opacity:0.0;
+}
+#AnimeImg img.active {
+	z-index:10;
+	opacity:1.0;
+}
+#AnimeImg img.last-active {
+	z-index:9;
 }
 /* カレンダー */
 .SubWinBox .SW_SD_Month td, .SubWinBox .SW_SD_Month th {
 	width: 26px !important;
 	height:29px !important;
-}
-
-.group-crystal-list li dd span {
-    font-size: 14px;
-    font-weight: bold;
-    color: #e60012;
-}
-
-/* DPの紹介枠 */
-.dp_introduction{
-    border: 1px #4c4c4c solid;
-    padding: 20px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    background: -moz-linear-gradient(top, #eeeeee 6%, #cccccc 52%, #cccccc 82%);
-    background: -webkit-linear-gradient(top, #eeeeee 6%,#cccccc 52%,#cccccc 82%);
-    background: linear-gradient(to bottom, #eeeeee 6%,#cccccc 52%,#cccccc 82%);
 }
 /* IIE11 Edgeも適応 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {

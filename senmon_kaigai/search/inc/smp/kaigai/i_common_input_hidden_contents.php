@@ -1,5 +1,3 @@
-
-
 <form id="searchTour" name="searchTour" method="post" >
 
 <input type="hidden" id="MyNaigai" name="MyNaigai" value="i">
@@ -31,7 +29,6 @@
 <input type="hidden" id="search_country_unlimited_flag" name="search_country_unlimited_flag" value="<?php e($masterCsv[KEY_MASTER_CSV_SEARCH_COUNTRY_UNLIMITED_FLAG]); ?>">
 <input type="hidden" id="search_country_init" name="search_country_init" value="<?php e(json_encode($masterCsv[KEY_MASTER_CSV_SEARCH_COUNTRY_INIT])); ?>">
 <input type="hidden" id="tour_init_flag" name="tour_init_flag" value="">
-<input type="hidden" id="p_hatsu_array" name="p_hatsu_array" value="<?php e(json_encode($p_hatsu_array)); ?>">
 
 
 <input type="hidden" id="p_hatsu" name="p_hatsu" value="<?php       e(isset($_POST['p_hatsu']) ? $_POST['p_hatsu'] : ''); ?>">

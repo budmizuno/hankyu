@@ -1846,14 +1846,12 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
 	bottom: -150px;
     padding: 8px 10px;
     display: none;
-    cursor: pointer;
 }
 .wr-banner2-a.change_tokyo_full{
     right: auto;
 	bottom: -50px;
 	left: -40px;
     padding: 8px 10px;
-    cursor: pointer;
 }
 .wr-banner2-a.back_kanto{
     bottom: auto;
@@ -4093,10 +4091,6 @@ p.btn-find-tour:before {
 .btn-heritage .btn-heritage-link:hover,
 .slider-sly ul li a:hover {
     text-decoration: none;
-}
-.slider-sly ul li a p.sly3-cpt{
-	color: #333;
-	pointer-events:none;
 }
 .base-special li a:hover,
 .base-place li a:hover,

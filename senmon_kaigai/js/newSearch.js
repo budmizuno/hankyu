@@ -479,7 +479,7 @@ var sbc = {
                             MokutekiVal += paramObj['preDest'] + '-' + val + '-';
                         });
                     }
-                    else if($("#tour_init_flag").val() == '' && 0 < $("#p_search_country").val().length && typeof paramObj['preCity'] != 'undefined'){
+                    else if($("#tour_init_flag").val() == '' && 0 < $("#p_search_country").val().length){
                         var CitySplit = paramObj['preCity'].split(',');
                         jQuery.each(CitySplit, function (i, val) {
                             if (i > 0) {

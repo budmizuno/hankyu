@@ -321,29 +321,14 @@ NarrowSearchMain.prototype = {
                     }
                 }
                 //方面　その他ファセット
-				else if (str.match(/(.*)\,(.*)/i)) {
-					//Z577880_混乗対応 ファセット合算
-					if(myName == 'p_hatsu_name'){
-						if(json['p_hatsu_local_name'].length>0){
-							for(j in json['p_hatsu_local_name']){
-								var localstr = json['p_hatsu_local_name'][j];
-								if(localstr == str){
-									var totalFacet = json['p_hatsu_local_name'][parseInt(j) + 1] + json[myName][parseInt(i) + 1];
-								}
-							}
-						}else {
-							var totalFacet = json[myName][parseInt(i) + 1];
-						}
-
-					}
-					var obj = {
-						'code': RegExp.$1,
-						'jname': RegExp.$2,
-						//'facet': json[myName][parseInt(i) + 1]
-						'facet': totalFacet
-					}
-				}
-				FacetArr.push(obj);
+                else if (str.match(/(.*)\,(.*)/i)) {
+                    var obj = {
+                        'code': RegExp.$1,
+                        'jname': RegExp.$2,
+                        'facet': json[myName][parseInt(i) + 1]
+                    }
+                }
+                FacetArr.push(obj);
             }
         }
         FacetArr.sort(function (a, b) {
@@ -548,505 +533,343 @@ var price_t = [1000, 5000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 8000
             });
             $(document).on('click', '#preHatsu', function () {
                 var destFacetArr = [];
-				var obj = {
-				  'code': '105',
-				  'jname': '北海道発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-					'code': '117,129,126,109,118,141,128,140,125',
-				  'jname': '東北発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-					'code': '101,130,133,151,134,119,139',
-				  'jname': '関東・甲信越発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-				  'code': '105',
-				  'jname': '東海・北陸発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-				  'code': '105',
-				  'jname': '関西発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-				  'code': '105',
-				  'jname': '中国・四国発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-				var obj = {
-				  'code': '105',
-				  'jname': '九州・沖縄発',
-				  'facet': 1
-				}
-				destFacetArr.push(obj);
-
-
-				var FacetArr = [];
-				var obj = {
-				  'code': '105',
-				  'jname': '北海道',
-					'pjname': '北海道発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '117',
-				  'jname': '青森',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '129',
-				  'jname': '三沢',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '126',
-				  'jname': '花巻',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '109',
-				  'jname': '仙台',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '118',
-				  'jname': '秋田',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '141',
-				  'jname': '大館能代',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '128',
-				  'jname': '山形',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '140',
-				  'jname': '庄内',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '125',
-				  'jname': '福島',
-					'pjname': '東北発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '101',
-				  'jname': '東京（成田）',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '130',
-				  'jname': '東京（羽田）',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '159',
-				  'jname': '羽田又は成田',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '133',
-				  'jname': '横浜',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '151',
-				  'jname': '山梨',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '134',
-				  'jname': '北関東',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '119',
-				  'jname': '新潟発',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '139',
-				  'jname': '長野',
-					'pjname': '関東・甲信越発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '103',
-				  'jname': '名古屋',
-					'pjname': '東海・北陸発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '124',
-				  'jname': '富山',
-					'pjname': '東海・北陸発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '114',
-				  'jname': '石川',
-					'pjname': '東海・北陸発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '164',
-				  'jname': '石川又は福井',
-					'pjname': '東海・北陸発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-
-				var obj = {
-				  'code': '112',
-				  'jname': '静岡',
-					'pjname': '東海・北陸発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '102',
-				  'jname': '関空',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '152',
-				  'jname': '伊丹',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '153',
-				  'jname': '関空又は伊丹',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '154',
-				  'jname': '関空又は神戸',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '155',
-				  'jname': '伊丹又は神戸',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '156',
-				  'jname': '関空又は伊丹又は神戸',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '157',
-				  'jname': '神戸港',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '158',
-				  'jname': '舞鶴港',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '160',
-				  'jname': '大阪港',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '161',
-				  'jname': '大阪南港',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '143',
-				  'jname': '神戸',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '163',
-				  'jname': '兵庫その他',
-					'pjname': '関西発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '113',
-				  'jname': '岡山',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '131',
-				  'jname': '出雲',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '135',
-				  'jname': '米子',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '136',
-				  'jname': '鳥取発',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '107',
-				  'jname': '広島',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '132',
-				  'jname': '山口',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '138',
-				  'jname': '岩国',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '115',
-				  'jname': '徳島',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '111',
-				  'jname': '高松',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '165',
-				  'jname': '高松又は徳島',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '108',
-				  'jname': '松山',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '110',
-				  'jname': '高知',
-					'pjname': '中国・四国発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '104',
-				  'jname': '福岡',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '127',
-				  'jname': '北九州',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '162',
-				  'jname': '佐賀',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '122',
-				  'jname': '長崎',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '120',
-				  'jname': '熊本',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '121',
-				  'jname': '大分',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '123',
-				  'jname': '宮崎',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '116',
-				  'jname': '鹿児島',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
-
-				var obj = {
-				  'code': '106',
-				  'jname': '沖縄',
-					'pjname': '九州・沖縄発',
-				  'facet': 1
-				}
-				FacetArr.push(obj);
+                var obj = {
+                    'code': '105',
+                    'jname': '北海道発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '117,129,126,109,118,141,128,140,125',
+                    'jname': '東北発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '101,130,133,151,134,119,139',
+                    'jname': '関東・甲信越発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '105',
+                    'jname': '東海・北陸発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '105',
+                    'jname': '関西発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '105',
+                    'jname': '中国・四国発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var obj = {
+                    'code': '105',
+                    'jname': '九州・沖縄発',
+                    'facet': 1
+                }
+                destFacetArr.push(obj);
+                var FacetArr = [];
+                var obj = {
+                    'code': '105',
+                    'jname': '北海道',
+                    'pjname': '北海道発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '117',
+                    'jname': '青森',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '129',
+                    'jname': '三沢',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '126',
+                    'jname': '花巻',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '109',
+                    'jname': '仙台',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '118',
+                    'jname': '秋田',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '141',
+                    'jname': '大館能代',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '128',
+                    'jname': '山形',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '140',
+                    'jname': '庄内',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '125',
+                    'jname': '福島',
+                    'pjname': '東北発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '101',
+                    'jname': '東京（成田）',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '130',
+                    'jname': '東京（羽田）',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '133',
+                    'jname': '横浜',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '151',
+                    'jname': '山梨',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '134',
+                    'jname': '茨城',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '119',
+                    'jname': '新潟',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '139',
+                    'jname': '長野',
+                    'pjname': '関東・甲信越発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '103',
+                    'jname': '名古屋',
+                    'pjname': '東海・北陸発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '124',
+                    'jname': '富山',
+                    'pjname': '東海・北陸発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '114',
+                    'jname': '石川',
+                    'pjname': '東海・北陸発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '112',
+                    'jname': '静岡',
+                    'pjname': '東海・北陸発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '102',
+                    'jname': '大阪',
+                    'pjname': '関西発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '143',
+                    'jname': '神戸',
+                    'pjname': '関西発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '113',
+                    'jname': '岡山',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '131',
+                    'jname': '出雲',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '135',
+                    'jname': '米子',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '136',
+                    'jname': '鳥取',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '107',
+                    'jname': '広島',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '132',
+                    'jname': '山口',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '138',
+                    'jname': '岩国',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '115',
+                    'jname': '徳島',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '111',
+                    'jname': '高松',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '108',
+                    'jname': '松山',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '110',
+                    'jname': '高知',
+                    'pjname': '中国・四国発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '104',
+                    'jname': '福岡',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '127',
+                    'jname': '北九州',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '122',
+                    'jname': '長崎',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '120',
+                    'jname': '熊本',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '121',
+                    'jname': '大分',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '123',
+                    'jname': '宮崎',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '116',
+                    'jname': '鹿児島',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
+                var obj = {
+                    'code': '106',
+                    'jname': '沖縄',
+                    'pjname': '九州・沖縄発',
+                    'facet': 1
+                }
+                FacetArr.push(obj);
                 var makeBox = function (FacetArrReal) {
                     var html = '<div class="overlayBlk overlayDeptBox">';
                     html += '<div class="selectClose"><a href="javascript:void(0);">閉じる</a></div>';
@@ -1143,7 +966,7 @@ var price_t = [1000, 5000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 8000
                 var options = {
                     kind: 'Detail',
                     p_data_kind: 3,
-                    p_rtn_data: "p_hatsu_name,p_hatsu_local_name"
+                    p_rtn_data: "p_hatsu_name"
                 }
                 var dataVal = NSearch.requestProcess(options);
                 delete(dataVal.p_hatsu);
@@ -1867,7 +1690,7 @@ var price_t = [1000, 5000, 10000, 20000, 30000, 40000, 50000, 60000, 70000, 8000
             /*----- onload ------------------------------------------------------------*/
             function initRequest(req) {
                 var naigai = $("#MyNaigai").val();
-                var rtn_data = "p_hatsu_name,p_dest_name,p_country_name,p_city_cn,p_kikan,p_carr_cn,p_price_flg,p_seatclass,p_timezone,p_total_amount_divide,p_discount,p_hotel_name,p_stock,p_decide,p_mainbrand,p_price_flg,p_web_conclusion_flag,p_conductor,p_bunrui,p_hatsu_local_name";
+                var rtn_data = "p_hatsu_name,p_dest_name,p_country_name,p_city_cn,p_kikan,p_carr_cn,p_price_flg,p_seatclass,p_timezone,p_total_amount_divide,p_discount,p_hotel_name,p_stock,p_decide,p_mainbrand,p_price_flg,p_web_conclusion_flag,p_conductor,p_bunrui";
                 var options = {
                     MyNaigai: naigai,
                     dataType: "json",

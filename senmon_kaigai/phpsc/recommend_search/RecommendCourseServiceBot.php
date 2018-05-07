@@ -225,7 +225,7 @@ class RecommendCourseServiceBot {
                 if((!isset($newArray[$key]['p_course_name']) || strlen($newArray[$key]['p_course_name']) == 0) && !empty($special_tour->p_course_name))
                 {
                     $p_course_name = $special_tour->p_course_name;
-                    $newArray[$key]['p_course_name'] = mb_convert_kana($p_course_name, "KV","UTF-8"); // 半角ｶﾅを全角カナ;
+                    $newArray[$key]['p_course_name'] = $p_course_name;
                 }
                 if((!isset($newArray[$key]['p_point1']) || strlen($newArray[$key]['p_point1']) == 0) && !empty($special_tour->p_point1))
                 {

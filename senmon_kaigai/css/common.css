@@ -3261,7 +3261,6 @@ div.inner{height:auto;margin:0 auto 10px;width:100%;min-width:960px;max-width:96
 .group-crystal {
     background: #ffffff url("../images/bg_crystal.jpg") no-repeat left top;
     padding: 81px 27px 15px;
-		margin-bottom:40px;
 }
 .brand_bot{
 }
@@ -3845,7 +3844,6 @@ div.inner{height:auto;margin:0 auto 10px;width:100%;min-width:960px;max-width:96
 }
 .list-country.uk{
 	top: 40px;
-	height:40px;
 }
 .list-country.italy{
 	bottom: 48px;

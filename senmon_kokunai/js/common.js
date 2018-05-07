@@ -8,15 +8,8 @@ var sl_content = new Object();
 window.onload = function() {
 
     var href = window.location.href ;
-
-    var tab_g_flag = false;
-    // URLに?tab=gがあるかフラグ
-    if(href.match(/tab=g&/) != null || href.match(/tab=g$/) != null){
-        tab_g_flag = true;
-    }
-
     // URLに?tab=gがあるなら
-    if ( ((href.match(/tab=g&/) != null || href.match(/tab=g$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(HACCHAKU_TAB_FLAG) == 'true' && 0 < $('.tab_genchihacchaku').length && $(".tab_genchihacchaku").css('display') !== 'none')) {
+    if ( (href.indexOf('tab=g') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(HACCHAKU_TAB_FLAG) == 'true' && 0 < $('.tab_genchihacchaku').length && $(".tab_genchihacchaku").css('display') !== 'none')) {
         set_senmon2017_cookie(HACCHAKU_TAB_FLAG,true);
         // 発着タブが開いた状態にする
         $("#bltai3 li:eq(2)").parent().children().removeClass('active');
@@ -25,18 +18,16 @@ window.onload = function() {
         $("#bltai3 li:eq(2)").parents('.wr-tab').find('.tab-ct').eq(2).show();
     }
 
-    if(!tab_g_flag){
-        // URLに?tab=fがあるなら
-        if ( ((href.match(/tab=f&/) != null || href.match(/tab=f$/) != null) && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
-            set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
-            // フリープランタブが開いた状態にする
-            $("#bltai3 li:eq(1)").parent().children().removeClass('active');
-            $("#bltai3 li:eq(1)").addClass('active');
-            $("#bltai3 li:eq(1)").parents('.wr-tab').find('.tab-ct').hide();
-            $("#bltai3 li:eq(1)").parents('.wr-tab').find('.tab-ct').eq(1).show();
-        }
-    }
 
+    // URLに?tab=fがあるなら
+    if ( (href.indexOf('tab=f') != -1 && 0 < $('.tab-menu').length) || (isBot() == false && 0 < $('.tab-menu').length && get_senmon2017_cookie(FREEPLAN_TAB_FLAG) == 'true')) {
+        set_senmon2017_cookie(FREEPLAN_TAB_FLAG,true);
+        // フリープランタブが開いた状態にする
+        $("#bltai3 li:eq(1)").parent().children().removeClass('active');
+        $("#bltai3 li:eq(1)").addClass('active');
+        $("#bltai3 li:eq(1)").parents('.wr-tab').find('.tab-ct').hide();
+        $("#bltai3 li:eq(1)").parents('.wr-tab').find('.tab-ct').eq(1).show();
+    }
     setGlobalNaviAction();
 }
 
@@ -585,18 +576,18 @@ $(function() {
 // $(document).on('click','.next',function(){
 //     var prev = $(this).parent().find('.prev').eq(0);
 //     var next = $(this).parent().find('.next').eq(0);
-//
+// 
 //     var parentFrame = $(this).parent().parent();
 //     var parentUL = parentFrame.find('ul').eq(0);
 //     var liNum = parentUL.children('li').length;
-//
+// 
 //     var widthFrame = parentFrame.eq(0).width();
 //     var widthLi = parentUL.children('li').eq(0).width();
-//
+// 
 //     var displayCount = Math.floor( widthFrame / widthLi );
-//
+// 
 //     var activeNum = 0;
-//
+// 
 //     // 表示個数が2個以上の場合
 //     if (displayCount > 1) {
 //         parentUL.children('li').each(function(index, el) {
@@ -605,7 +596,7 @@ $(function() {
 //             }
 //         });
 //         activeNum++; // 移動前のため加算
-//
+// 
 //         if ((liNum - 1) <= activeNum) {
 //             $(this).addClass('disabled');
 //         }
@@ -615,18 +606,18 @@ $(function() {
 // $(document).on('click','.prev',function(){
 //     var prev = $(this).parent().find('.prev').eq(0);
 //     var next = $(this).parent().find('.next').eq(0);
-//
+// 
 //     var parentFrame = $(this).parent().parent();
 //     var parentUL = parentFrame.find('ul').eq(0);
 //     var liNum = parentUL.children('li').length;
-//
+// 
 //     var widthFrame = parentFrame.eq(0).width();
 //     var widthLi = parentUL.children('li').eq(0).width();
-//
+// 
 //     var displayCount = Math.floor( widthFrame / widthLi );
-//
+// 
 //     var activeNum = 0;
-//
+// 
 //     // 表示個数が2個以上の場合
 //     if (displayCount > 1) {
 //         parentUL.children('li').each(function(index, el) {
@@ -635,7 +626,7 @@ $(function() {
 //             }
 //         });
 //         activeNum--; // 移動前のため減算
-//
+// 
 //         if (activeNum <= 0) {
 //             $(this).addClass('disabled');
 //         }

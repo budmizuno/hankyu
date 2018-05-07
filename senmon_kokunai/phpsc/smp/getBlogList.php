@@ -40,7 +40,12 @@ class GetimportantBlogList {
 			}else{
 				$XmlUrl = "http://heiweb:heibud@blog.hankyu-travel.com/staging_news/index.xml";
 			}
-			$Blog = $this->RetTagNewSenmon($XmlUrl, 'dd', $width, $num, $DateType,0);
+
+			//ブログ呼び出し
+			// TODO 20170828 ニュースリリースの実装 RetTagNewSenmonを適応させる
+			$Blog = $this->RetTagNew($XmlUrl, 'dd', $width, $num, $DateType);
+//			$Blog = $this->RetTagNewSenmon($XmlUrl, 'dd', $width, $num, $DateType);
+
 
 			if (empty($Blog)) {
 				return;
@@ -60,36 +65,6 @@ EOD;
 		echo $html;
 		return;
 		}
-	}
-
-	##################################################
-	#	ニュースリリース
-	##################################################
-	public function blogToNews($naigai = '', $num = '', $width = '', $DateType = 0, $InfoLink = 0) {
-		global $severEnvironment;
-
-		$XmlUrl = '';
-		$XmlUrl = "http://heiweb:heibud@blog.hankyu-travel.com/newsrelease/index.xml";
-
-		$Blog = $this->RetTagNewSenmon($XmlUrl, 'li', $width, $num, $DateType,1);
-
-		if (empty($Blog)) {
-			return;
-		}
-
-		$html =<<< EOD
-			<section class="yellow newsReleaseWrapper">
-			  <h2>ニュースリリース</h2>
-			  <ul class="blue adWrapper">
-			  	{$Blog}
-			  </ul>
-			  <p class="btmLink"><a href="http://blog.hankyu-travel.com/newsrelease/"><span>ニュースリリースをもっと見る</span></a></p>
-			</section>
-EOD;
-
-		// 表示して終わり
-		echo $html;
-		return;
 	}
 
 	public function blogToHtmlBottomSmp($knd) {
@@ -306,9 +281,9 @@ EOD;
 	##################################################
 	#	ブログ記事リンク生成_リニューアル版
 	##################################################
-	private function RetTagNewSenmon ($URL = NULL, $TagName = 'li', $Width = '', $Row = '', $DateType = 0,$news_flag) {
+	private function RetTagNewSenmon ($URL = NULL, $TagName = 'li', $Width = '', $Row = '', $DateType = 0) {
 		// 呼び出し
-		global $SharingPSPath,$masterCsv,$naigai,$categoryType,$getCsvItem;
+		global $SharingPSPath,$masterCsv,$naigai,$categoryType;
 
 
 		// 変数
@@ -319,26 +294,18 @@ EOD;
 		$kaigai_country = '';
 		$kokunai_homen = '';
 		$kokunai_country = '';
-		if($categoryType == CATEGORY_TYPE_DEST){
-			$kokunai_homen = $masterCsv[KEY_MASTER_CSV_NAME_JA];
-		}elseif($categoryType == CATEGORY_TYPE_COUNTRY){
-			$kokunai_country = $masterCsv[KEY_MASTER_CSV_NAME_JA];
-		}elseif($masterCsv[KEY_MASTER_CSV_HOMEN] == 'hokkaido/' || $masterCsv[KEY_MASTER_CSV_HOMEN] == 'okinawa/'){
-			// 国を取得
-	        $countryDir = preg_replace('/\/([\w]+?)$/','',$masterCsv[KEY_MASTER_CSV_DIRNAME]);
-
-	        $array = array();
-	        if (is_array($getCsvItem->masterCsvAllData) && count($getCsvItem->masterCsvAllData) > 0) {
-	            foreach ($getCsvItem->masterCsvAllData as $value) {
-	                if($countryDir == $value[KEY_MASTER_CSV_DIRNAME])
-	                {
-	                    $array = $value;
-	                    break;
-	                }
-	            }
-	        }
-
-	        $kokunai_homen = $array[KEY_MASTER_CSV_NAME_JA];
+		if($naigai == 'i'){
+			if($categoryType == CATEGORY_TYPE_DEST){
+				$kaigai_homen = $masterCsv[KEY_MASTER_CSV_NAME_JA];
+			}else{
+				$kaigai_country = $masterCsv[KEY_MASTER_CSV_NAME_JA];
+			}
+		}else{
+			if($categoryType == CATEGORY_TYPE_DEST){
+				$kokunai_homen = $masterCsv[KEY_MASTER_CSV_NAME_JA];
+			}else{
+				$kokunai_country = $masterCsv[KEY_MASTER_CSV_NAME_JA];
+			}
 		}
 
 		// XMLの連想配列取得
@@ -372,12 +339,22 @@ EOD;
 						continue;
 					}
 
-					if($categoryType == CATEGORY_TYPE_DEST || $categoryType == CATEGORY_TYPE_CITY){
-						// 国内の方面
-						if ($this->CheckBlogValueSenmon($Obj->pubnews_dom,	$Obj->pubnews_cate  , $kokunai_homen) === false) continue;
+					if($naigai == 'i'){
+						if($categoryType == CATEGORY_TYPE_DEST){
+							// 海外の方面
+							if ($this->CheckBlogValueSenmon($Obj->pubnews_ove,	$Obj->pubnews_cate  , $kaigai_homen) === false) continue;
+						}else{
+							// 海外の国
+							if ($this->CheckBlogValueSenmon($Obj->pubnews_cou,	$Obj->pubnews_cate  , $kaigai_country) === false) continue;
+						}
 					}else{
-						// 国内の国
-						if ($this->CheckBlogValueSenmon($Obj->pubnews_pre,	$Obj->pubnews_cate  , $kokunai_country) === false) continue;
+						if($categoryType == CATEGORY_TYPE_DEST){
+							// 国内の方面
+							if ($this->CheckBlogValueSenmon($Obj->pubnews_dom,	$Obj->pubnews_cate  , $kokunai_homen) === false) continue;
+						}else{
+							// 国内の国
+							if ($this->CheckBlogValueSenmon($Obj->pubnews_pre,	$Obj->pubnews_cate  , $kokunai_country) === false) continue;
+						}
 					}
 				}
 
@@ -389,15 +366,9 @@ EOD;
 				// HTMLのテンプレートパターン
 				// 更新日無し
 				if ($DateType === 0) {
-					if($news_flag == 0){
-						$Html .= <<< EOD
-	<{$TagName}><a href="{$Obj->link}">{$Title}</a></{$TagName}>
+					$Html .= <<< EOD
+<{$TagName}><a href="{$Obj->link}">{$Title}</a></{$TagName}>
 EOD;
-					}else{
-						$Html .= <<< EOD
-	<{$TagName}><a href="{$Obj->link}"><span>{$Title}</span></a></{$TagName}>
-EOD;
-					}
 				}
 				// 更新日あり
 				else {
@@ -428,7 +399,7 @@ EOD;
 	##################################################
 	private function CheckBlogValue($xmlVal, $setVal) {
 		// カテゴリ「ALL」は全表示なのでOK
-		if (strpos($xmlVal, "ALL") !== false || strpos($xmlVal, "専門店") !== false) {
+		if (strpos($xmlVal, "ALL") !== false) {
 			return true;
 		}
 
@@ -478,7 +449,7 @@ EOD;
 	private function CheckBlogValueSenmon($xmlVal,$category, $setVal) {
 
 		// カテゴリ「ALL」は全表示なのでOK
-		if (strpos($category, "ALL") !== false || strpos($category, "専門店") !== false) return true;
+		if (strpos($category, "ALL") !== false) return true;
 
 		if($xmlVal == $setVal) return true;
 
@@ -706,12 +677,8 @@ class blogDisp{
 		if(empty($blogGenchi_url)){
 			return;
 		}
-
-		$XmlUrl = 'https://tabicoffret.com/rss/domestic' . $blogGenchi_url;
-
-//		$XmlUrl = $BlogDom . $blogGenchi_url;
+		$XmlUrl = $BlogDom . $blogGenchi_url;
 		$this->LinkUrl = str_replace('index.xml', '', $XmlUrl);
-		$this->LinkUrl = str_replace('rss/', '', $this->LinkUrl);
 		$XmlParse = RssParser14::RetAry($XmlUrl);
 		if(is_object($XmlParse)){
 			$count ='';
@@ -755,7 +722,7 @@ EOD;
 				elseif($this->naigai == 'd'){
 						$li .=<<< EOD
 							<article class="artclBlog">
-								<a href="{$data['link']}" target="_blank">
+								<a href="{$data['link']}">
 									<dl class="clearfix">
 										<dt>{$data['time']}</dt>
 										<dd class="photo">

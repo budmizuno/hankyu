@@ -11,14 +11,12 @@
 <?php if($categoryType == CATEGORY_TYPE_DEST):?>
     <link rel="stylesheet" href="/attending/guide/sharing/css/base.css" type="text/css" media="all" />
     <link type="text/css" rel="stylesheet" href="/attending/guide/sharing/css/index.css" />
-   
     <?php
     $guide_key = str_replace("/guide/", "", $masterCsv[KEY_MASTER_CSV_GUIDE_PATH]);
     $guide_key = str_replace("/", "", $guide_key);
     $csv_guide_renewal_csv_path = '/attending'.$masterCsv[KEY_MASTER_CSV_GUIDE_PATH].'css/renewal_'.$guide_key.'.css';
     if (file_exists($_SERVER['DOCUMENT_ROOT'] . $csv_guide_renewal_csv_path)) {
-        //echo '<link rel="stylesheet" href="'.$csv_guide_renewal_csv_path.'" type="text/css" />';
-				echo ' <link type="text/css" rel="stylesheet" href="/attending/guide/css/2017/index.css">';
+        echo '<link rel="stylesheet" href="'.$csv_guide_renewal_csv_path.'" type="text/css" />';
     }
 
     $csv_guide_index_csv_path = '/attending'.$masterCsv[KEY_MASTER_CSV_GUIDE_PATH].'css/index.css';

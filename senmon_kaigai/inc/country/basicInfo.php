@@ -41,6 +41,9 @@
             }
         ?>
     <?php endif; ?>
-    
-    <?php include_once($PathSenmonCommon . 'sharing/phpsc/GenchiBlog.php');//現地情報ブログ?>
+    <?php if(!empty($masterCsv[KEY_MASTER_CSV_BLOG_DISPLAY])): ?>
+        <?php include_once($PathSenmonCommon . 'sharing/phpsc/GenchiBlog.php');//現地情報ブログ?>
+        <?else:?>
+            <div class="aside right nodata"></div>
+    <?php endif; ?>
 </div>
