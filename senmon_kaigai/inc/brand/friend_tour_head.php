@@ -35,7 +35,7 @@
     <li class="top">
         <dl class="group-crystal-num-list list">
             <dt class="font-20 list-item">1.</dt>
-            <dd class="font-14 list-item">ゆったり日程で大満喫</dd>
+            <dd class="font-14 list-item">ゆったりゆったり日程で大満喫</dd>
         </dl>
     </li>
     <li class="top">
