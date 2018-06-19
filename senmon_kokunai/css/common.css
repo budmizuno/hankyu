@@ -1654,7 +1654,7 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
     color: #47444b;
 }
 .bn-menu .submenu .submenu-block ul{
-    /*margin-left: 15px;*/
+    margin-left: 15px;
 }
 .bn-menu .submenu .submenu-block ul li{
     margin-bottom: 4px;
@@ -1665,7 +1665,7 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
     font-weight: bold;
     text-align: left;
     border-radius: 2px;
-    padding-left: 15px;
+    /*padding-left: 15px;*/
 }
 .bn-menu .submenu .submenu-block ul li a.disabled{
     color: #d9d9d9;
@@ -1821,6 +1821,7 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
     bottom: 48px;
     right: 4px;
     z-index: 1000;
+    font-weight:bold;
 }
 .wr-banner2-b {
     margin: 5px;
@@ -1846,12 +1847,14 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
 	bottom: -150px;
     padding: 8px 10px;
     display: none;
+    cursor: pointer;
 }
 .wr-banner2-a.change_tokyo_full{
     right: auto;
 	bottom: -50px;
 	left: -40px;
     padding: 8px 10px;
+    cursor: pointer;
 }
 .wr-banner2-a.back_kanto{
     bottom: auto;
@@ -2940,9 +2943,11 @@ div.inner{height:auto;margin:0 auto;width:100%;min-width:960px;max-width:960px;p
     margin-bottom: 20px;
 }
 .list-hotel li p span{
-	display: inline-block;
-    background: gray;
-    color: #ffffff;
+    display: inline-block;
+	background: #47444b;
+	color: #ffffff;
+	padding: 0px 5px;
+	margin-right: 3px;
 }
 .list-hotel-1 {
     width: 360px;
@@ -3247,6 +3252,33 @@ p.btn-find-tour:before {
     border-bottom: 0 !important;
     font-size: 18px;
 }
+.aside-index-title {
+    line-height: 2;
+    color: #4d4d4d;
+    border-bottom: 0 !important;
+    font-size: 18px;
+}
+/*Photoshopいらず！CSSで画像を中央トリミングする方法（レスポンシブ対応）ここから*/
+.aside-index .aside-index-info a .phtLayout {
+  position: relative;
+  width: 100%;/*　トリミングしたい枠の幅（固定にしたい場合はサイズを入力）　*/
+  padding-top: 75%;/*　トリミングしたい枠の高さ（固定にしたい場合はサイズを入力）　*/
+  overflow: hidden;/*　画像が枠からはみ出た部分はトリミング（非表示）する　*/
+  margin: 0 auto;
+}
+.aside-index .aside-index-info a .phtLayout img {
+/* 画像を上下左右に中央配置する（絶対指定） */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* 画像の最大サイズは枠の●倍まで */
+  max-width: 135%;
+  max-height: 175%;
+}
+/*Photoshopいらず！CSSで画像を中央トリミングする方法（レスポンシブ対応）ここまで*/
 .auto {
     margin-left: auto;
     margin-right: auto;
@@ -4092,6 +4124,10 @@ p.btn-find-tour:before {
 .slider-sly ul li a:hover {
     text-decoration: none;
 }
+.slider-sly ul li a p.sly3-cpt{
+	color: #333;
+	pointer-events:none;
+}
 .base-special li a:hover,
 .base-place li a:hover,
 .list-hotel li a:hover,
@@ -4894,6 +4930,7 @@ p.btn-find-tour:before {
 .blog_p a img{width:160px; height:auto}
 
 /* map */
+/*
 .gd_map_area .sbTtl { margin-bottom:5px;}
 .gd_map_area #guide_index_sightseeing_map_highlights {
 	top:0px;
@@ -4966,7 +5003,7 @@ p.btn-find-tour:before {
 white-space: nowrap;
 overflow: hidden;
 text-overflow: ellipsis;
-}
+}*/
 
 .sdj-d .box_bus_tour{display:none;}
 
@@ -5022,4 +5059,25 @@ text-overflow: ellipsis;
     height: 77px;
     border: none;
     outline: none;
+}
+
+/*bot 追記20170621*/
+.area-slct{ clear:both; border-bottom:1px dotted #d3d3d3; overflow:hidden; margin-bottom:10px; padding-bottom:10px;}
+.area-slct li{ float:left; margin-right:24px;}
+.area-slct li a {font-size: 14px; color: #1b3697; -webkit-box-orient: vertical; -webkit-line-clamp: 2;  display: block;}
+.area-slct li a:before{content:"▶";color:#ffae00!important; display:inline-block; margin-right:3px;}
+.tour_box01{ clear:both; overflow:hidden;}
+.tour_box01 p{ float:left; width:210px;}
+.tour_box01 ul{ float:left; width:750px;}
+.air{ padding: 2px 20px; display: inline-block; border-radius: 4px; background: gray; color: #fff; width:100px; text-align:center;}
+.tour_box02 ul{ clear:both; overflow:hidden;}
+.tour_box02 .fl01{ float:left; width:100px; margin-right:10px;}
+.tour_box02 .fl02{ float:left; width:640px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.tour_box02 .fl03{ float:left; width:210px;}
+.btn_more_list { border: solid 1px #bbc3df; margin: 0px 0px 15px 760px; text-align: center; display:inline-block;}
+.btn_more_list a { display: block; font-size: 14px; line-height: 1.7; padding: 2px 11px; color: #1d3597; text-align: center; width:198px;}
+.day_mds{ font-size:18px; font-weight:bold; width:960px; margin-bottom:5px;}
+.day_mds02{ font-size:18px; font-weight:bold; border-top: solid 1px #d3d3d3; padding-top:10px; width:960px; margin-bottom:5px;}
+.slectAreaBox {
+    display:block;
 }
